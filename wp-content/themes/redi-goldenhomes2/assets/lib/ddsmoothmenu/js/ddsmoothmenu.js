@@ -216,7 +216,7 @@ buildmobilemenu: function($, setting, $ul){
 		return $flattened
 	}
 
-	var $mainmenu = $('#' + setting.mainmenuid)
+	var $mainmenu = jQuery('#' + setting.mainmenuid)
 	var $mainul = $ul
 	var $topulref = null
 
@@ -264,7 +264,7 @@ buildmobilemenu: function($, setting, $ul){
 				e.stopPropagation()
 			})
 		var $topulsdiv = $maincontainer.find('div.topulsdiv')
-		var $mobiletoggler = $('#ddsmoothmenu-mobiletoggle').css({display: 'block'})
+		var $mobiletoggler = jQuery('#ddsmoothmenu-mobiletoggle').css({display: 'block'})
 		$mobiletoggler
 			.on('click', function(e){ // assign click behavior to main mobile menu toggler
 				ddsmoothmenu.togglemobile()
@@ -519,7 +519,7 @@ buildsubheaders: function($, $subul, $headers, setting, method, prevobjs){
 initmenu: function(setting){
 	if (setting.mobilemql.matches){ // if mobile mode
 		jQuery(function($){
-			var $mainmenu = $('#' + setting.mainmenuid)
+			var $mainmenu = jQuery('#' + setting.mainmenuid)
 			$mainmenu.css({display: 'none'}) // hide regular menu
 			//setTimeout(function(){$('.ddshadow').addClass('ddsmoothmenushadowsnone')}, 150)
 			if (!setting.$mainulclone){ // store a copy of the main menu's UL menu before it gets manipulated
@@ -533,7 +533,7 @@ initmenu: function(setting){
 				ddsmoothmenu.getajaxmenuMobile($, setting)
 			}
 			else{ // if mobile menu built already, just show mobile togger
-				$('#ddsmoothmenu-mobiletoggle').css({display: 'block'})				
+				jQuery('#ddsmoothmenu-mobiletoggle').css({display: 'block'})				
 			}
 		})
 		return
@@ -541,12 +541,12 @@ initmenu: function(setting){
 	else{ // if desktop mode
 		var menustate = setting.menustate
 		if (menustate && menustate != "error"){ // if menustate is anything other than "error" (meaning error fetching ajax content), it means menu's built already, so exit init()
-			var $mainmenu = $('#' + setting.mainmenuid)
+			var $mainmenu = jQuery('#' + setting.mainmenuid)
 			$mainmenu.css({display: 'block'}) // show regular menu
 			if (this.mobilecontainer.$main){ // if mobile menu defined, hide it
 				this.togglemobile('close', 0)
 			}
-			$('#ddsmoothmenu-mobiletoggle').css({display: 'none'}) // hide mobile menu toggler
+			jQuery('#ddsmoothmenu-mobiletoggle').css({display: 'none'}) // hide mobile menu toggler
 			return
 		}
 	}
@@ -617,12 +617,12 @@ initmenu: function(setting){
 	}).attr('src', ddsmoothmenu.arrowimages.down[1]);
 	setting.shadow = this.detectie6 && (setting.method === 'hover' || setting.orientation === 'v')? false : setting.shadow || this.shadow; //in IE6, always disable shadow except for horizontal toggle menus
 	jQuery(document).ready(function($){
-		var $mainmenu = $('#' + setting.mainmenuid)
+		var $mainmenu = jQuery('#' + setting.mainmenuid)
 		$mainmenu.css({display: 'block'}) // show regular menu (in case previously hidden by mobile menu activation)
 		if (ddsmoothmenu.mobilecontainer.$main){ // if mobile menu defined, hide it
 				ddsmoothmenu.togglemobile('close', 0)
 		}
-		$('#ddsmoothmenu-mobiletoggle').css({display: 'none'}) // hide mobile menu toggler
+		jQuery('#ddsmoothmenu-mobiletoggle').css({display: 'none'}) // hide mobile menu toggler
 		if (!setting.$mainulclone){ // store a copy of the main menu's UL menu before it gets manipulated
 			setting.$mainulclone = $mainmenu.find('>ul').clone()
 		}
