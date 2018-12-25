@@ -104,30 +104,38 @@
 	background-color: $menu_bg;
 	padding: 2px 0px;
 	.logo{
-		text-align: center;
+		    text-align: center;
+    margin-left: 25px;
 	}
 	.menu-box{
 		position: relative;
-		margin-left: 65px;
+		margin-left: 70px;
 		#smoothmainmenu{
-			margin-left: 45px;
+			margin-left:45px;
 		}
 		.home-icon{
 			position: absolute;
 			left: 0;
 			top: 33px;
-			color:$menu_color;
-			font-size: 20px;
+			a{
+				color:$menu_color;
+				font-size: 20px;
+			}
 		}
 	}
 }
 .main-menu{
 	>li{
+		&:first-child{
+			margin-left: 10px;
+		}
 		&:nth-child(2){
+			margin-left:30px;
 			a{
 				background-image: url('../img/san-pham.png');
 				background-repeat: no-repeat;
 				background-position: 0 center;
+				padding: 35px 20px;
 				&:hover{
 					background-image: url('../img/san-pham.png');
 					background-repeat: no-repeat;
@@ -136,15 +144,54 @@
 			}
 		}
 		&:nth-child(4){
+			margin-left: 30px;
 			a{
 				background-image: url('../img/khach-hang.png');
 				background-repeat: no-repeat;
 				background-position: 0 center;
+				padding: 35px 25px;
 				&:hover{
 					background-image: url('../img/khach-hang.png');
 					background-repeat: no-repeat;
 					background-position: 0 center;
 				}
+			}
+		}
+	}
+}
+.owl_carousel_banner .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;    
+}
+.owl_carousel_banner .owl-dots .owl-dot span{
+	width: 17px;
+	height: 7px;
+}
+.owl_carousel_banner .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #ed9205;
+}
+.tu_van_box {
+	background: linear-gradient(to right, #caa047 , #dcbc68);
+	padding: 6px 6px 6px 2px;
+	position: fixed;
+	top: 490px;
+	right: -180px;
+	z-index: 2;
+	border-radius: 35px 0 0 35px;
+	@include p-web(transition,all 0.5s);
+	.icon_phone{
+		float: left;
+	}
+	.text_phone{
+		float: left;		
+		.tv_24_7{
+			color: #fff;
+		}
+		.sdt_tu_van{
+			a{
+				color: #fff;
 			}
 		}
 	}

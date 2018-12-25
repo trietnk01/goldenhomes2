@@ -123,11 +123,19 @@
 							?>        		
 						</div>
 						<div class="home-icon">
-							<i class="fa fa-home" aria-hidden="true"></i>
+							<a href="<?php echo home_url( '', null ); ?>"><i class="fa fa-home" aria-hidden="true"></i></a>
 						</div>
 					</div>					
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="tu_van_box">
+		<div class="icon_phone"><img src="<?php echo P_IMG.'/phone_support.png'; ?>" alt="tên hình"></div>
+		<div class="text_phone">
+			<div class="tv_24_7">TƯ VẤN 24/7</div>				
+			<div class="sdt_tu_van"><a href="tel:<?php echo get_field('tel_alo','option'); ?>"><?php echo get_field('sdt','option'); ?></a></div>
+		</div>
+		<div class="clr"></div>
 	</div>
 <?php do_action('p_after_header') ; ?>
