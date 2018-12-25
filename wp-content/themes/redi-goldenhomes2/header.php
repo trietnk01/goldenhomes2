@@ -81,31 +81,7 @@
 				</div>			
 			</div>
 		</div>
-	</div>
-	<!--<div id="smoothmainmenumobile" class="ddsmoothmenu-mobile">
-		<?php			
-		$args = array( 
-			'menu'              => '', 
-			'container'         => '', 
-			'container_class'   => '', 
-			'container_id'      => '', 
-			'menu_class'        => 'main-menu-mobile',                             
-			'echo'              => true, 
-			'fallback_cb'       => 'wp_page_menu', 
-			'before'            => '', 
-			'after'             => '', 
-			'link_before'       => '', 
-			'link_after'        => '', 
-			'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>',  
-			'depth'             => 3, 
-			'walker'            => '', 
-			'theme_location'    => 'mobile' ,
-			'menu_li_actived'       => 'current-menu-item-mobile',
-			'menu_item_has_children'=> 'menu-item-has-children-mobile',
-		);
-		wp_nav_menu($args);
-		?>        		
-	</div>-->
+	</div>	
 <div class="header_bg_mobile">
 	<div class="logo_mobile">
 		<a href="<?php echo home_url() ?>" title="Logo">					
@@ -115,7 +91,7 @@
 	<div class="phone_mobile_view">
 		<a href="tel:<?php echo get_field('tel_alo','option'); ?>"><i class="fa fa-phone" aria-hidden="true"></i></a>		
 	</div>
-	<!--<div class="mobile_navbar">
+	<div class="mobile_navbar">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">				
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -129,7 +105,7 @@
 				?>				
 			</div>
 		</nav>
-	</div>-->	
+	</div>
 </div>
 <div class="mainmenu_box">
 	<div class="container">

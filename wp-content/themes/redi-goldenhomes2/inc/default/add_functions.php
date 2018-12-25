@@ -866,13 +866,7 @@ function add_code_ddsmoothmenu(){
 			orientation: "h", 
 			classname: "ddsmoothmenu",
 			contentsource: "markup" 
-		});
-	ddsmoothmenu.init({
-			mainmenuid: "smoothmainmenumobile", 
-			orientation: "h", 
-			classname: "ddsmoothmenu",
-			contentsource: "markup" 
-		});
+		});	
 	</script>
 	    ';				
 	echo $chuoi;
