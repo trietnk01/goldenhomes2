@@ -103,4 +103,21 @@
 .header-menu{
 	background-color: $menu_bg;
 	padding: 2px 0px;
+	.logo{
+		text-align: center;
+	}
+	.menu-box{
+		position: relative;
+		margin-left: 65px;
+		#smoothmainmenu{
+			margin-left: 45px;
+		}
+		.home-icon{
+			position: absolute;
+			left: 0;
+			top: 33px;
+			color:$menu_color;
+			font-size: 20px;
+		}
+	}
 }

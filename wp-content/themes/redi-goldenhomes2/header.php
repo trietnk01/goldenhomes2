@@ -90,35 +90,42 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-2">
-					<a href="<?php echo home_url() ?>" title="<?php echo get_bloginfo( 'name'); ?>">					
+					<div class="logo">
+						<a href="<?php echo home_url() ?>" title="<?php echo get_bloginfo( 'name'); ?>">					
 						<img src="<?php echo get_field('logo_header','option'); ?>" alt="<?php echo get_bloginfo( 'name'); ?>" >
 					</a>
+					</div>					
 				</div>
 				<div class="col-lg-10">
-					<div id="smoothmainmenu" class="ddsmoothmenu">
-						<?php			
-						$args = array( 
-							'menu'              => '', 
-							'container'         => '', 
-							'container_class'   => '', 
-							'container_id'      => '', 
-							'menu_class'        => 'main-menu',                             
-							'echo'              => true, 
-							'fallback_cb'       => 'wp_page_menu', 
-							'before'            => '', 
-							'after'             => '', 
-							'link_before'       => '', 
-							'link_after'        => '', 
-							'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>',  
-							'depth'             => 3, 
-							'walker'            => '', 
-							'theme_location'    => 'primary' ,
-							'menu_li_actived'       => 'current-menu-item',
-							'menu_item_has_children'=> 'menu-item-has-children',
-						);
-						wp_nav_menu($args);
-						?>        		
-					</div>
+					<div class="menu-box">
+						<div id="smoothmainmenu" class="ddsmoothmenu">
+							<?php			
+							$args = array( 
+								'menu'              => '', 
+								'container'         => '', 
+								'container_class'   => '', 
+								'container_id'      => '', 
+								'menu_class'        => 'main-menu',                             
+								'echo'              => true, 
+								'fallback_cb'       => 'wp_page_menu', 
+								'before'            => '', 
+								'after'             => '', 
+								'link_before'       => '', 
+								'link_after'        => '', 
+								'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>',  
+								'depth'             => 3, 
+								'walker'            => '', 
+								'theme_location'    => 'primary' ,
+								'menu_li_actived'       => 'current-menu-item',
+								'menu_item_has_children'=> 'menu-item-has-children',
+							);
+							wp_nav_menu($args);
+							?>        		
+						</div>
+						<div class="home-icon">
+							<i class="fa fa-home" aria-hidden="true"></i>
+						</div>
+					</div>					
 				</div>
 			</div>
 		</div>

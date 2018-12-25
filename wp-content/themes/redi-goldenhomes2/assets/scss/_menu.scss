@@ -19,18 +19,18 @@
   >ul{    
     >li{
       >a{
-        font-family:$f_bold;
-        font-size: 14px;
+        font-family:$f_regular;
+        font-size: 20px;
         text-transform: uppercase;               
         background:transparent;                 
-        padding: 18px 20px; 
-        border-right: 1px solid #909090; 
+        padding:35px 22px; 
+        border-right: 0; 
         &:link,&:visited{
           color: $menu_color;
         }                     
         &:hover,&.selected{  
-          background-color: $logo_bg !important;                  
-          color: #3c3c3c;
+          color: $menu_color;
+          background-color:transparent;
         } 
         @media (max-width: 1024px){
           padding: 15px 20px;  
