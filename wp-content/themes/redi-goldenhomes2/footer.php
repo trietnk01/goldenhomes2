@@ -9,46 +9,47 @@ Footer template
 	<div class="footer-top">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-2">
+				<div class="col-md-6">
 					<div class="footer_logo">
 						<a href="<?php echo home_url() ?>" title="Logo">					
 							<img src="<?php echo get_field('logo_header','option'); ?>" alt="Logo" >
 						</a>
 					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="bloginfo_name"><?php echo get_bloginfo( 'name'); ?></div>
-					<div class="blog-social">
-						<?php 
-						$source_social=get_field('op_inf_sn_repeat','option');				
-						if(count(@$source_social) > 0){
+					<div class="blog-info-social">
+						<div class="bloginfo_name"><?php echo get_bloginfo( 'name'); ?></div>
+						<div class="blog-social">
+							<?php 
+							$source_social=get_field('op_inf_sn_repeat','option');				
+							if(count(@$source_social) > 0){
+								?>
+								<ul class="social_lst">
+									<li>
+										<a href="<?php echo @$source_social[0]['op_inf_sn_repeat_link']; ?>" title="tiêu đề tên" target="_blank" rel="nofollow"><i class="fa fa-facebook-official" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li>
+										<a href="<?php echo @$source_social[3]['op_inf_sn_repeat_link']; ?>" title="tiêu đề tên" target="_blank" rel="nofollow">
+											<i class="fa fa-google-plus-official" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li>
+										<a href="<?php echo @$source_social[2]['op_inf_sn_repeat_link']; ?>" title="tiêu đề tên" target="_blank" rel="nofollow">
+											<i class="fa fa-youtube-play" aria-hidden="true"></i>
+										</a>
+									</li>					
+									<li>
+										<a href="<?php echo @$source_social[5]['op_inf_sn_repeat_link']; ?>" title="tiêu đề tên" target="_blank" rel="nofollow"><i class="fa fa-instagram" aria-hidden="true"></i>
+										</a>
+									</li>
+								</ul>
+								<?php
+							}
 							?>
-							<ul class="social_lst">
-								<li>
-									<a href="<?php echo @$source_social[0]['op_inf_sn_repeat_link']; ?>" title="tiêu đề tên" target="_blank" rel="nofollow"><i class="fa fa-facebook-official" aria-hidden="true"></i>
-									</a>
-								</li>
-								<li>
-									<a href="<?php echo @$source_social[3]['op_inf_sn_repeat_link']; ?>" title="tiêu đề tên" target="_blank" rel="nofollow">
-										<i class="fa fa-google-plus-official" aria-hidden="true"></i>
-									</a>
-								</li>
-								<li>
-									<a href="<?php echo @$source_social[2]['op_inf_sn_repeat_link']; ?>" title="tiêu đề tên" target="_blank" rel="nofollow">
-										<i class="fa fa-youtube-play" aria-hidden="true"></i>
-									</a>
-								</li>					
-								<li>
-									<a href="<?php echo @$source_social[5]['op_inf_sn_repeat_link']; ?>" title="tiêu đề tên" target="_blank" rel="nofollow"><i class="fa fa-instagram" aria-hidden="true"></i>
-									</a>
-								</li>
-							</ul>
-							<?php
-						}
-						?>
-						<div class="clr"></div>	
+							<div class="clr"></div>	
+						</div>
 					</div>
-				</div>
+					<div class="clr"></div>	
+				</div>				
 				<div class="col-md-6">
 					<div class="footer-address-phone-email-box">
 						<div class="footer-addr">

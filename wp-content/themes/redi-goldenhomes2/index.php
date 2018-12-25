@@ -3,6 +3,8 @@
 	Home template default
 */	
 	get_header();
+	global $zController;
+	$productModel=$zController->getModel("/frontend","ProductModel");
 	$source_banner=get_field('op_banner_repeat','option');		
 	?>
 	<h1 style="display: none"><?php echo get_bloginfo( 'name','' ); ?></h1>
@@ -20,51 +22,56 @@
 			}
 			?>								
 		</div>		
-	</div>	
-	<?php 
-	global $zController;
-	$productModel=$zController->getModel("/frontend","ProductModel");
-	$args = array(
-		'post_type' => 'post',  
-		'orderby' => 'id',
-		'order'   => 'DESC', 
-		'tax_query'=>array(
-			array(
-				'taxonomy' => 'category',
-				'field'    => 'slug',
-				'terms'    => 'blog',
-			)
-		), 						
-	);
-	$the_query=new WP_Query($args);  
-	/* start setup pagination */
-	$totalItemsPerPage=get_option( 'posts_per_page' );
-	$pageRange=3;
-	$currentPage=1; 
-	if(!empty(@$_POST["filter_page"]))          {
-		$currentPage=@$_POST["filter_page"];  
-	}
-	$productModel->setWpQuery($the_query);   
-	$productModel->setPerpage($totalItemsPerPage);        
-	$productModel->prepare_items();               
-	$totalItems= $productModel->getTotalItems();               
-	$arrPagination=array(
-		"totalItems"=>$totalItems,
-		"totalItemsPerPage"=>$totalItemsPerPage,
-		"pageRange"=>$pageRange,
-		"currentPage"=>$currentPage   
-	);    
-	$pagination=$zController->getPagination("Pagination",$arrPagination); 
-	/* end setup pagination */	
-	?>	
-	<div class="box-news box-news-2">
+	</div>		
+	<div class="box-service-mobile">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col">
+					<?php include get_template_directory() . "/block/block-service.php"; ?>		
+				</div>
+			</div>
+		</div>		
+	</div>
+	<div class="box-news box-news-2">
+		<div class="container">			
+			<div class="row">
+				<div class="col-lg-8">
 					<form name="frm_category_hp" method="POST">
 						<input type="hidden" name="filter_page" value="1" />
 						<div>
 							<?php 
+							$args = array(
+								'post_type' => 'post',  
+								'orderby' => 'id',
+								'order'   => 'DESC', 
+								'tax_query'=>array(
+									array(
+										'taxonomy' => 'category',
+										'field'    => 'slug',
+										'terms'    => 'blog',
+									)
+								), 						
+							);
+							$the_query=new WP_Query($args);  
+							/* start setup pagination */
+							$totalItemsPerPage=get_option( 'posts_per_page' );
+							$pageRange=3;
+							$currentPage=1; 
+							if(!empty(@$_POST["filter_page"]))          {
+								$currentPage=@$_POST["filter_page"];  
+							}
+							$productModel->setWpQuery($the_query);   
+							$productModel->setPerpage($totalItemsPerPage);        
+							$productModel->prepare_items();               
+							$totalItems= $productModel->getTotalItems();               
+							$arrPagination=array(
+								"totalItems"=>$totalItems,
+								"totalItemsPerPage"=>$totalItemsPerPage,
+								"pageRange"=>$pageRange,
+								"currentPage"=>$currentPage   
+							);    
+							$pagination=$zController->getPagination("Pagination",$arrPagination); 
+							/* end setup pagination */	
 							if($the_query->have_posts()){
 								while ($the_query->have_posts()) {
 									$the_query->the_post();
@@ -112,8 +119,10 @@
 						</div>		
 					</form>												
 				</div>
-				<div class="col-md-4">
-					<?php include get_template_directory() . "/block/block-service.php"; ?>
+				<div class="col-lg-4">
+					<div class="box-service-desktop">
+						<?php include get_template_directory() . "/block/block-service.php"; ?>
+					</div>					
 					<div class="ritan">
 						<?php include get_template_directory() . "/block/block-regsister.php"; ?>
 					</div>					

@@ -870,7 +870,7 @@ function add_code_ddsmoothmenu(){
 	ddsmoothmenu.init({
 			mainmenuid: "smoothmainmenumobile", 
 			orientation: "h", 
-			classname: "ddsmoothmobile",
+			classname: "ddsmoothmenu",
 			contentsource: "markup" 
 		});
 	</script>
@@ -887,36 +887,6 @@ function portfolio_page_template( $template ) {
 	$term=get_term_by('id', $id,'category');
 	if(!empty($term)){
 		$slug=$term->slug;
-	}	
-	if(get_query_var('za_category') != ''){
-		$file = get_template_directory() . '/template-05-product.php';
-		if(file_exists($file)){
-			return $file;
-		}			
-	}
-	if(get_query_var('za_trade') != ''){
-		$file = get_template_directory() . '/template-05-product.php';
-		if(file_exists($file)){
-			return $file;
-		}			
-	}
-	if(get_query_var('za_vungmien') != ''){
-		$file = get_template_directory() . '/template-05-product.php';
-		if(file_exists($file)){
-			return $file;
-		}			
-	}	
-	if(get_query_var('zaproduct') != ''){
-		$file = get_template_directory() . '/template-09-product-detail.php';
-		if(file_exists($file)){
-			return $file;
-		}			
-	}	
-	if(strcmp($slug, 'diem-kinh-doanh') == 0 || strcmp($slug, 'tram-dung-chan') == 0){
-		$file = get_template_directory() . '/template-06-business-position.php';
-		if(file_exists($file)){
-			return $file;
-		}
 	}		
 	return $template;
 }

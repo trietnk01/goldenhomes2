@@ -140,7 +140,8 @@ if(have_posts()){
 							</div>
 							<?php
 						}
-						?>								
+						?>
+						<div class="clr"></div>								
 					</div>
 					<?php
 					wp_reset_postdata();

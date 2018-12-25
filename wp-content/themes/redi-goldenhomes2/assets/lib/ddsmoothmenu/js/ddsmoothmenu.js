@@ -48,7 +48,7 @@ var ddsmoothmenu = {
 
 ///////////////////////// Global Configuration Options: /////////////////////////
 
-mobilemediaquery: "screen and (max-width: 700px)", // CSS media query string that when matched activates mobile menu (while hiding default)
+mobilemediaquery: "screen and (max-width: 992px)", // CSS media query string that when matched activates mobile menu (while hiding default)
 //Specify full URL to down and right arrow images (23 is padding-right for top level LIs with drop downs, 6 is for vertical top level items with fly outs):
 arrowimages: {down:['downarrowclass', '', 23], right:['rightarrowclass', '', 6], left:['leftarrowclass', '']},
 transition: {overtime:300, outtime:300}, //duration of slide in/ out animation, in milliseconds

@@ -3,7 +3,7 @@ $args = array(
 	'post_type' => 'post',  
 	'orderby' => 'id',
 	'order'   => 'DESC',  
-	'posts_per_page' => 6,        	
+	'posts_per_page' => 4,        	
 	'tax_query' => array(
 		array(
 			'taxonomy' => 'category',
@@ -16,7 +16,7 @@ $the_query=new WP_Query($args);
 if($the_query->have_posts()){
 	?>
 	<h3 class="dvvp">Dịch vụ của Vương Phát</h3>
-	<div class="service-box">
+	<div class="service-box">		
 		<?php 
 		while($the_query->have_posts()) { 
 			$the_query->the_post();
@@ -29,12 +29,12 @@ if($the_query->have_posts()){
 			$date_post='';
 			$date_post=get_the_date('d/m/Y',@$post_id);      
 			?>
-			<div class="service-item">
+			<div class="service-item">									
 				<div class="service-left-item">
 					<a href="<?php echo @$permalink; ?>">
 						<img src="<?php echo @$featured_img; ?>" alt="<?php echo @$title; ?>">
 					</a>
-				</div>
+				</div>										
 				<div class="service-right-item">
 					<h3 class="service-right-title"><a href="<?php echo @$permalink; ?>"><?php echo wp_trim_words( @$title, 5,'') ; ?></a></h3>
 					<div class="service-price"><?php echo  p_wc_price_format_html2($price); ?>/tháng</div>
@@ -52,7 +52,8 @@ if($the_query->have_posts()){
 			</div>
 			<?php
 		}
-		?>
+		?>		
+		<div class="clr"></div>
 		<div class="service-viewall">
 			<a href="<?php echo site_url( 'dich-vu',null ); ?>">Xem tất cả</a>
 		</div>						
