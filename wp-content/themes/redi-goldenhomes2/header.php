@@ -24,5 +24,66 @@
 	
 </head>
 <body <?php body_class() ?> id="body-top">
-	
+	<div class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="tuvan-hotline-email-box">
+						<div class="user-box">
+							<div><img src="<?php echo P_IMG."/user.png"; ?>"></div>
+							<div>Tư vấn 24/7</div>
+							<div class="clr"></div>
+						</div>
+						<div class="phone-box">
+							<div><i class="fa fa-phone" aria-hidden="true"></i></div>
+							<div><a href="tel:<?php echo get_field('tel_alo','option'); ?>"><?php echo get_field('sdt','option'); ?></a></div>
+							<div class="clr"></div>
+						</div>
+						<div class="email-box">
+							<div><i class="fa fa-envelope" aria-hidden="true"></i></div>
+							<div><a href="mailto:<?php echo get_field('email_info','option'); ?>"><?php echo get_field('email_info','option'); ?></a></div>
+							<div class="clr"></div>
+						</div>
+						<div class="clr"></div>
+					</div>
+					<div class="social-box">
+						<div>Theo dõi:</div>
+						<div>
+							<?php 
+							$source_social=get_field('op_inf_sn_repeat','option');				
+							if(count(@$source_social) > 0){
+								?>
+								<ul class="social_lst">
+									<li>
+										<a href="<?php echo @$source_social[0]['op_inf_sn_repeat_link']; ?>" title="tiêu đề tên" target="_blank" rel="nofollow">
+											<i class="fa fa-facebook" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li>
+										<a href="<?php echo @$source_social[1]['op_inf_sn_repeat_link']; ?>" title="tiêu đề tên" target="_blank" rel="nofollow">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li>
+										<a href="<?php echo @$source_social[2]['op_inf_sn_repeat_link']; ?>" title="tiêu đề tên" target="_blank" rel="nofollow">
+											<i class="fa fa-youtube-play" aria-hidden="true"></i>
+										</a>
+									</li>					
+									<li>
+										<a href="<?php echo @$source_social[3]['op_inf_sn_repeat_link']; ?>" title="tiêu đề tên" target="_blank" rel="nofollow">
+											<i class="fa fa-google-plus" aria-hidden="true"></i>
+										</a>
+									</li>
+								</ul>
+								<?php
+							}
+							?>
+						</div>
+						<div class="clr"></div>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div>	
 <?php do_action('p_after_header') ; ?>

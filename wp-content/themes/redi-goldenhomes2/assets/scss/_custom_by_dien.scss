@@ -1,0 +1,102 @@
+.header-top{
+	background-image: url('../img/header-pattern.png');
+	background-repeat: repeat;
+    padding: 7px 0px;
+	.tuvan-hotline-email-box{
+		float: left;
+		.user-box{
+			float:left; 
+			div{
+				&:first-child{
+					float: left;
+				}
+				&:nth-child(2){
+					float: left;
+					margin-left: 5px;
+					color: $mau;
+					font-size: 13px;
+					margin-top: 2px;
+				}
+			}			
+		}
+		.phone-box{
+			float:left; 
+			margin-left: 30px;
+			div{
+				&:first-child{
+					float: left;
+					color: $mau;
+				}
+				&:nth-child(2){
+					float: left;
+					margin-left: 5px;										
+					a{
+						color:$mau;
+						font-size: 13px;
+					}
+				}
+			}			
+		}
+		.email-box{
+			float:left; 
+			margin-left: 30px;
+			div{
+				&:first-child{
+					float: left;
+					color: $mau;
+				}
+				&:nth-child(2){
+					float: left;
+					margin-left: 5px;										
+					a{
+						color:$mau;
+						font-size: 13px;
+					}
+				}
+			}			
+		}
+	}
+	.social-box{
+		float: right;
+		div{
+			&:first-child{
+				float: left;
+				color: $mau;
+			}
+			&:nth-child(2){
+				float: left;
+				margin-left:15px;
+				.social_lst{
+					list-style: none;
+					margin-left: 0;
+					padding-left: 0;
+					li{
+						float: left;
+						margin-right: 10px;
+						&:first-child{
+							a{
+								color: #004f9f;
+							}
+						}						
+						&:nth-child(2){
+							a{
+								color: #2989eb;
+							}
+						}
+						&:nth-child(3){
+							a{
+								color: #ff0000;
+							}
+						}
+						&:last-child{
+							margin-right: 0;
+							a{
+								color: #dd5244;
+							}
+						}						
+					}
+				}
+			}
+		}		
+	}
+}

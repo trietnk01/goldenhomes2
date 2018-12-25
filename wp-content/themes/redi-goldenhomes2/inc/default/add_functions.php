@@ -917,8 +917,7 @@ function script_footer(){
 			</div>
 		</form>
 	</div>
-	";
-	echo $pan_search;
+	";	
 	echo $google;
 	echo $facebook;
 }
