@@ -23,7 +23,7 @@
 	<?php do_action("p_add_code_head") ?>
 	
 </head>
-<body <?php body_class() ?> id="body-top">
+<body <?php body_class() ?> id="body-top">	
 	<div class="header-top">
 		<div class="container">
 			<div class="row">
@@ -92,8 +92,8 @@
 				<div class="col-lg-2">
 					<div class="logo">
 						<a href="<?php echo home_url() ?>" title="<?php echo get_bloginfo( 'name'); ?>">					
-						<img src="<?php echo get_field('logo_header','option'); ?>" alt="<?php echo get_bloginfo( 'name'); ?>" >
-					</a>
+							<img src="<?php echo get_field('logo_header','option'); ?>" alt="<?php echo get_bloginfo( 'name'); ?>" >
+						</a>
 					</div>					
 				</div>
 				<div class="col-lg-10">
@@ -127,15 +127,35 @@
 						</div>
 					</div>					
 				</div>
-			</div>
+			</div>			
 		</div>
-	</div>
+	</div>	
+	<div class="mobile_navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="box_logo_mobile">
+				<a href="<?php echo home_url() ?>" title="Logo">					
+					<img src="<?php echo get_field('logo_header','option'); ?>" alt="Logo" >
+				</a>
+			</div>		
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<?php
+				wp_nav_menu( array(
+					'theme_location'  => 'mobile',
+					'menu_class'      => 'navbar-nav',											
+				) );
+				?>				
+			</div>
+		</nav>		
+	</div>		
+	<div class="clr"></div>
 	<div class="tu_van_box">
 		<div class="icon_phone"><img src="<?php echo P_IMG.'/phone_support.png'; ?>" alt="tên hình"></div>
 		<div class="text_phone">
 			<div class="tv_24_7">TƯ VẤN 24/7</div>				
 			<div class="sdt_tu_van"><a href="tel:<?php echo get_field('tel_alo','option'); ?>"><?php echo get_field('sdt','option'); ?></a></div>
-		</div>
-		<div class="clr"></div>
+		</div>		
 	</div>
 <?php do_action('p_after_header') ; ?>

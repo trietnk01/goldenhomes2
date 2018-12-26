@@ -2,6 +2,9 @@
 	background-image: url('../img/header-pattern.png');
 	background-repeat: repeat;
     padding: 7px 0px;
+    @media(max-width: 992px){
+    	display: none;
+    }
 	.tuvan-hotline-email-box{
 		float: left;
 		.user-box{
@@ -103,6 +106,9 @@
 .header-menu{
 	background-color: $menu_bg;
 	padding: 2px 0px;
+	@media(max-width: 992px){
+		display: none;
+	}
 	.logo{
 		    text-align: center;
     margin-left: 25px;
@@ -127,7 +133,7 @@
 .main-menu{
 	>li{		
 		&:nth-child(2){
-			margin-left:45px;
+			margin-left:35px;
 			a{
 				background-image: url('../img/san-pham.png');
 				background-repeat: no-repeat;
@@ -141,13 +147,13 @@
 			}
 		}
 		&:nth-child(3){
-			margin-left: 35px;
+			margin-left: 20px;
 			a{
 				padding: 35px 0px;
 			}			
 		}
 		&:nth-child(4){
-			margin-left: 50px;
+			margin-left: 35px;
 			a{
 				background-image: url('../img/khach-hang.png');
 				background-repeat: no-repeat;
@@ -160,26 +166,42 @@
 				}
 			}
 		}
-		&:nth-child(5){
-			margin-left: 10px;
-		}
 		&:nth-child(6){
-			margin-left: 35px;
+			margin-left: 40px;
 		}
 	}
 }
-.owl_carousel_banner .owl-dots {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;    
-}
-.owl_carousel_banner .owl-dots .owl-dot span{
-	width: 17px;
-	height: 7px;
-}
-.owl_carousel_banner .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #ed9205;
+.owl_carousel_banner{
+	.owl-dots {
+		position: absolute;
+		bottom: 20px;
+		left: 0;
+		width: 100%;
+		.owl-dot{
+			span{
+				width: 17px;
+				height: 7px;
+			}
+			&:hover{
+				span{
+					background: #ed9205;
+				}
+			}
+		} 
+		.owl-dot.active{
+			span{
+				background: #ed9205;
+			}
+		}   
+	}	
+} 
+.owl-theme {
+	.owl-nav{
+		margin-top: 0;
+	}
+	.owl-nav.disabled+.owl-dots{
+		margin-top: 0;
+	}
 }
 .tu_van_box {
 	background: linear-gradient(to right, #caa047 , #dcbc68);
@@ -189,6 +211,9 @@
 	right: -180px;
 	z-index: 2;
 	border-radius: 35px 0 0 35px;
+	@media(max-width: 992px){
+		display: none;
+	}
 	@include p-web(transition,all 0.5s);
 	.icon_phone{
 		float: left;
@@ -203,5 +228,14 @@
 				color: #fff;
 			}
 		}
+	}
+}
+.mobile_navbar{
+	display: none;		
+	@media(max-width: 992px){
+		display: block;
+	}
+	.box_logo_mobile{
+		width: 80px;
 	}
 }

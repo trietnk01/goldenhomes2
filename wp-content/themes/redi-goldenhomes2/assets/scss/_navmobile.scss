@@ -1,11 +1,6 @@
-.mobile_navbar{
-	position: absolute;
-	top:35px;
-	left: 0;
-	width: 100%;
-	z-index: 2;
+.mobile_navbar{	
 	.bg-light{
-		background:transparent !important; 
+		background:$menu_bg !important; 
 		.navbar-toggler{
 			border:0;		
 		}
@@ -22,7 +17,7 @@
 			} 
 		} 
 		.navbar-collapse{
-			background-color:$logo_bg ;
+			background-color:$menu_bg ;
 			margin-top:27px;
 		}
 		.sub-menu{
