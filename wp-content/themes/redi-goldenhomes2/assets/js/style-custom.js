@@ -47,12 +47,14 @@ jQuery(document).ready(function($){
 		var ul= $(li).children('ul');
 		var status=$(ul).css('display');
 		if(status=='none'){
-			$(ul).slideDown();
-			console.log(status);
+			$(ul).slideDown();			
 		}else{
-			$(ul).slideUp();
-			console.log(status);
+			$(ul).slideUp();			
 		}		
 	});
 	$('.smlightbox').simpleLightbox();
+	var suspan= $('.fb-page').find('span');
+	console.log(suspan);
+	var suspan_width=$(suspan[0]).css('width');
+	console.log(suspan_width);
 });

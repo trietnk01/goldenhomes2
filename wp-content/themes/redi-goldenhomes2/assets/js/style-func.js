@@ -53,8 +53,7 @@ function registerNow(ctrl) {
 		"phone"     : phone,                    
 		"email"     : email,                    		                
 		"message"     : message		
-	}	
-	console.log(data_item);
+	}		
 	jQuery.ajax({
 		url         : ajaxurl,
 		type        : "POST",
