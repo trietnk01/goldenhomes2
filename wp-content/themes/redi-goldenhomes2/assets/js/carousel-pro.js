@@ -69,7 +69,7 @@ jQuery(document).ready(function(){
             360:{
                items:2
             },
-            600:{
+            740:{
                 items:3
             },            
             768:{
