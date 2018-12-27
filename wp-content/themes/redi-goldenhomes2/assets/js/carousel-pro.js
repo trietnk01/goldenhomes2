@@ -52,6 +52,21 @@ jQuery(document).ready(function(){
             }
         }
     });
+    jQuery(".owl_carousel_gallery2").owlCarousel({
+        autoplay:false,                    
+        loop:false,
+        margin:0,                                
+        dots:true,            
+        mouseDrag: true,
+        touchDrag: true,                                
+        responsiveClass:true,
+        lazyLoad: true,
+        responsive:{
+            0:{
+                items:1
+            }
+        }
+    });
     jQuery(".owl_carousel_trade").owlCarousel({
         autoplay:false,                    
         loop:true,

@@ -139,6 +139,157 @@
 			</div>					
 		</div>
 	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<h2 class="content_bottom_h">Tin tức mới nhất</h2>
+				<div>
+					<?php 
+					for($i=1;$i<=2;$i++){
+						?>
+						<div class="article_box">
+							<div class="article_hinh_anh">
+								<figure>
+									<a href="javascript:void(0);" title="tiêu đề tên"><img src="<?php echo P_IMG.'/img_news'.$i.'.png'; ?>" alt="tên hình">
+									</a>
+								</figure>
+							</div>	
+							<div class="article_info">
+								<div class="article_info_date_post">12.06.2018</div>
+								<h3 class="article_info_title"><a href="javascript:void(0);" title="tiêu đề tên">Khoác áo mới cho phòng khách đón hè</a></h3>
+								<div class="article_info_intro">
+									<?php 
+									$intro="Những màu sắc từ mùa đông sang mùa xuân như thảm lông, gối ôm… đã không còn phù hợp với không khí mùa hè. Tuy nhiên bạn không cần.Những màu sắc từ mùa đông sang mùa xuân như thảm lông, gối ôm… đã không còn phù hợp với không khí mùa hè. Tuy nhiên bạn không cần.Những màu sắc từ mùa đông sang mùa xuân như thảm lông, gối ôm… đã không còn phù hợp với không khí mùa hè. Tuy nhiên bạn không cần";
+									$intro=mb_substr( $intro, 0,200, 'UTF-8')."...";														
+									echo $intro;
+									?>									
+								</div>
+							</div>
+							<div class="clr"></div>					
+						</div>
+						<?php
+					}
+					?>										
+				</div>				
+				<div class="readmore2">
+					<a href="javascript:void(0)" title="tiêu đề tên">Xem tất cả</a>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<h2 class="content_bottom_h">Hình ảnh</h2>
+				<div class="box-gallery2">
+					<div class="owl_carousel_gallery2 owl-carousel owl-theme owl-loaded">
+						<?php 
+						for($i=1;$i<=3;$i++){
+							?>
+							<div class="item">
+								<div>
+									<div class="row">
+										<div class="col">
+											<div class="img_bottom">
+												<a href="javascript:void(0);" title="tiêu đề tên">
+													<div><img src="<?php echo P_IMG.'/hinhanh1.png'; ?>" alt="tên hình"></div>
+													<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
+												</a>
+											</div>									
+										</div>									
+									</div>
+								</div>
+							</div>
+							<?php
+						}
+						?>
+					</div>
+				</div>	
+				<div class="box-gallery1">
+					<div class="owl_carousel_gallery owl-carousel owl-theme owl-loaded">
+						<?php 
+						for($i=1;$i<=10;$i++){
+							?>
+							<div class="item">
+								<div>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="img_bottom">
+												<a href="javascript:void(0);" title="tiêu đề tên">
+													<div><img src="<?php echo P_IMG.'/hinhanh1.png'; ?>" alt="tên hình"></div>
+													<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
+												</a>
+											</div>									
+										</div>
+										<div class="col-sm-6">
+											<div class="img_bottom">
+												<a href="javascript:void(0);" title="tiêu đề tên">
+													<div><img src="<?php echo P_IMG.'/hinhanh2.png'; ?>" alt="tên hình"></div>
+													<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
+												</a>
+											</div>								
+										</div>
+										<div class="col-sm-6">
+											<div class="img_bottom">
+												<a href="javascript:void(0);" title="tiêu đề tên">
+													<div><img src="<?php echo P_IMG.'/hinhanh3.png'; ?>" alt="tên hình"></div>
+													<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
+												</a>
+											</div>								
+										</div>
+										<div class="col-sm-6">
+											<div class="img_bottom">
+												<a href="javascript:void(0);" title="tiêu đề tên">
+													<div><img src="<?php echo P_IMG.'/hinhanh4.png'; ?>" alt="tên hình"></div>
+													<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
+												</a>
+											</div>									
+										</div>
+									</div>
+								</div>
+							</div>
+							<?php
+						}
+						?>
+					</div>
+				</div>							
+			</div>
+		</div>
+	</div>	
+	<div class="bg_bottom">				
+		<div class="container">
+			<div class="row">
+				<div class="col"><h2 class="tsnhtv_goldenhomes">Tại sao nên hợp tác với Golden Homes</h2></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="why_box">
+						<div class="why_box_solieu"><span class="counter">500</span>+</div>
+						<div class="why_box_hr"></div>
+						<div class="why_box_txt">Khách hàng tiêu biểu</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="why_box">
+						<div class="why_box_solieu"><span class="counter">30</span>+</div>
+						<div class="why_box_hr"></div>
+						<div class="why_box_txt">Thợ tay nghề cao</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="why_box">
+						<div class="why_box_solieu"><span class="counter">9</span>+</div>
+						<div class="why_box_hr"></div>
+						<div class="why_box_txt">Năm kinh nghiệm</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="why_box">
+						<div class="why_box_solieu"><span class="counter">99</span>%</div>
+						<div class="why_box_hr"></div>
+						<div class="why_box_txt">Khách hàng hài lòng</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clr"></div>
 	<?php	
 	get_footer();
 	?>
