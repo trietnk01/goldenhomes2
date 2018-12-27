@@ -1123,6 +1123,7 @@
 	padding-bottom: 48px;
 	background-size: cover;
 	background-repeat: no-repeat;
+	margin-top: 90px;
 	.tsnhtv_goldenhomes{
 		text-align: center;
 		color: #fff;
@@ -1148,4 +1149,116 @@
 		}
 	}
 }
+.footer{
+	background-color: #0c303b;
+	padding-top: 95px;	
+	.footer_info{		
+		color: #fff;
+		.tru_so_chinh{
+			font-size: 18px;
+			text-transform: uppercase;
+			margin-bottom: 30px;	
+		}
+		.about_us{
+			font-size: 18px;
+			text-transform: uppercase;
+			margin-top: 40px;
+		}
+		.about_us_intro{
+			font-size: 14px;
+			margin-top: 15px;
+		}
+		.telephone_r{
+			margin-top: 10px;
+			a{
+				color: #fff;
+				font-size: 15px;
+			}
+		}
+		.menu_footer{
+			list-style: none;	
+			margin-bottom: 0;
+			padding-left: 0;
+			a{
+				color: #fff;
+				font-size: 15px;
+				display: block;
+			}
+			li{
+				padding-bottom: 10px;
+				&:last-child{
+					padding-bottom: 0;
+				}
+			}	
+		}
+		.footer_social{
+			list-style: none;
+			margin-bottom: 0;
+			margin-top: 55px;
+			padding-left: 0;
+			li{
+				display: inline-block;
+				&:first-child{
+					a{
+						border-radius: 21px;
+						padding: 6px 14px;
+						background-color: #3b5998;
+					}
+
+				}
+				&:nth-child(2){
+					a{
+						border-radius: 21px;
+						padding: 6px 12px;
+						background-color: #be0a0a;
+					}			
+				}
+				&:nth-child(3){
+					a{
+						border-radius: 21px;
+						padding: 6px 11px;
+						background-color: #45b0e4;
+					}			
+				}
+				&:last-child{
+					a{
+						border-radius: 21px;
+						padding: 6px 8px;
+						background-color: #dd4b39;
+					}			
+				}
+				margin-right: 5px;
+			}
+			a{
+				color: #fff;
+				display: block;
+				font-size: 17px;
+			}
+		}
+	}	
+	.footer_copyright{
+		border-top: 1px solid #20414b;
+		padding: 15px 0;
+		text-align: center;
+		font-size: 11px;
+		margin-top: 55px;
+		.copyright{
+			color: #fff;
+		}
+		.golden_home{
+			a{
+				color: #b58c41;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
 
