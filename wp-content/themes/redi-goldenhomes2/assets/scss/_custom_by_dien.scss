@@ -116,8 +116,14 @@
 	.menu-box{
 		position: relative;
 		margin-left:65px;
+		@media(max-width: 1024px){
+			margin-left: 0;
+		}
 		#smoothmainmenu{
 			margin-left:70px;
+			@media(max-width: 1024px){
+				margin-left: 10px;
+			}
 		}
 		.home-icon{
 			position: absolute;
@@ -134,6 +140,9 @@
 	>li{		
 		&:nth-child(2){
 			margin-left:35px;
+			@media(max-width: 1024px){
+				margin-left: 0;
+			}
 			a{
 				background-image: url('../img/san-pham.png');
 				background-repeat: no-repeat;
@@ -148,12 +157,15 @@
 		}
 		&:nth-child(3){
 			margin-left: 20px;
-			a{
-				padding: 35px 0px;
-			}			
+			@media(max-width: 1024px){
+				margin-left: 0;
+			}
 		}
 		&:nth-child(4){
 			margin-left: 35px;
+			@media(max-width: 1024px){
+				margin-left: 0;
+			}
 			a{
 				background-image: url('../img/khach-hang.png');
 				background-repeat: no-repeat;
@@ -168,6 +180,9 @@
 		}
 		&:nth-child(6){
 			margin-left: 40px;
+			@media(max-width: 1024px){
+				margin-left: 0;
+			}
 		}
 	}
 }
@@ -230,12 +245,143 @@
 		}
 	}
 }
-.mobile_navbar{
-	display: none;		
+.navbar{
+	display: none;
+	position: relative;
+	padding: 20px 0;
 	@media(max-width: 992px){
 		display: block;
 	}
 	.box_logo_mobile{
-		width: 80px;
+		width: 100px;
+		position: absolute;
+		left: 50%;
+		top: 0;
+		margin-left: -50px;		
+	}
+}
+.hr_slideshow{
+	background: url('../img/hr-slideshow.png') repeat;
+	padding: 2px 0px 1px 0px;
+}
+.bg_ck_mp_tc{
+	background: $menu_bg;
+	padding: 15px 0px;	
+	@media(max-width: 992px){
+		display: none;
+	}
+	.ck_mp_tc_left{
+		float: left;
+	}
+	.ck_mp_tc_right{
+		float: left;
+		color: $menu_color;
+		margin-top: 7px;
+		margin-left: 10px;	
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.bg_ck_mp_tc_wp{
+		width: 1044px;
+		margin: auto;
+	}
+	.ck_wrapper{
+		width: 255px;
+		margin:auto;
+	}
+	.mp_wrapper{
+		width:275px;
+		margin:auto;
+	}
+	.tc_wrapper{
+		width:258px;
+		margin:auto;
+	}
+}
+.navbar-light{
+	.navbar-toggler-icon{
+		background-image:url('../img/nav-line.png');		
+	}
+}
+.bg-ck-mp-tc-tablet{
+	background: $menu_bg;		
+	display: none;
+	@media(max-width: 992px){
+		display: block;
+	}
+	.ck_mp_tc_left{
+		float: left;
+	}
+	.ck_mp_tc_right{
+		float: left;
+		color: $menu_color;
+		margin-top: 7px;
+		margin-left: 10px;	
+		font-size: 18px;
+		text-transform: uppercase;
+		@media(max-width: 576px){
+			font-size: 12px;
+		}
+		@media(max-width: 375px){
+			font-size: 10px;
+		}
+		@media(max-width: 320px){
+			font-size: 7px;
+		}
+		@media(max-width: 240px){
+			font-size: 6px;
+		}
+	}
+	.bg_ck_mp_tc_wp{
+		width: 1044px;
+		margin: auto;
+	}
+	.ck_wrapper{
+		width: 255px;
+		margin: 0px auto;
+		padding: 10px 0;
+		@media(max-width: 576px){
+			padding: 10px 30px;
+		}
+	}
+	.mp_wrapper{
+		width:275px;
+		margin:auto;
+		@media(max-width: 576px){
+			width: 195px;
+		}
+		@media(max-width: 375px){
+			width: 175px;
+		}
+		@media(max-width: 320px){
+			width: 135px;
+		}
+	}
+	.tc_wrapper{
+		width:258px;
+		margin:auto;
+		@media(max-width: 576px){
+			width: 195px;
+		}
+		@media(max-width: 375px){
+			width: 175px;
+		}
+		@media(max-width: 320px){
+			width: 135px;
+		}
+	}
+	.mp-tc-box{
+		border-top: 1px solid #ffffff;	
+	}
+	.mp-box{
+		float: left;
+		border-right: 1px solid #ffffff;
+		width: 50%;
+		padding: 10px 0;
+	}
+	.tc-box{
+		float: left;
+		width: 50%;
+		padding: 10px 0;
 	}
 }

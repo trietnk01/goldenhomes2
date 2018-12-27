@@ -1,35 +1,36 @@
-.mobile_navbar{	
-	.bg-light{
-		background:$menu_bg !important; 
-		.navbar-toggler{
-			border:0;		
-		}
-		.navbar-nav{
+.bg-light{
+	background:$menu_bg !important; 
+	.navbar-toggler{
+		border:0;			
+		float: right;
+		margin-top: 0px;
+		margin-right: 15px;
+		outline: none;
+	}
+	.navbar-nav{
+		li{
 			a{
-				color: $body_color;		
+				color: $menu_color;		
 				display: block;
 				padding: 10px 10px;	
 				text-transform: uppercase;	
-				font-family: $f_bold;			  
+				font-family: $f_bold;		
+				border-bottom: 1px solid #082b35;	  
+			}
+			&:last-child{
+				a{
+					border-bottom: 0;
+				}
 			}	
 			ul{
 				padding-left: 0;
-			} 
-		} 
-		.navbar-collapse{
-			background-color:$menu_bg ;
-			margin-top:27px;
-		}
-		.sub-menu{
-			list-style: none;
-		}
+			}
+		}			
+	} 
+	.navbar-collapse{
+		background-color:$menu_bg ;		
 	}
-	.navbar{
-		padding: 0
+	.sub-menu{
+		list-style: none;
 	}
-	.navbar-light{
-		.navbar-toggler-icon{
-			background-image: url('../img/nav-line.png');
-		}
-	}
-}
+}	

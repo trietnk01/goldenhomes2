@@ -24,17 +24,17 @@
         text-transform: uppercase;               
         background:transparent;                 
         padding:35px 0;         
-        border-right: 0; 
+        border-right: 0;
+        @media(max-width: 1024px){
+          padding: 35px 10px;
+        } 
         &:link,&:visited{
           color: $menu_color;
         }                     
         &:hover,&.selected{  
           color: $menu_color;
           background-color:transparent;
-        } 
-        @media (max-width: 1024px){
-          padding: 15px 20px;  
-        }
+        }         
       }
       &:last-child{
         a{
@@ -43,7 +43,7 @@
       } 
       &.current-menu-item{
         >a{
-          background-color: $logo_bg !important;                  
+          background-color: none;                  
           color: $menu_color_hover_active;
         }
       }   
