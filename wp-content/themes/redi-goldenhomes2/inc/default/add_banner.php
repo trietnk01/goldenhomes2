@@ -39,7 +39,7 @@ function p_add_banner( $show = false ){
 
   <div class="sc-banner-theme">
 
-    <div style="background:url(<?php echo $banner ?>) no-repeat center/cover;padding-top:20%;">
+    <div style="background:url(<?php echo $banner ?>) no-repeat center/cover;padding:205px 0;">
 
     </div>
 
