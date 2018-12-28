@@ -1338,6 +1338,7 @@
 		border-radius: 10px;
 		position: relative;
 		margin-top: 40px;
+		padding-bottom: 20px;
 		.httt{
 			position: absolute;
 			top: 110px;
@@ -1357,8 +1358,75 @@
 				text-transform: uppercase;
 			}
 		}
+		.support-hotline{
+			margin-top: 10px;
+			text-align: center;
+			padding: 0px 60px;
+			.support-phone-icon{
+				float: left;
+				margin-top: 8px;
+			}
+			.support-phone-number{
+				float: left;
+				font-family: $f_bold;
+				font-size: 26px;
+				color: #000;
+				margin-left: 10px;
+			}
+		}
+		.call-skype-viber-zalo{
+			font-family: $f_regular;
+			font-size: 16px;
+			text-align: center;
+			margin-top: 10px;
+			color: #000000;
+		}
+		.support-email{
+			font-family: $f_regular;
+			font-size: 16px;
+			text-align: center;
+			color: #000000;			
+			margin-top: 10px;
+		}
+		.cara-call-skype-viber-zalo{
+			text-align: center;
+			margin-top: 10px;
+		}
 	}
+	.cac-dich-vu-chinh{
+		font-family: $f_bold;
+		font-size: 22px;
+		color: #000;
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: 20px;
+	}
+	.main-service{
+		margin-top: 20px;
+		.dvc{
+			margin-bottom: 20px;
+			position: relative;
+			border-radius: 10px;
+			height: 225px;
+			width: 100%;
+			background-size: cover;
+			h3{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				padding: 20px;
+				a{
+					font-family: $f_bold;
+					font-size: 22px;
+					color: #ffffff;
+					text-transform: uppercase;					
+				}
+			}			
+		}		
+	}	
 }
+
 
 
 
