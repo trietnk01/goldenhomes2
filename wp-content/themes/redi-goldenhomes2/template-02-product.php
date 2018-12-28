@@ -21,8 +21,7 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 						<li class="category-title"><a href="javascript:void(0);">Dàn phơi thông minh</a></li>										
 					</ul>
 					<div class="clr"></div>
-				</div>				
-				<div class="clr"></div>
+				</div>								
 			</div>
 		</div>
 		<?php 
