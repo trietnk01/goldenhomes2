@@ -8,7 +8,7 @@ get_header();
 <div class="box-single">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-8">			
+			<div class="col-lg-8 col-md-7">			
 				<h2 class="single-title">
 					Giới thiệu
 				</h2>
@@ -27,9 +27,9 @@ get_header();
 				<div class="single-thong-tin-chi-tiet">
 					<div class="dbtttct">Để biết thêm thông tin chi tiết, xin vui lòng liên hệ với chúng tôi tại:</div>
 					<div class="goldenhomes">Golden Homes</div>
-					<div class="dc-dt-em"><span class="golden-left"><i class="fa fa-map-marker" aria-hidden="true"></i></span>&nbsp;&nbsp;<span class="golden-right">42/1 Đường 17, P. Hiệp Bình Chánh, Q. Thủ Đức, TP.HCM</span></div>
-					<div class="dc-dt-em"><span class="golden-left"><i class="fa fa-phone" aria-hidden="true"></i></span>&nbsp;&nbsp;<span class="golden-right">0903 600 002</span> </div>
-					<div class="dc-dt-em"><span class="golden-left"><i class="fa fa-envelope" aria-hidden="true"></i></span>&nbsp;&nbsp;<span class="golden-right">nguyenbaotuoc@gmail.com</span></div>
+					<div class="dc-dt-em"><span class="golden-left"><i class="fa fa-map-marker" aria-hidden="true"></i></span>&nbsp;&nbsp;<span class="golden-right"><a href="javascript:void(0);">42/1 Đường 17, P. Hiệp Bình Chánh, Q. Thủ Đức, TP.HCM</a></span></div>
+					<div class="dc-dt-em"><span class="golden-left"><i class="fa fa-phone" aria-hidden="true"></i></span>&nbsp;&nbsp;<span class="golden-right"><a href="javascript:void(0);">0903 600 002</a></span> </div>
+					<div class="dc-dt-em"><span class="golden-left"><i class="fa fa-envelope" aria-hidden="true"></i></span>&nbsp;&nbsp;<span class="golden-right"><a href="javascript:void(0);">nguyenbaotuoc@gmail.com</a></span></div>
 				</div>
 				<div class="rapidshare">                                            
 					<div class="facebook_button">
@@ -49,7 +49,7 @@ get_header();
 					<div class="clr"></div>
 				</div>  
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-5">
 				<div class="support-online-box">
 					<img src="<?php echo P_IMG.'/ho-tro-truc-tuyen.png'; ?>">
 					<div class="httt">
@@ -68,7 +68,7 @@ get_header();
 						<img src="<?php echo P_IMG.'/skype-viber-zalo.png'; ?>">
 					</div>
 					<div class="support-email">
-						Email: nguyenbaotuoc@gmail.com
+						<a href="javascript:void(0);">Email: nguyenbaotuoc@gmail.com</a>
 					</div>
 				</div>
 				<h3 class="cac-dich-vu-chinh">Các dịch vụ chính</h3>
