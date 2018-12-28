@@ -7,6 +7,7 @@
 	$productModel=$zController->getModel("/frontend","ProductModel");
 	$source_banner=get_field('op_banner_repeat','option');		
 	?>
+	<h1 style="display: none;"><?php echo get_bloginfo( 'name'); ?></h1>
 	<div class="banner_slideshow">
 		<div class="owl_carousel_banner owl-carousel owl-theme owl-loaded">		
 			<?php 
