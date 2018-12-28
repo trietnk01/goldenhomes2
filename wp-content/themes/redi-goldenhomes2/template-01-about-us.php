@@ -31,6 +31,23 @@ get_header();
 					<div class="dc-dt-em"><span class="golden-left"><i class="fa fa-phone" aria-hidden="true"></i></span>&nbsp;&nbsp;<span class="golden-right">0903 600 002</span> </div>
 					<div class="dc-dt-em"><span class="golden-left"><i class="fa fa-envelope" aria-hidden="true"></i></span>&nbsp;&nbsp;<span class="golden-right">nguyenbaotuoc@gmail.com</span></div>
 				</div>
+				<div class="rapidshare">                                            
+					<div class="facebook_button">
+						<div class="fb-share-button" data-href="https://vitoen.com/thang-nhom-chu-a-han-quoc-poongsan-oa-8.html" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Chia sẻ</a></div>
+					</div>       
+					<div class="facebook_like_button">
+						<div class="fb-like" data-href="https://vitoen.com/thang-nhom-chu-a-han-quoc-poongsan-oa-8.html" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+					</div>
+					<div class="category_twitter_sg"><a href="https://vitoen.com/thang-nhom-chu-a-han-quoc-poongsan-oa-8.html" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+					<div class="category_linkedin_sg">
+						<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+						<script type="IN/Share" data-url="https://vitoen.com/thang-nhom-chu-a-han-quoc-poongsan-oa-8.html"></script>
+					</div>
+					<div class="category_g_plus_sg">
+						<div class="g-plus" data-action="share" data-annotation="none" data-height="24" data-href="https://vitoen.com/thang-nhom-chu-a-han-quoc-poongsan-oa-8.html"></div>
+					</div>
+					<div class="clr"></div>
+				</div>  
 			</div>
 			<div class="col-lg-4">
 				<div class="support-online-box">
