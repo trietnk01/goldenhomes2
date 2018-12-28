@@ -8,7 +8,7 @@ Footer template
 <div class="footer">
 	<div class="container">		
 		<div class="row">
-			<div class="col-lg-5">
+			<div class="col-md-5">
 				<div class="footer_info">
 					<h2 class="tru_so_chinh">Trụ sở chính</h2>
 					<div class="address_r">
@@ -30,8 +30,8 @@ Footer template
 					</div>
 				</div>				
 			</div>
-			<div class="col-lg-3">
-				<div class="footer_info">
+			<div class="col-md-7">
+				<div class="footer_info san-pham-footer">
 					<h2 class="tru_so_chinh">Sản phẩm</h2>
 					<ul class="menu_footer">
 						<li><a href="javascript:void(0);">Đồ gỗ</a></li>
@@ -44,14 +44,13 @@ Footer template
 						<li><a href="javascript:void(0);" title="tiêu đề tên" target="_blank" rel="nofollow"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
 						<li><a href="javascript:void(0);" title="tiêu đề tên" target="_blank" rel="nofollow"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 						<li><a href="javascript:void(0);" title="tiêu đề tên" target="_blank" rel="nofollow"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-					</ul>		
-				</div>				
-			</div>
-			<div class="col-lg-4">
-				<div class="map_box">
+					</ul>								
+				</div>
+				<div class="map-box">
 					<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="340" data-height="260" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
 				</div>
-			</div>
+				<div class="clr"></div>						
+			</div>			
 		</div>		
 	</div>
 	<div class="footer_copyright">
