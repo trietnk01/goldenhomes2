@@ -51,7 +51,7 @@ get_header();
 			</div>
 			<div class="col-lg-4 col-md-5">
 				<div class="support-online-box">
-					<img src="<?php echo P_IMG.'/ho-tro-truc-tuyen.png'; ?>">
+					<div class="ho-tro-tot" style="background-image: url(<?php echo P_IMG.'/ho-tro-truc-tuyen.png'; ?>);"></div>
 					<div class="httt">
 						<div class="ho-tro">Hỗ trợ</div>
 						<div class="truc-tuyen">Trực tuyến</div>

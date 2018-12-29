@@ -122,7 +122,9 @@
 						for ($i=1; $i <= 6; $i++) { 
 							?>
 							<div class="item">
-								<a href="javascript:void(0);" title="tiêu đề tên" target="_blank" rel="nofollow"><img src="<?php echo P_IMG.'/logo_doitac'.$i.'.png'; ?>" alt="tên hình"></a>
+								<a href="javascript:void(0);" title="tiêu đề tên" target="_blank" rel="nofollow">
+									<div style="background-image: url(<?php echo P_IMG.'/logo_doitac'.$i.'.png'; ?>);background-repeat: no-repeat;background-size: cover;padding-top: calc(100% / ( 197 / 93 ))"></div>
+								</a>
 							</div>
 							<?php
 						}
@@ -150,11 +152,14 @@
 						?>
 						<div class="article_box">
 							<div class="article_hinh_anh">
-								<figure>
-									<a href="javascript:void(0);" title="tiêu đề tên"><img src="<?php echo P_IMG.'/img_news'.$i.'.png'; ?>" alt="tên hình">
-									</a>
-								</figure>
-							</div>	
+								<a href="javascript:void(0);" title="tiêu đề tên">
+									<figure>									
+										<div class="news-bx-img" style="background-image: url(<?php echo P_IMG.'/img_news1.png'; ?>);">
+											
+										</div>																			
+									</figure>
+								</a>
+							</div>
 							<div class="article_info">
 								<div class="article_info_date_post">12.06.2018</div>
 								<h3 class="article_info_title"><a href="javascript:void(0);" title="tiêu đề tên">Khoác áo mới cho phòng khách đón hè</a></h3>
@@ -189,7 +194,7 @@
 										<div class="col">
 											<div class="img_bottom">
 												<a href="javascript:void(0);" title="tiêu đề tên">
-													<div><img src="<?php echo P_IMG.'/hinhanh1.png'; ?>" alt="tên hình"></div>
+													<div class="bottom-img-calc" style="background-image: url(<?php echo P_IMG.'/hinhanh1.png'; ?>)"></div>
 													<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
 												</a>
 											</div>									
@@ -213,7 +218,7 @@
 										<div class="col-sm-6">
 											<div class="img_bottom">
 												<a href="javascript:void(0);" title="tiêu đề tên">
-													<div><img src="<?php echo P_IMG.'/hinhanh1.png'; ?>" alt="tên hình"></div>
+													<div class="bottom-img-calc" style="background-image: url(<?php echo P_IMG.'/hinhanh1.png'; ?>)"></div>
 													<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
 												</a>
 											</div>									
@@ -221,23 +226,23 @@
 										<div class="col-sm-6">
 											<div class="img_bottom">
 												<a href="javascript:void(0);" title="tiêu đề tên">
-													<div><img src="<?php echo P_IMG.'/hinhanh2.png'; ?>" alt="tên hình"></div>
+													<div class="bottom-img-calc" style="background-image: url(<?php echo P_IMG.'/hinhanh2.png'; ?>)"></div>
 													<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
 												</a>
-											</div>								
+											</div>									
 										</div>
 										<div class="col-sm-6">
 											<div class="img_bottom">
 												<a href="javascript:void(0);" title="tiêu đề tên">
-													<div><img src="<?php echo P_IMG.'/hinhanh3.png'; ?>" alt="tên hình"></div>
+													<div class="bottom-img-calc" style="background-image: url(<?php echo P_IMG.'/hinhanh3.png'; ?>)"></div>
 													<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
 												</a>
-											</div>								
+											</div>									
 										</div>
 										<div class="col-sm-6">
 											<div class="img_bottom">
 												<a href="javascript:void(0);" title="tiêu đề tên">
-													<div><img src="<?php echo P_IMG.'/hinhanh4.png'; ?>" alt="tên hình"></div>
+													<div class="bottom-img-calc" style="background-image: url(<?php echo P_IMG.'/hinhanh4.png'; ?>)"></div>
 													<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
 												</a>
 											</div>									

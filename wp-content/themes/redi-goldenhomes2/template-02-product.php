@@ -35,7 +35,7 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 				<div class="wood_box_wp">
 					<div class="wood_img">
 						<a href="javascript:void(0)" title="tiêu đề tên">							
-							<div class="do_go_img"><img src="<?php echo P_IMG.'/img_3.png'; ?>" alt="tên hình"></div>						
+							<div class="do_go_img" style="background-image: url(<?php echo P_IMG.'/img_3.png'; ?>);"></div>						
 							<div class="overlay">Chi tiết</div>
 						</a>
 					</div>
