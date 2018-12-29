@@ -13,14 +13,18 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 			<div class="col">
 				<h2 class="san-pham-title">Dịch vụ</h2>
 				<div class="service-bol-1">
-					<div class="bol-service-left" style="background-image: url('<?php echo P_IMG.'/bol-service-1.png'; ?>');">
-						<div class="outline-box">
-							<div class="hinh-binh-hanh">
-								<div class="binh-hinh-hanh">
-									<h4 class="hanh-binh-title">Thiết kế nội thất</h4>
+					<div class="bol-service-left" >
+						<div class="service-img" style="background-image: url('<?php echo P_IMG.'/bol-service-1.png'; ?>');">
+						</div>	
+						<div class="corel">
+							<div class="outline-box">
+								<div class="hinh-binh-hanh">
+									<div class="binh-hinh-hanh">
+										<h4 class="hanh-binh-title">Thiết kế nội thất</h4>
+									</div>
 								</div>
 							</div>
-						</div>
+						</div>											
 					</div>
 					<div class="bol-service-right">
 						<h3 class="service-title"><a href="javascript:void(0);">Thiết kế nội thất</a></h3>
@@ -43,14 +47,18 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 							<a href="javascript:void(0)">Xem chi tiết</a>
 						</div>						
 					</div>
-					<div class="bol-service-right"  style="background-image: url('<?php echo P_IMG.'/bol-service-1.png'; ?>');">
-						<div class="outline-box">
-							<div class="hinh-binh-hanh">
-								<div class="binh-hinh-hanh">
-									<h4 class="hanh-binh-title">Thi công nội thất</h4>
+					<div class="bol-service-right">
+						<div class="service-img" style="background-image: url('<?php echo P_IMG.'/bol-service-1.png'; ?>');">
+						</div>	
+						<div class="corel">
+							<div class="outline-box">
+								<div class="hinh-binh-hanh">
+									<div class="binh-hinh-hanh">
+										<h4 class="hanh-binh-title">Thiết kế nội thất</h4>
+									</div>
 								</div>
 							</div>
-						</div>
+						</div>		
 					</div>
 					<div class="clr"></div>
 				</div>						
