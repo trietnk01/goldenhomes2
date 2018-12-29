@@ -1365,180 +1365,7 @@
 				}				
 			}
 		}		
-	}
-	.support-online-box{
-		background-color: #f1f3f4;
-		border-radius: 10px;
-		position: relative;
-		margin-top: 40px;
-		padding-bottom: 20px;
-		@media(max-width: 740px){
-			text-align: center;		
-		}		
-		.ho-tro-tot{
-			background-repeat: no-repeat;
-			background-size: cover;
-			padding-top: calc(100% / ( 360 / 212 ));			
-		}
-		.httt{
-			position: absolute;
-			top: 110px;
-			left: 0;
-			width: 100%;
-			padding: 0px 20px;
-			@media(max-width: 992px){
-				top: 90px;
-			}	
-			@media(max-width: 320px){
-				top: 40px;
-			}		
-			.ho-tro{
-				font-family: $f_regular;
-				font-size: 16px;
-				color: #ffffff;
-				text-transform: uppercase;
-				@media(max-width: 740px){
-					font-size: 25px;
-				}
-			}
-			.truc-tuyen{
-				font-family: $f_bold;
-				font-size: 26px;
-				color: #ffffff;
-				text-transform: uppercase;
-				@media(max-width: 992px){
-					font-size: 20px;
-				}
-				@media(max-width: 740px){
-					font-size: 35px;
-				}
-				@media(max-width: 240px){
-					font-size: 25px;
-				}
-			}
-		}
-		.support-hotline{
-			margin-top: 10px;
-			text-align: center;			
-			margin-left: auto;
-			margin-right: auto;
-			width: 225px;	
-			@media(max-width: 240px){
-				width: 180px;
-			}		
-			.support-phone-icon{
-				float: left;
-				margin-top: 8px;
-			}
-			.support-phone-number{
-				float: left;
-				font-family: $f_bold;
-				font-size: 26px;
-				color: #000;
-				margin-left: 10px;
-				@media(max-width: 240px){
-					font-size: 20px;
-					margin-top: 5px;
-				}
-			}
-		}
-		.call-skype-viber-zalo{
-			font-family: $f_regular;
-			font-size: 16px;
-			text-align: center;
-			margin-top: 10px;
-			color: #000000;
-			padding: 0px 20px;
-			@media(max-width: 240px){
-				font-size: 14px;
-				padding: 0px 10px;
-			}
-		}
-		.support-email{
-			margin-top: 10px;
-			padding: 0 10px;
-			text-align: center;
-			a{
-				font-family: $f_regular;
-				font-size: 16px;			
-				color: #000000;	
-				@media(max-width: 240px){
-					font-size: 12px;
-				}		
-			}					
-		}
-		.cara-call-skype-viber-zalo{
-			text-align: center;
-			margin-top: 10px;
-			padding: 0px 20px;
-		}
-	}
-	.cac-dich-vu-chinh{
-		font-family: $f_bold;
-		font-size: 22px;
-		color: #000;
-		text-align: center;
-		text-transform: uppercase;
-		margin-top: 20px;
-		@media(max-width: 240px){
-			font-size: 20px;
-		}
-	}
-	.main-service{
-		margin-top: 20px;
-		.dvc{
-			margin-bottom: 20px;
-			position: relative;
-			border-radius: 10px;
-			height: 225px;
-			width: 100%;
-			background-size: cover;
-			h3{
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				width: 100%;
-				padding: 20px;
-				a{
-					font-family: $f_bold;
-					font-size: 22px;
-					color: #ffffff;
-					text-transform: uppercase;		
-					@media(max-width: 992px){
-						font-size: 20px;
-					}	
-					@media(max-width: 240px){
-						font-size: 15px;
-					}		
-				}
-			}			
-		}		
-	}	
-	.rapidshare{
-		margin-top: 25px;
-		.facebook_button{
-			margin-left: 0px;
-			float: left;
-		}
-		.facebook_like_button{
-			margin-left: 10px;
-			float: left;
-		}
-		.category_twitter_sg{
-			margin-top: 2px;
-			margin-left: 10px;
-			float: left;
-		}
-		.category_linkedin_sg{
-			margin-top:2px;
-			margin-left: 10px;
-			float: left;
-		}
-		.category_g_plus_sg{			
-			margin-left: 10px;
-			float: left;
-		}
-	}
+	}		
 }
 .box-product{
 	margin-bottom: 30px;
@@ -2058,71 +1885,84 @@
 	}
 }
 
-.box-product-detail{
-	background-image: linear-gradient(to bottom , #f8f8f8,#ffffff);
-	margin-bottom: 80px;
-	@media(max-width: 992px){
-		margin-bottom: 30px;
+.box-product-detail{	
+	margin-bottom: 80px;	
+	.product-info-box{
+		margin-top: 40px;
+		position: relative;
+		.info-product-title{
+			font-family: $f_bold;
+			font-size: 23px;
+			color: #494949;
+			text-transform: uppercase;
+		}
+		.sao-danh-gia{
+			margin-top: 10px;
+			.item-ngoi-sao{
+				float: left;
+				margin-left: 5px;
+				width: 17px;
+			}
+		}
+		.ma-hang{
+			margin-top: 10px;
+			.mahang{
+				font-family: $f_bold;
+				font-size: 16px;
+				color: #242424;				
+			}
+			.mhdynamic{
+				font-family: $f_regular;
+				font-size: 16px;
+				color: #242424;
+				text-transform: uppercase;
+			}
+		}
+		.chat-lieu{
+			margin-top: 25px;
+			span{
+				&:first-child{
+					font-family: $f_bold;
+					font-size: 16px;
+					color: #242424;		
+				}
+				&:last-child{
+					font-family: $f_regular;
+					font-size: 16px;
+					color: #242424;
+				}
+			}
+		}
+		.product-excerpt{
+			margin-top: 25px;
+		}
 	}
 	.box_sp_img{
-		background-color: #ffffff;
-		@media(max-width: 992px){
-			margin-bottom: 20px;
+		background-color: #ffffff;		
+		margin-top: 40px;
+		.box-ca{
+			margin-top: 25px;
+			a{
+				display: block;
+				div{
+					background-repeat: no-repeat;
+					background-size: cover;
+					padding-top: calc(100% / (600 / 400));
+				}
+			}
 		}
 		.owl_carousel_product_detail{
 			.owl-prev {
 				position: absolute;
-				left: -7px;
-				top: 40px;
-				background-color: transparent !important;
-				@media(max-width: 1024px){
-					top: 35px;
-				}
-				@media(max-width: 992px){
-					top: 120px;
-				}
-				@media(max-width: 740px){
-					top: 80px;
-				}
-				@media(max-width: 576px){
-					top:60px;
-				}
-				@media(max-width: 375px){
-					top:50px;
-				}
-				@media(max-width: 320px){
-					top:40px;
-				}
-				@media(max-width: 240px){
-					top:20px;
-				}
+				left: -25px;
+				top: 18px;
+				background-color: transparent !important;				
 			}
 			.owl-next {
 				position: absolute;
-				right: -7px;
-				top: 40px;
+				right: -25px;
+				top:18px;
 				background-color: transparent !important;	
-				@media(max-width: 1024px){
-					top: 35px;
-				}
-				@media(max-width: 992px){
-					top: 120px;
-				}
-				@media(max-width: 740px){
-					top: 80px;
-				}
-				@media(max-width: 576px){
-					top:60px;
-				}
-				@media(max-width: 375px){
-					top:50px;
-				}
-				@media(max-width: 320px){
-					top:40px;
-				}
-				@media(max-width: 240px){
-					top:20px;
-				}
 			}
 			.owl-nav{
 				[class*=owl-]{					
@@ -2131,8 +1971,15 @@
 			}
 		}
 		.box_img_w{
-			text-align: center;
-    		padding:15px 70px;	
+			text-align: center;    		
+			a{
+				display: block;
+				.img-detail{
+					background-repeat: no-repeat;
+					background-size: cover;    				
+					padding-top: calc(100% / (600 / 400));
+				}
+			}
 		}
 	}
 	.product_detail_title{
@@ -2156,9 +2003,6 @@
 		margin-top: 25px;
 		.product_detail_contact_left{
 			float: left;
-			@media(max-width: 576px){
-				width: 100%;
-			}
 			.lienhe{
 				text-transform: uppercase;
 				font-size: 20px;
@@ -2169,19 +2013,11 @@
 				a{
 					color: $logo_bg;					
 					font-size: 20px;
-					@media(max-width: 240px){
-						font-size: 15px;
-					}
 				}
 			}
 		}
 		.product_detail_contact_right{
 			float: right;
-			@media(max-width: 576px){
-				float: left;
-				width: 100%;
-				margin-top: 10px;
-			}
 			.nhanbaogia{
 				a{
 					display: flex;
@@ -2249,11 +2085,179 @@
 		background-color: #ffffff;
 		padding: 40px 35px;		
 		margin-top: 30px;
-		@media(max-width: 576px){
-			padding: 15px 15px;
-		}
 	}
 }
-
-
+.support-online-box{
+	background-color: #f1f3f4;
+	border-radius: 10px;
+	position: relative;
+	margin-top: 40px;
+	padding-bottom: 20px;
+	@media(max-width: 740px){
+		text-align: center;		
+	}		
+	.ho-tro-tot{
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: calc(100% / ( 360 / 212 ));			
+	}
+	.httt{
+		position: absolute;
+		top: 110px;
+		left: 0;
+		width: 100%;
+		padding: 0px 20px;
+		@media(max-width: 992px){
+			top: 90px;
+		}	
+		@media(max-width: 320px){
+			top: 40px;
+		}		
+		.ho-tro{
+			font-family: $f_regular;
+			font-size: 16px;
+			color: #ffffff;
+			text-transform: uppercase;
+			@media(max-width: 740px){
+				font-size: 25px;
+			}
+		}
+		.truc-tuyen{
+			font-family: $f_bold;
+			font-size: 26px;
+			color: #ffffff;
+			text-transform: uppercase;
+			@media(max-width: 992px){
+				font-size: 20px;
+			}
+			@media(max-width: 740px){
+				font-size: 35px;
+			}
+			@media(max-width: 240px){
+				font-size: 25px;
+			}
+		}
+	}
+	.support-hotline{
+		margin-top: 10px;
+		text-align: center;			
+		margin-left: auto;
+		margin-right: auto;
+		width: 225px;	
+		@media(max-width: 240px){
+			width: 180px;
+		}		
+		.support-phone-icon{
+			float: left;
+			margin-top: 8px;
+		}
+		.support-phone-number{
+			float: left;
+			font-family: $f_bold;
+			font-size: 26px;
+			color: #000;
+			margin-left: 10px;
+			@media(max-width: 240px){
+				font-size: 20px;
+				margin-top: 5px;
+			}
+		}
+	}
+	.call-skype-viber-zalo{
+		font-family: $f_regular;
+		font-size: 16px;
+		text-align: center;
+		margin-top: 10px;
+		color: #000000;
+		padding: 0px 20px;
+		@media(max-width: 240px){
+			font-size: 14px;
+			padding: 0px 10px;
+		}
+	}
+	.support-email{
+		margin-top: 10px;
+		padding: 0 10px;
+		text-align: center;
+		a{
+			font-family: $f_regular;
+			font-size: 16px;			
+			color: #000000;	
+			@media(max-width: 240px){
+				font-size: 12px;
+			}		
+		}					
+	}
+	.cara-call-skype-viber-zalo{
+		text-align: center;
+		margin-top: 10px;
+		padding: 0px 20px;
+	}
+}
+.cac-dich-vu-chinh{
+	font-family: $f_bold;
+	font-size: 22px;
+	color: #000;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 20px;
+	@media(max-width: 240px){
+		font-size: 20px;
+	}
+}
+.main-service{
+	margin-top: 20px;
+	.dvc{
+		margin-bottom: 20px;
+		position: relative;
+		border-radius: 10px;
+		height: 225px;
+		width: 100%;
+		background-size: cover;
+		h3{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			padding: 20px;
+			a{
+				font-family: $f_bold;
+				font-size: 22px;
+				color: #ffffff;
+				text-transform: uppercase;		
+				@media(max-width: 992px){
+					font-size: 20px;
+				}	
+				@media(max-width: 240px){
+					font-size: 15px;
+				}		
+			}
+		}			
+	}		
+}	
+.rapidshare{
+	margin-top: 25px;
+	.facebook_button{
+		margin-left: 0px;
+		float: left;
+	}
+	.facebook_like_button{
+		margin-left: 10px;
+		float: left;
+	}
+	.category_twitter_sg{
+		margin-top: 2px;
+		margin-left: 10px;
+		float: left;
+	}
+	.category_linkedin_sg{
+		margin-top:2px;
+		margin-left: 10px;
+		float: left;
+	}
+	.category_g_plus_sg{			
+		margin-left: 10px;
+		float: left;
+	}
+}
 

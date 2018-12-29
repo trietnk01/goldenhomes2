@@ -17,7 +17,7 @@ function tuVanShowHide(){
 }
 function changeImg(image,title){    
 		var image_detail=jQuery(".box_img_w");
-		var imghtml='<a href="'+image+'"  class="smlightbox"><img src="'+image+'" alt="'+title+'"/></a>';        
+		var imghtml='<a href="'+image+'" title="'+title+'" class="smlightbox"><div class="img-detail" style="background-image: url('+image+');"></div></a>';        
 		jQuery(image_detail).empty();
 		jQuery(image_detail).append(imghtml);	
 		jQuery('.smlightbox').simpleLightbox();
