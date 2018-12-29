@@ -4,7 +4,6 @@ Template name: Template giới thiệu
 Template Post Type: post, page
 */
 get_header(); 
-echo "<pre>".print_r("OK",true)."</pre>";
 ?>
 <div class="box-single">
 	<div class="container">
