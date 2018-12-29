@@ -34,12 +34,12 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 			<div class="col-sm-4">
 				<div class="wood_box_wp">
 					<div class="wood_img">
-						<a href="javascript:void(0)" title="tiêu đề tên">							
+						<a href="<?php echo site_url( 'chi-tiet-san-pham',  null ); ?>" title="tiêu đề tên">							
 							<div class="do_go_img" style="background-image: url(<?php echo P_IMG.'/img_3.png'; ?>);"></div>						
 							<div class="overlay">Chi tiết</div>
 						</a>
 					</div>
-					<h3 class="h3_wood"><a href="javascript:void(0);" title="tiêu đề tên">Tủ gỗ #01</a></h3>
+					<h3 class="h3_wood"><a href="<?php echo site_url( 'chi-tiet-san-pham',  null ); ?>" title="tiêu đề tên">Tủ gỗ #01</a></h3>
 					<div class="service_line_wood"></div>					
 				</div>					
 			</div>
