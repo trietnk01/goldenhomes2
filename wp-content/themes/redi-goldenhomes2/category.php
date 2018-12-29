@@ -54,71 +54,15 @@ if($the_query->have_posts()){
 	wp_reset_postdata();	
 }  
 ?>
-<div class="box-news box-news-2">
+<div class="box-news">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8">
-				<form name="frm_prduct_lst" method="POST">
-					<input type="hidden" name="filter_page" value="1" />
-					<input type="hidden" name="s" value="<?php echo @$_POST["s"]; ?>" />					
-					<div>
-						<?php 
-						if(count(@$source_article) > 0){
-							foreach ($source_article as $key => $value) { 
-								?>
-								<div class="box-item-news">
-									<div class="row">
-										<div class="col-md-4">
-											<div class="bx-img">
-												<div>
-													<a href="<?php echo @$value['permalink']; ?>">
-														<figure>
-															<img src="<?php echo @$value['featured_img']; ?>" alt="<?php echo @$value['title']; ?>">
-														</figure>													
-													</a>
-												</div>		
-												<div class="box-date"><?php echo @$value['date_post']; ?></div>											
-											</div>		
-										</div>
-										<div class="col-md-8">
-											<h3 class="box-item-news-title"><a href="<?php echo @$value['permalink']; ?>"><?php echo @$value['title']; ?></a></h3>
-											<div class="box-item-news-excerpt">
-												<?php echo @$value['excerpt']; ?>
-											</div>
-											<div class="box-item-readmore">
-												<a href="<?php echo @$value['permalink']; ?>">Xem thêm</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<?php
-							}
-						}								
-						?>			
-					</div>
-					<div class="hool-pagination">
-						<?php echo @$pagination->showPagination();   ?>	
-					</div>						
-				</form>				
-			</div>
-			<div class="col-md-4">				
-				<?php 
-				$cssclass="rata";				
-				if(is_category( 'blog' )){
-					include get_template_directory() . "/block/block-service.php";
-					$cssclass="ritan";
-				}
-				?>
-				<div class="<?php echo $cssclass; ?>">
-					<?php include get_template_directory() . "/block/block-regsister.php"; ?>
-				</div>					
-				<div class="fanpage-box">
-					<?php include get_template_directory() . "/block/block-fanpage.php"; ?>
-				</div>
+			<div class="col">
+				<h2 class="san-pham-title">Tin tức mới nhất</h2>
 			</div>
 		</div>
 	</div>
-</div>	
-<?php     
+</div>
+<?php
 get_footer();
 ?>
