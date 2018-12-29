@@ -1806,7 +1806,17 @@
 		}
 	}
 }
-
+.box-customer{
+	margin-bottom: 80px;
+	margin-top: 30px;
+	.san-pham-title{
+		font-family: $f_bold;
+		font-size: 33px;
+		color: #494949;
+		text-transform: uppercase;
+		text-align: center;		
+	}
+}
 
 
 
