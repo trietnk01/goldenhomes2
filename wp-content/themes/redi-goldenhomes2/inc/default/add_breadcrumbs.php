@@ -41,8 +41,10 @@ function p_add_breadcrumb( $show = false ){
     
   <!-- Breadcrumb -->
   <div class="section-breadcrum p-ptb-10">
-    <div class="container container-breadcrumb">
-      <?php echo $r ?>
+    <div class="container">
+      <div class="row">
+        <div class="col"><?php echo $r ?></div>
+      </div>      
     </div>
   </div>
   <!-- End Breadcrumb -->
