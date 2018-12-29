@@ -52,9 +52,5 @@ jQuery(document).ready(function($){
 			$(ul).slideUp();			
 		}		
 	});
-	$('.smlightbox').simpleLightbox();
-	var suspan= $('.fb-page').find('span');
-	console.log(suspan);
-	var suspan_width=$(suspan[0]).css('width');
-	console.log(suspan_width);
+	$('.smlightbox').simpleLightbox();	
 });
