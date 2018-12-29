@@ -1990,13 +1990,70 @@
 		text-transform: uppercase;	
 		text-align: center;		
 	}
+	.contact-marker{
+		color: #e8a61b;
+	}
+	.contact-address{
+		a{
+			font-family: $f_regular;
+			font-size: 15px;
+			color: #4a4a4a;
+		}
+	}
 	.gdhomes-address{
 		text-align: center;
-		.contact-marker{
-			color: #e8a61b;
+		margin-top: 30px;
+		
+	}
+	.gdhomes-phone{
+		text-align: center;
+		margin-top: 10px;
+		
+	}
+	.big-contact{
+		border:1px solid #ededed;
+		padding: 25px 30px 25px 30px;
+		margin-top: 60px;
+		box-shadow: 2px 2px 3px 1px #efefef;
+		.nhapthongtinlienhe{
+			font-family: $f_bold;
+			font-size: 20px;
+			color: #494949;
+			text-transform: uppercase;
+			margin-bottom: 30px;
 		}
-		.contact-address{
-
+	}
+	.big-map{
+		margin-top: 60px;
+	}
+	.ck_contact{
+		margin-top: 10px;
+		.contact-dt{
+			float: left;
+			width: 49%;
+		}
+		.contact-email{
+			float: left;
+			width: 49%;
+			margin-left: 9px;
+		}
+	}
+	.ck_submit{
+		margin-top: 10px;
+		a{
+			display:block;
+			color: #ffffff;
+			padding: 5px 50px;
+			background-color: #e8a61b;
+			font-family: $f_bold;
+			font-size: 18px;
+			text-transform: uppercase;
+			border-radius: 5px;
+			float: left;
+			@include p-web(transition,all 0.5s);
+			&:hover{
+				background-color: #f89431;
+			}
 		}
 	}
 }
