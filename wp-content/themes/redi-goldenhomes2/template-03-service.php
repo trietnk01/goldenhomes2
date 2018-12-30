@@ -54,7 +54,7 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 							<div class="outline-box">
 								<div class="hinh-binh-hanh">
 									<div class="binh-hinh-hanh">
-										<h4 class="hanh-binh-title">Thiết kế nội thất</h4>
+										<h4 class="hanh-binh-title">Thi công nội thất</h4>
 									</div>
 								</div>
 							</div>

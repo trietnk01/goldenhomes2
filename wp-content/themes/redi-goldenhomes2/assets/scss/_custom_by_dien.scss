@@ -1538,7 +1538,10 @@
 		.bol-service-left{
 			float: left;			
 			width: 50%;		
-			position: relative;					
+			position: relative;
+			@media(max-width: 992px){
+				width: 100%;
+			}					
 			.service-img{
 				background-size: cover;
 				background-repeat: no-repeat;
@@ -1590,7 +1593,14 @@
 		.bol-service-right{
 			float: left;
 			width: 50%;
-			padding: 70px 70px 0px 70px;			
+			padding: 70px 70px 0px 70px;
+			@media(max-width: 1024px){
+				padding: 30px 30px 0px 30px;
+			}	
+			@media(max-width: 992px){
+				width: 100%;
+				padding: 30px 30px 30px 30px;
+			}		
 		}
 	}
 	.service-bol-2{
@@ -1599,12 +1609,22 @@
 		.bol-service-left{
 			float: left;
 			width: 50%;
-			padding: 70px 70px 0px 70px;		
+			padding: 70px 70px 0px 70px;	
+			@media(max-width: 1024px){
+				padding: 30px 30px 0px 30px;
+			}	
+			@media(max-width: 992px){
+				width: 100%;
+				padding: 30px 30px 30px 30px;
+			}		
 		}
 		.bol-service-right{
 			float: left;			
 			width: 50%;		
-			position: relative;					
+			position: relative;	
+			@media(max-width: 992px){
+				width: 100%;
+			}				
 			.service-img{
 				background-size: cover;
 				background-repeat: no-repeat;
@@ -1660,6 +1680,12 @@
 			font-size: 28px;
 			color: #ffffff;
 			text-transform: uppercase;
+			@media(max-width: 320px){
+				font-size: 20px;
+			}
+			@media(max-width: 240px){
+				font-size: 15px;
+			}
 		}				
 	}
 	.service-excerpt{
@@ -1667,9 +1693,15 @@
 		font-size: 15px;
 		color: #ffffff;
 		margin-top: 35px;
+		@media(max-width: 1024px){
+			margin-top: 10px
+		}
 	}
 	.service-readmore{
 		margin-top: 35px;
+		@media(max-width: 1024px){
+			margin-top:25px
+		}
 		a{
 			display: inline-block;
 			color: #ffffff;
@@ -1681,7 +1713,10 @@
 			position: relative;
 			overflow: hidden;
 			z-index: 1;		
-			border: 1px solid #c0c0c0;						
+			border: 1px solid #c0c0c0;	
+			@media(max-width: 240px){
+				padding: 10px 20px;
+			}					
 			&:hover{
 				&:before{
 					left: 0;
