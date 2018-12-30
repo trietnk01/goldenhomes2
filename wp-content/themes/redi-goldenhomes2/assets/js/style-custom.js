@@ -28,6 +28,19 @@ function showFrmSearch(){
 function closeFrmSearch(){
 	jQuery('.pan_search').hide();
 }
+function openCity(evt, cityName) {    
+	var i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	}   
+	tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	}   
+	document.getElementById(cityName).style.display = "block";
+	evt.currentTarget.className += " active";
+}
 jQuery(document).ready(function($){		
 	/* begin counter */
 	$('.counter').counterUp({
@@ -53,4 +66,8 @@ jQuery(document).ready(function($){
 		}		
 	});
 	$('.smlightbox').simpleLightbox();	
+	/* start tab */
+	$("div.tab > button.tablinks:first-child").addClass('active');
+	$(".tabcontent:first-child").css("display","block");
+	/* end tab */
 });

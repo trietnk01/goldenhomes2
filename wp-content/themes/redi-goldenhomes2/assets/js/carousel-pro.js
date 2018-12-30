@@ -108,4 +108,20 @@ jQuery(document).ready(function(){
             },                                                                   
         }
     }); 
+    jQuery(".owl_carousel_product_related").owlCarousel({
+        autoplay:false,                    
+        loop:false,
+        margin:30,                        
+        nav:true, 
+        navText: ["<i class=\"fa fa-chevron-left\"></i>","<i class=\"fa fa-chevron-right\"></i>"],       
+        dots:false,            
+        mouseDrag: true,
+        touchDrag: true,                                
+        responsiveClass:true,
+        responsive:{   
+            0:{
+                items:2
+            },                                                                   
+        }
+    }); 
 });         
