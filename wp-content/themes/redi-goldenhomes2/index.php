@@ -193,7 +193,7 @@
 									<div class="row">
 										<div class="col">
 											<div class="img_bottom">
-												<a href="javascript:void(0);" title="tiêu đề tên">
+												<a href="<?php echo P_IMG.'/hinhanh1.png'; ?>" title="tiêu đề tên" class="smlightbox">
 													<div class="bottom-img-calc" style="background-image: url(<?php echo P_IMG.'/hinhanh1.png'; ?>)"></div>
 													<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
 												</a>
@@ -217,7 +217,7 @@
 									<div class="row">
 										<div class="col-sm-6">
 											<div class="img_bottom">
-												<a href="javascript:void(0);" title="tiêu đề tên">
+												<a href="<?php echo P_IMG.'/hinhanh1.png'; ?>" class="smlightbox" title="tiêu đề tên">
 													<div class="bottom-img-calc" style="background-image: url(<?php echo P_IMG.'/hinhanh1.png'; ?>)"></div>
 													<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
 												</a>
@@ -225,7 +225,7 @@
 										</div>
 										<div class="col-sm-6">
 											<div class="img_bottom">
-												<a href="javascript:void(0);" title="tiêu đề tên">
+												<a href="<?php echo P_IMG.'/hinhanh1.png'; ?>" class="smlightbox" title="tiêu đề tên">
 													<div class="bottom-img-calc" style="background-image: url(<?php echo P_IMG.'/hinhanh2.png'; ?>)"></div>
 													<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
 												</a>
