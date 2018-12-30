@@ -2373,4 +2373,69 @@
 		float: left;
 	}
 }
-
+#baogiamodal{
+	.modal-dialog{
+		max-width:875px;
+		.modal-content{
+			border-radius: 20px;
+			.modal-body{
+				padding: 0;
+				.cbblose{
+					position: absolute;
+					top: 5px;
+					right: 5px;
+					a{
+						display: block;
+						padding: 0px 5px;
+						color: #ffffff;    
+						border-radius: 11px;
+						background-color: $logo_bg;
+					}	
+				}
+				.radialmodal{
+					width: 30%;
+					height:563px;
+					background-image: url(../img/img_tranggioithieu.png);
+					background-repeat: no-repeat;
+					background-size: cover;
+					float: left;
+					background-position: -125px 0px;
+					border-radius: 20px 0px 0px 20px;
+				}
+				.info_modal{
+					float: left;
+					width: 70%;
+					padding: 40px;
+					.info_title{
+						color: #f7941e;
+						text-transform: uppercase;
+						font-family: $f_bold;
+						font-size: 24px;
+						margin-bottom: 30px;
+					}	
+					.ck_contact{
+						margin-bottom: 5px;
+					}
+					.ck_submit{
+						margin-top: 10px;
+						a{
+							display:block;
+							color: #ffffff;
+							padding: 5px 50px;
+							background-color: #e8a61b;
+							font-family: $f_bold;
+							font-size: 15px;
+							text-transform: uppercase;
+							border-radius: 18px;
+							float: left;
+							@include p-web(transition,all 0.5s);
+							&:hover{
+								background-color: #d79200;
+							}
+						}
+					}
+				}
+			}		
+		}	
+	}	
+}

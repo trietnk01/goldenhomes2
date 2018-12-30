@@ -91,7 +91,7 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 									<span>1m6x2m</span>
 								</div>
 								<div class="lienhebtn">
-									<a href="javascript:void(0);">Liên hệ</a>
+									<a href="javascript:void(0);" data-toggle="modal" data-target="#baogiamodal">Liên hệ</a>
 								</div>	
 								<div class="clr"></div>							
 							</div>
@@ -171,6 +171,36 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 			<div class="col-lg-4">		
 			<?php include get_template_directory() . "/block/block-product-detail.php"; ?>					
 			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="baogiamodal" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">			
+			<div class="modal-body">
+				<div class="cbblose">
+					<a href="javascript:void(0);" data-dismiss="modal">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</a>							
+				</div>	
+				<div class="radialmodal"></div>
+				<form class="info_modal" name="frm_dk_bg">
+					<h4 class="info_title">Đăng ký nhận báo giá</h4>
+					<div class="ck_contact"><input type="text" name="fullname" class="form-control" placeholder="Họ tên" required></div>
+					<div class="ck_contact"><input type="text" name="phone" class="form-control" placeholder="Điện thoại" required></div>
+					<div class="ck_contact"><input type="text" name="email" class="form-control" placeholder="Email" required></div>
+					<div class="ck_contact">
+						<textarea name="message" class="form-control" cols="30" rows="10" placeholder="Ghi chú thêm" required=""></textarea>
+					</div>
+					<div class="ck_submit">
+						<a href="javascript:void(0);" onclick="registerNow();">Đặt mua</a>
+						<div class="ajax_loader_contact"></div>
+                		<div class="clr"></div>     
+					</div>
+					<div class="note">Cảm ơn đã đặt phòng tại khách sạn của chúng tôi . Chúng tôi sẽ liên hệ lại bạn trong thời gian sớm nhất.</div>
+				</form>	
+				<div class="clr"></div>			
+			</div>			
 		</div>
 	</div>
 </div>
