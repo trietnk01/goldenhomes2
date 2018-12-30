@@ -32,7 +32,7 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet ultrices ultricies. Phasellus nec ex sit amet nibh fermentum gravida. Mauris pretium id tortor nec eleifend. Sed fringilla libero sit amet lorem aliquet mollis. Integer vitae lacinia lectus. Maecenas commodo risus eu tellus aliquet bibendum. Cras eget convallis mauris, ut condimentum dolor. 
 						</div>
 						<div class="service-readmore">
-							<a href="<?php echo site_url( 'gioi-thieu',null ); ?>">Xem chi tiết</a>
+							<a href="<?php echo site_url( 'chi-tiet-dich-vu',null ); ?>">Xem chi tiết</a>
 						</div>
 					</div>
 					<div class="clr"></div>
@@ -44,7 +44,7 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet ultrices ultricies. Phasellus nec ex sit amet nibh fermentum gravida. Mauris pretium id tortor nec eleifend. Sed fringilla libero sit amet lorem aliquet mollis. Integer vitae lacinia lectus. Maecenas commodo risus eu tellus aliquet bibendum. Cras eget convallis mauris, ut condimentum dolor. 
 						</div>
 						<div class="service-readmore">
-							<a href="<?php echo site_url( 'gioi-thieu',null ); ?>">Xem chi tiết</a>
+							<a href="<?php echo site_url( 'chi-tiet-dich-vu',null ); ?>">Xem chi tiết</a>
 						</div>						
 					</div>
 					<div class="bol-service-right">

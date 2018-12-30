@@ -64,12 +64,12 @@ if($the_query->have_posts()){
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="news-item">
-					<a href="javascript:void(0);">
+					<a href="<?php echo site_url( 'chi-tiet-tin-tuc', null ); ?>">
 						<figure><div class="news-img" style="background-image: url(<?php echo P_IMG.'/news-1.png'; ?>);"></div></figure>
 					</a>
 					<div class="news-date-post">12.06.2018</div>
 					<h3 class="news-title">
-						<a href="javascript:void(0);">Hướng dẫn dọn dẹp tủ quần áo một cách chuyên nghiệp</a>
+						<a href="<?php echo site_url( 'chi-tiet-tin-tuc', null ); ?>">Hướng dẫn dọn dẹp tủ quần áo một cách chuyên nghiệp</a>
 					</h3>
 					<div class="news-excerpt">
 						Trước khi bắt tay vào việc dọn dẹp tủ quần áo hãy viết tất cả mọi thứ bạn muốn “vứt” ra giấy. Có như vậy công việc dọn dẹp sẽ được giải quyết khoa học và nhanh chóng hơn.
@@ -83,7 +83,7 @@ if($the_query->have_posts()){
 						?>
 						<div class="article_box">
 							<div class="article_hinh_anh">
-								<a href="javascript:void(0);" title="tiêu đề tên">
+								<a href="<?php echo site_url( 'chi-tiet-tin-tuc', null ); ?>" title="tiêu đề tên">
 									<figure>									
 										<div class="news-bx-img" style="background-image: url(<?php echo P_IMG.'/img_news1.png'; ?>);">
 											
@@ -93,7 +93,7 @@ if($the_query->have_posts()){
 							</div>	
 							<div class="article_info">
 								<div class="article_info_date_post">12.06.2018</div>
-								<h3 class="article_info_title"><a href="javascript:void(0);" title="tiêu đề tên">Khoác áo mới cho phòng khách đón hè</a></h3>
+								<h3 class="article_info_title"><a href="<?php echo site_url( 'chi-tiet-tin-tuc', null ); ?>" title="tiêu đề tên">Khoác áo mới cho phòng khách đón hè</a></h3>
 								<div class="article_info_intro">
 									<?php 
 									$intro="Những màu sắc từ mùa đông sang mùa xuân như thảm lông, gối ôm… đã không còn phù hợp với không khí mùa hè. Tuy nhiên bạn không cần.Những màu sắc từ mùa đông sang mùa xuân như thảm lông, gối ôm… đã không còn phù hợp với không khí mùa hè. Tuy nhiên bạn không cần.Những màu sắc từ mùa đông sang mùa xuân như thảm lông, gối ôm… đã không còn phù hợp với không khí mùa hè. Tuy nhiên bạn không cần";
@@ -122,7 +122,7 @@ if($the_query->have_posts()){
 				<div class="box-art">
 					<div class="article_box">
 						<div class="article_hinh_anh">
-							<a href="javascript:void(0);" title="tiêu đề tên">
+							<a href="<?php echo site_url( 'chi-tiet-tin-tuc', null ); ?>" title="tiêu đề tên">
 								<figure>									
 									<div class="news-bx-img" style="background-image: url(<?php echo P_IMG.'/img_news1.png'; ?>);">
 
@@ -132,7 +132,7 @@ if($the_query->have_posts()){
 						</div>	
 						<div class="article_info">
 							<div class="article_info_date_post">12.06.2018</div>
-							<h3 class="article_info_title"><a href="javascript:void(0);" title="tiêu đề tên">Khoác áo mới cho phòng khách đón hè</a></h3>
+							<h3 class="article_info_title"><a href="<?php echo site_url( 'chi-tiet-tin-tuc', null ); ?>" title="tiêu đề tên">Khoác áo mới cho phòng khách đón hè</a></h3>
 							<div class="article_info_intro">
 								<?php 
 								$intro="Những màu sắc từ mùa đông sang mùa xuân như thảm lông, gối ôm… đã không còn phù hợp với không khí mùa hè. Tuy nhiên bạn không cần.Những màu sắc từ mùa đông sang mùa xuân như thảm lông, gối ôm… đã không còn phù hợp với không khí mùa hè. Tuy nhiên bạn không cần.Những màu sắc từ mùa đông sang mùa xuân như thảm lông, gối ôm… đã không còn phù hợp với không khí mùa hè. Tuy nhiên bạn không cần";
