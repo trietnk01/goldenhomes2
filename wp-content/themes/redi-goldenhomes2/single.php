@@ -33,126 +33,49 @@ if(have_posts()){
 <div class="box-single">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-8">
-				<h1 class="diem_kd_h"><?php echo @$title; ?></h1>
-				<div class="news_published_date">
-					<span><img src="<?php echo P_IMG.'/calendar.png'; ?>"></span>
-					<span class="published_date_txt"><?php echo @$date_post; ?></span>
+			<div class="col-lg-8 col-md-7">			
+				<h2 class="single-title">
+					Giới thiệu
+				</h2>
+				<div class="single-content">
+					<p>Golden Homes là 1 công ty nội thất có tuổi đời hơn 5 năm kinh nghiệm, phát triển với đội ngũ hơn 50 nhân sự và sẽ còn nhiều hơn thế, Hiện là thương hiệu thiết kế kiến trúc, nội thất nổi tiếng tại Việt Nam, Với sự nỗ lực trong suốt nhiều năm qua, Golden Homes  mong muốn mang lại cho khách hàng những sản phẩm thiết kế tốt nhất và biến những sản phẩm thiết kế đó trở thành hiện thực. Golden Homes  tin rằng với khát vọng đầy tính nhân văn của mình, sẽ tạo được nhiều giá trị thích dụng và bền vững cho toàn xã hội </p>
+					<p><img src="<?php echo P_IMG.'/cai-ban.png'; ?>"></p>
+
+					<p>Sau khi hoàn thành bản vẽ, Golden Homes tiến hành lập dự toán thi công. Để đảm bảo chi phí thi công được kiểm soát chặt chẽ, Golden Homes tiến hành đề xuất vật liệu, màu sắc, chủng loại phụ kiện, vải rèm, giấy dán tường,.... và bắt đầu vào giai đoạn thi công ngoài công trường. Golden Homes luôn có giám sát thường trực có mặt tại  công trình, để kiểm tra chặt chẽ quy trình và các vướng mắc
+					Golden Homes là 1 công ty nội thất có tuổi đời hơn 5 năm kinh nghiệm, phát triển với đội ngũ hơn 50 nhân sự và sẽ còn nhiều hơn thế, Hiện là thương hiệu thiết kế kiến trúc, nội thất nổi tiếng tại Việt Nam, Với sự nỗ lực trong suốt nhiều năm qua, Golden Homes  mong muốn mang lại cho khách hàng những sản phẩm thiết kế tốt nhất và biến những sản phẩm thiết kế đó trở thành hiện thực. Golden Homes  tin rằng với khát vọng đầy tính nhân văn của mình, sẽ tạo được nhiều giá trị thích dụng và bền vững cho toàn xã hội</p>
+
+					<p>Sau khi hoàn thành bản vẽ, Golden Homes tiến hành lập dự toán thi công. Để đảm bảo chi phí thi công được kiểm soát chặt chẽ, Golden Homes tiến hành đề xuất vật liệu, màu sắc, chủng loại phụ kiện, vải rèm, giấy dán tường,.... và bắt đầu vào giai đoạn thi công ngoài công trường. Golden Homes luôn có giám sát thường trực có mặt tại  công trình, để kiểm tra chặt chẽ quy trình và các vướng mắc</p>
+					<p>Golden Homes là 1 công ty nội thất có tuổi đời hơn 5 năm kinh nghiệm, phát triển với đội ngũ hơn 50 nhân sự và sẽ còn nhiều hơn thế, Hiện là thương hiệu thiết kế kiến trúc, nội thất nổi tiếng tại Việt Nam, Với sự nỗ lực trong suốt nhiều năm qua, Golden Homes  mong muốn mang lại cho khách hàng những sản phẩm thiết kế tốt nhất và biến những sản phẩm thiết kế đó trở thành hiện thực. Golden Homes  tin rằng với khát vọng đầy tính nhân văn của mình, sẽ tạo được nhiều giá trị thích dụng và bền vững cho toàn xã hội</p>
+					<p>
+					Sau khi hoàn thành bản vẽ, Golden Homes tiến hành lập dự toán thi công. Để đảm bảo chi phí thi công được kiểm soát chặt chẽ, Golden Homes tiến hành đề xuất vật liệu, màu sắc, chủng loại phụ kiện, vải rèm, giấy dán tường,.... và bắt đầu vào giai đoạn thi công ngoài công trường. Golden Homes luôn có giám sát thường trực có mặt tại  công trình, để kiểm tra chặt chẽ quy trình và các vướng mắc</p>
 				</div>
-				<div>
-					<?php 
-					if(have_posts()){
-						while (have_posts()) {
-							the_post();                            
-							the_content();
-						}
-						wp_reset_postdata();  
-					}
-					?>
+				<div class="single-thong-tin-chi-tiet">
+					<div class="dbtttct">Để biết thêm thông tin chi tiết, xin vui lòng liên hệ với chúng tôi tại:</div>
+					<div class="goldenhomes">Golden Homes</div>
+					<div class="dc-dt-em"><span class="golden-left"><i class="fa fa-map-marker" aria-hidden="true"></i></span>&nbsp;&nbsp;<span class="golden-right"><a href="javascript:void(0);">42/1 Đường 17, P. Hiệp Bình Chánh, Q. Thủ Đức, TP.HCM</a></span></div>
+					<div class="dc-dt-em"><span class="golden-left"><i class="fa fa-phone" aria-hidden="true"></i></span>&nbsp;&nbsp;<span class="golden-right"><a href="javascript:void(0);">0903 600 002</a></span> </div>
+					<div class="dc-dt-em"><span class="golden-left"><i class="fa fa-envelope" aria-hidden="true"></i></span>&nbsp;&nbsp;<span class="golden-right"><a href="javascript:void(0);">nguyenbaotuoc@gmail.com</a></span></div>
 				</div>
-				<div class="vcomment">
-					Bình luận
-				</div>
-				<div>
-					<div class="fb-comments" data-href="<?php echo @$permalink; ?>" data-numposts="5"></div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<?php 
-				$args = array(
-					'post_type' => 'post',  
-					'orderby' => 'id',
-					'order'   => 'DESC',  
-					'posts_per_page' => 6,        
-					'post__not_in'=>array($post_id),
-					'tax_query' => array(
-						array(
-							'taxonomy' => 'category',
-							'field'    => 'slug',
-							'terms'    => array($term_slug),                   
-						),
-					),
-				);
-				$the_query=new WP_Query($args);
-				if($the_query->have_posts()){
-					if(strcmp($term_slug, 'dich-vu')==0){
-						?>
-						<h3 class="dvvp">Các dịch vụ khác</h3>
-						<?php
-					}else{
-						?>
-						<h3 class="dvvp">Tin tức liên quan</h3>
-						<?php
-					}
-					?>					
-					<div class="service-box">
-						<?php 
-						while($the_query->have_posts()) { 
-							$the_query->the_post();
-							$post_id=$the_query->post->ID;                                                                      
-							$permalink=get_the_permalink($post_id);         
-							$title=get_the_title($post_id);
-							$excerpt=wp_trim_words( get_the_excerpt($post_id), 20, '...' ) ;
-							$price=get_field('op_news_service_price',$post_id);
-							$featured_img=get_the_post_thumbnail_url($post_id, 'full'); 
-							$date_post='';
-							$date_post=get_the_date('d/m/Y',@$post_id);      
-							?>
-							<div class="service-item">
-								<div class="service-left-item">
-									<a href="<?php echo @$permalink; ?>">
-										<img src="<?php echo @$featured_img; ?>" alt="<?php echo @$title; ?>">
-									</a>
-								</div>
-								<div class="service-right-item">
-									<h3 class="service-right-title"><a href="<?php echo @$permalink; ?>"><?php echo wp_trim_words( @$title, 4,'') ; ?></a></h3>
-									<?php 
-									if(strcmp($term_slug, 'dich-vu')==0){
-										?>
-										<div class="service-price"><?php echo  p_wc_price_format_html2($price); ?>/tháng</div>
-										<?php
-									}
-									if(strcmp($term_slug, 'dich-vu')==0){
-										?>
-										<div class="th-dk">
-											<div class="timhieu">
-												<a href="<?php echo @$permalink; ?>">Tìm hiểu</a>
-											</div>
-											<div class="dangky">
-												<a href="javascript:void(0);">Đăng ký</a>
-											</div>
-											<div class="clr"></div>
-										</div>
-										<?php
-									}else{
-										?>
-										<div class="th-dk">
-											<div class="timhieu">
-												<a href="<?php echo @$permalink; ?>">Tìm hiểu</a>
-											</div>											
-											<div class="clr"></div>
-										</div>
-										<?php
-									}
-									?>																		
-								</div>
-								<div class="clr"></div>
-							</div>
-							<?php
-						}
-						?>
-						<div class="clr"></div>								
+				<div class="rapidshare">                                            
+					<div class="facebook_button">
+						<div class="fb-share-button" data-href="https://vitoen.com/thang-nhom-chu-a-han-quoc-poongsan-oa-8.html" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Chia sẻ</a></div>
+					</div>       
+					<div class="facebook_like_button">
+						<div class="fb-like" data-href="https://vitoen.com/thang-nhom-chu-a-han-quoc-poongsan-oa-8.html" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
 					</div>
-					<?php
-					wp_reset_postdata();
-				}
-				?>					
-				<div class="ritan">
-					<?php include get_template_directory() . "/block/block-regsister.php"; ?>
-				</div>					
-				<div class="fanpage-box">
-					<?php include get_template_directory() . "/block/block-fanpage.php"; ?>
-				</div>
+					<div class="category_twitter_sg"><a href="https://vitoen.com/thang-nhom-chu-a-han-quoc-poongsan-oa-8.html" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+					<div class="category_linkedin_sg">
+						<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+						<script type="IN/Share" data-url="https://vitoen.com/thang-nhom-chu-a-han-quoc-poongsan-oa-8.html"></script>
+					</div>
+					<div class="category_g_plus_sg">
+						<div class="g-plus" data-action="share" data-annotation="none" data-height="24" data-href="https://vitoen.com/thang-nhom-chu-a-han-quoc-poongsan-oa-8.html"></div>
+					</div>
+					<div class="clr"></div>
+				</div>  
+			</div>
+			<div class="col-lg-4 col-md-5">
+				<?php include get_template_directory() . "/block/block-product-detail.php"; ?>					
 			</div>
 		</div>
 	</div>

@@ -10,7 +10,7 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 <div class="box-product-detail">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-8">	
+			<div class="col-lg-8 col-md-7">	
 				<div class="row">
 					<div class="col-lg-6">
 						<div class="box_sp_img">
@@ -168,7 +168,7 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4">		
+			<div class="col-lg-4 col-md-5">		
 			<?php include get_template_directory() . "/block/block-product-detail.php"; ?>					
 			</div>
 		</div>

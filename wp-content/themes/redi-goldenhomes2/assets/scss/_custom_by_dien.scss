@@ -1941,6 +1941,9 @@
 			.product-size{
 				float: left;
 				margin-top: 10px;
+				@media(max-width: 240px){
+					margin-top: 8px;
+				}
 				span{
 					&:first-child{
 						font-family: $f_bold;
@@ -1956,7 +1959,13 @@
 			}
 			.lienhebtn{
 				float: left;
-				margin-left: 40px;				
+				margin-left: 40px;	
+				@media(max-width: 1024px){
+					margin-left: 20px;
+				}		
+				@media(max-width: 240px){
+					margin-left: 5px;
+				}	
 				a{
 					display: inline-block;
 					background-color: #e8a61b;
@@ -1970,6 +1979,13 @@
 					font-size: 18px;
 					&:hover{
 						background-color: #dc9500;
+					}
+					@media(max-width: 1024px){
+						padding: 10px 45px;
+					}
+					@media(max-width: 240px){
+						padding: 10px 25px;
+						font-size: 15px;
 					}					
 				}
 			}
@@ -1984,6 +2000,9 @@
 			font-size: 13px;
 			padding: 5px 10px;
 			border-radius: 24px;
+			@media(max-width: 240px){
+				top: 35px;
+			}
 			div{
 				&:first-child{
 					margin-top: 0;
@@ -2013,13 +2032,61 @@
 				position: absolute;
 				left: -25px;
 				top: 18px;
-				background-color: transparent !important;				
+				background-color: transparent !important;	
+				@media(max-width: 1024px){
+					top: 12px;
+				}
+				@media(max-width: 992px){
+					top: 25px;
+				}
+				@media(max-width: 740px){
+					top:35px;
+				}
+				@media(max-width: 576px){
+					top:25px;
+				}
+				@media(max-width: 375px){
+					top:20px;
+				}	
+				@media(max-width: 360px){
+					top:15px;
+				}	
+				@media(max-width: 320px){
+					top:12px;
+				}
+				@media(max-width: 240px){
+					top:3px;
+				}		
 			}
 			.owl-next {
 				position: absolute;
 				right: -25px;
 				top:18px;
 				background-color: transparent !important;	
+				@media(max-width: 1024px){
+					top: 12px;
+				}
+				@media(max-width: 992px){
+					top: 25px;
+				}	
+				@media(max-width: 740px){
+					top:35px;
+				}	
+				@media(max-width: 576px){
+					top:25px;
+				}	
+				@media(max-width: 375px){
+					top:20px;
+				}
+				@media(max-width: 360px){
+					top:15px;
+				}
+				@media(max-width: 320px){
+					top:12px;
+				}	
+				@media(max-width: 240px){
+					top:3px;
+				}
 			}
 			.owl-nav{
 				[class*=owl-]{					
@@ -2144,6 +2211,9 @@
 		margin-top: 30px;
 	}
 	.product-tab{
+		@media(max-width: 992px){
+			margin-top: 30px;
+		}		
 		.tab{
 			button{
 				background:none;
@@ -2158,6 +2228,19 @@
 				&.active{
 					background-color: #e8a61b;
 					color: #ffffff;
+				}
+				@media(max-width: 576px){
+					padding: 15px 20px;
+				}
+				@media(max-width: 360px){
+					padding: 10px 15px;
+				}
+				@media(max-width: 320px){					
+					font-size: 15px;
+				}
+				@media(max-width: 240px){					
+					font-size: 12px;
+					padding: 10px 8px;
 				}
 			}
 		}
@@ -2176,6 +2259,14 @@
 		background-color: #e8a61b;
 		padding: 20px 25px;
 		margin-top: 10px;
+		@media(max-width: 320px){
+			padding: 10px 10px;
+			font-size: 15px;
+		}
+		@media(max-width: 240px){
+			padding: 10px 5px;
+			font-size:12px;
+		}
 	}
 	.splq-line{
 		border-top: 2px solid #e8a61b;
@@ -2212,45 +2303,46 @@
 	.ho-tro-tot{
 		background-repeat: no-repeat;
 		background-size: cover;
-		padding-top: calc(100% / ( 360 / 212 ));			
-	}
-	.httt{
-		position: absolute;
-		top: 110px;
-		left: 0;
-		width: 100%;
-		padding: 0px 20px;
-		@media(max-width: 992px){
-			top: 90px;
-		}	
-		@media(max-width: 320px){
-			top: 40px;
-		}		
-		.ho-tro{
-			font-family: $f_regular;
-			font-size: 16px;
-			color: #ffffff;
-			text-transform: uppercase;
-			@media(max-width: 740px){
-				font-size: 25px;
-			}
-		}
-		.truc-tuyen{
-			font-family: $f_bold;
-			font-size: 26px;
-			color: #ffffff;
-			text-transform: uppercase;
+		padding-top: calc(100% / ( 360 / 212 ));	
+		position: relative;	
+		.httt{		
+			position: absolute;	
+			top: 105px;
+			left: 0;
+			width: 100%;			
+			padding: 0px 20px;
 			@media(max-width: 992px){
-				font-size: 20px;
+				top: 90px;
+			}	
+			@media(max-width: 320px){
+				top: 40px;
+			}		
+			.ho-tro{
+				font-family: $f_regular;
+				font-size: 16px;
+				color: #ffffff;
+				text-transform: uppercase;
+				@media(max-width: 740px){
+					font-size: 25px;
+				}
 			}
-			@media(max-width: 740px){
-				font-size: 35px;
-			}
-			@media(max-width: 240px){
-				font-size: 25px;
+			.truc-tuyen{
+				font-family: $f_bold;
+				font-size: 26px;
+				color: #ffffff;
+				text-transform: uppercase;
+				@media(max-width: 992px){
+					font-size: 20px;
+				}
+				@media(max-width: 740px){
+					font-size: 35px;
+				}
+				@media(max-width: 240px){
+					font-size: 25px;
+				}
 			}
 		}
-	}
+	}	
 	.support-hotline{
 		margin-top: 10px;
 		text-align: center;			
@@ -2362,15 +2454,24 @@
 		margin-top: 2px;
 		margin-left: 10px;
 		float: left;
+		@media(max-width: 1024px){
+			margin-left: 5px;
+		}
 	}
 	.category_linkedin_sg{
 		margin-top:2px;
 		margin-left: 10px;
 		float: left;
+		@media(max-width: 1024px){
+			margin-left: 5px;
+		}
 	}
 	.category_g_plus_sg{			
 		margin-left: 10px;
 		float: left;
+		@media(max-width: 1024px){
+			margin-left: 5px;
+		}
 	}
 }
 #baogiamodal{
