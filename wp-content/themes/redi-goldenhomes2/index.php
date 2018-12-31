@@ -71,12 +71,14 @@
 			<div class="clr"></div>
 		</div>	
 	</div>
-	<div class="thiet-ke-noi-that-box">		
-		<h3 class="box-info-title"><a href="<?php echo site_url( 'chi-tiet-dich-vu',null ); ?>">Thiết kế nội thất</a></h3>
-		<div class="box-info-excerpt">
-			Chúng tôi chuyên sản xuất sản phẩm tủ bếp 100% gỗ công nghiệp An Cường như tủ bếp Acrylic, tủ bếp Laminate, tủ bếp Melamine, tủ bếp MDF, tủ bếp MFC.
-		</div>
-		<div class="box-info-readmore"><a href="<?php echo site_url( 'chi-tiet-dich-vu',null ); ?>"><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
+	<div class="thiet-ke-noi-that-box">	
+		<div class="tknt-box-ab">
+			<h3 class="box-info-title"><a href="<?php echo site_url( 'chi-tiet-dich-vu',null ); ?>">Thiết kế nội thất</a></h3>
+			<div class="box-info-excerpt">
+				Chúng tôi chuyên sản xuất sản phẩm tủ bếp 100% gỗ công nghiệp An Cường như tủ bếp Acrylic, tủ bếp Laminate, tủ bếp Melamine, tủ bếp MDF, tủ bếp MFC.
+			</div>
+			<div class="box-info-readmore"><a href="<?php echo site_url( 'chi-tiet-dich-vu',null ); ?>"><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
+		</div>			
 	</div>
 	<div class="thi-cong-noi-that-box">
 		<div class="thi-cong-noi-that-info">
