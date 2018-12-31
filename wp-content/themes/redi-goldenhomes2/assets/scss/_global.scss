@@ -11,7 +11,7 @@ body{
 	position:relative;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;
 
 }
 .h1, .h2, .h3, .h4, .h5, .h6, 
@@ -32,13 +32,11 @@ a{
 		color:$mau_dam;
 	}	
 }
-figure{    
-    overflow: hidden;
-    position: relative;    
-    margin: 0;    
-}
 a{
 	figure{
+		overflow: hidden;
+		position: relative;    
+		margin: 0; 
 		div{
 			-webkit-transition:all 0.5s linear;transition:all 0.5s linear;-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1);
 		}
@@ -82,39 +80,39 @@ a{
 
 /* begin note */
 .note-danger {
-    background-color: #fef7f8;    
-    border-left: 5px solid #f0868e;    
+	background-color: #fef7f8;    
+	border-left: 5px solid #f0868e;    
 }
 .note-success {
-    background-color: #c0edf1;    
-    border-left: 5px solid #58d0da;
+	background-color: #c0edf1;    
+	border-left: 5px solid #58d0da;
 }
 .note {   
-    padding: 15px 15px 15px 15px;
-    margin-top: 15px;
-    display: none;        
-    color: #000;
-    text-transform: uppercase;
+	padding: 15px 15px 15px 15px;
+	margin-top: 15px;
+	display: none;        
+	color: #000;
+	text-transform: uppercase;
 }
 /* end note */
 .ajax_loader{
-	    background-image: url(../img/ajax-loader.gif);
-    background-repeat: no-repeat;    
-    width: 16px;
-    height: 16px;
-    margin: 15px auto 0 auto;    
-    display: none;
+	background-image: url(../img/ajax-loader.gif);
+	background-repeat: no-repeat;    
+	width: 16px;
+	height: 16px;
+	margin: 15px auto 0 auto;    
+	display: none;
 
 }
 .ajax_loader_contact{
-	    background-image: url(../img/ajax-loader.gif);
-    background-repeat: no-repeat;    
-    width: 16px;
-    height: 16px;
-    margin-top:10px;
-    margin-left: 15px;    
-    display: none;
-    float: left;
+	background-image: url(../img/ajax-loader.gif);
+	background-repeat: no-repeat;    
+	width: 16px;
+	height: 16px;
+	margin-top:10px;
+	margin-left: 15px;    
+	display: none;
+	float: left;
 
 }
 .page-numbers{
@@ -179,7 +177,7 @@ a{
 		border-bottom:1px solid #e1e1e1;	
 		.vatimkiem{
 			width: 90%;
-    		height: 100%;
+			height: 100%;
 			.txt_search{
 				color: #fff;
 				background: transparent;
