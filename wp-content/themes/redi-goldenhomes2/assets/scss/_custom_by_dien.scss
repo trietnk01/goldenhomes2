@@ -392,7 +392,7 @@
 	background-image: url(../img/banner_1.png);
 	background-repeat: no-repeat;
 	background-size: cover;	
-	padding: 335px 0px 335px 0px;
+	padding: 334px 0px 334px 0px;
 	position: relative;	
 	@media(max-width: 992px){
 		padding:280px 0px 280px 0px;
@@ -403,14 +403,14 @@
 	.tknt-box-ab{
 		position: absolute;
     	top: 220px;
-    	left: 95px;
+    	left: 95px;    	
     	@media(max-width: 992px){    		
     		top: 120px;
     		left: 0;
     		width: 100%;
     	}
     	@media(max-width: 576px){
-			top: 80px;
+			top: 40px;
 		}
 		.box-info-title{
 			@media(max-width: 992px){
@@ -445,12 +445,17 @@
 			}		
 			@media(max-width: 576px){
 				font-size: 14px;
+				padding: 10px;
+				margin-top: 0px;
 			}	
 		}
 		.box-info-readmore{
 			margin-top: 20px;
 			@media(max-width: 992px){
 				text-align: center;
+			}
+			@media(max-width: 576px){
+				margin-top: 0px;
 			}
 			a{
 				display: inline-block;
@@ -493,13 +498,24 @@
 	background-image: url(../img/banner_2.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 335px 0px 335px 0px;
+	padding: 334px 0px;
 	position: relative;
 	background-position: -215px 0px;
+	@media(max-width: 576px){
+		padding: 160px 0px;
+	}
 	.thi-cong-noi-that-info{
 		position: absolute;
     	top: 220px;
     	right: 95px;
+    	@media(max-width: 992px){
+    		right: 0;
+    		top: 130px;
+    		width: 100%;    		
+    	}
+    	@media(max-width: 576px){
+    		top: 65px;
+    	}
 		.box-info-title{
 			@media(max-width: 992px){
 				text-align: center;				
@@ -533,12 +549,17 @@
 			}		
 			@media(max-width: 576px){
 				font-size: 14px;
-			}	
+				padding: 10px;
+				margin-top: 0;
+			}			
 		}
 		.box-info-readmore{
 			margin-top: 20px;
 			@media(max-width: 992px){
 				text-align: center;
+			}
+			@media(max-width: 576px){
+				margin-top: 0;
 			}
 			a{
 				display: inline-block;
@@ -550,7 +571,13 @@
 				text-transform: uppercase;
 				position: relative;
 				overflow: hidden;
-				z-index: 1;								
+				z-index: 1;	
+				@media(max-width: 992px){
+					font-size: 28px;
+				}	
+				@media(max-width: 576px){
+					font-size: 14px;
+				}								
 				&:hover{
 					&:before{
 						left: 0;
@@ -575,13 +602,24 @@
 	background-image: url(../img/banner_3.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 335px 0px 335px 0px;
+	padding:314px 0px;
 	position: relative;
-	background-position: -210px 0px;	
+	background-position: -55px 0px;	
+	@media(max-width: 576px){
+		padding:150px 0;
+	}
 	.rem-cua-bx{
 		position: absolute;
-    	top: 220px;
+    	top: 210px;
     	left: 95px;
+    	@media(max-width: 992px){
+    		left: 0;
+    		top: 110px;
+    		width: 100%;
+    	}
+    	@media(max-width: 576px){
+    		top: 50px;
+    	}
 		.box-info-title{
 			@media(max-width: 992px){
 				text-align: center;				
@@ -615,12 +653,17 @@
 			}		
 			@media(max-width: 576px){
 				font-size: 14px;
+				margin-top: 0;
+				padding: 10px;
 			}	
 		}
 		.box-info-readmore{
 			margin-top: 20px;
 			@media(max-width: 992px){
 				text-align: center;
+			}
+			@media(max-width: 576px){
+				margin-top: 0;
 			}
 			a{
 				display: inline-block;
@@ -632,7 +675,13 @@
 				text-transform: uppercase;
 				position: relative;
 				overflow: hidden;
-				z-index: 1;								
+				z-index: 1;		
+				@media(max-width: 992px){
+					font-size: 28px;
+				}	
+				@media(max-width: 576px){
+					font-size: 14px;
+				}							
 				&:hover{
 					&:before{
 						left: 0;
@@ -657,17 +706,25 @@
 	background-image: url(../img/banner_4.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 335px 0px 335px 0px;
+	padding: 334px 0px;
 	position: relative;
-	background-position: -215px 0px;
-	@media(max-width: 992px){		
-		padding: 115px 30px 120px 30px;
-		background-position: -355px 0;
+	background-position: -145px 0px;	
+	@media(max-width: 576px){
+		padding: 140px 0;
+		background-position: 0px 0px;	
 	}
 	.thi-cong-noi-that-info{
 		position: absolute;
-    	top: 220px;
+    	top: 240px;
     	right: 95px;
+    	@media(max-width: 992px){
+    		right: 0;
+    		top: 140px;
+    		width: 100%;
+    	}
+    	@media(max-width: 576px){
+    		top: 55px;
+    	}
 		.box-info-title{
 			@media(max-width: 992px){
 				text-align: center;				
@@ -701,12 +758,17 @@
 			}		
 			@media(max-width: 576px){
 				font-size: 14px;
+				margin-top: 0;
+				padding: 10px;
 			}	
 		}
 		.box-info-readmore{
 			margin-top: 20px;
 			@media(max-width: 992px){
 				text-align: center;
+			}
+			@media(max-width: 576px){
+				margin-top: 0;
 			}
 			a{
 				display: inline-block;
@@ -718,7 +780,13 @@
 				text-transform: uppercase;
 				position: relative;
 				overflow: hidden;
-				z-index: 1;								
+				z-index: 1;		
+				@media(max-width: 992px){
+					font-size: 28px;
+				}	
+				@media(max-width: 576px){
+					font-size: 14px;
+				}							
 				&:hover{
 					&:before{
 						left: 0;
@@ -743,16 +811,25 @@
 	background-image: url(../img/banner_5.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 335px 0px 335px 0px;
+	padding: 334px 0px 334px 0px;
+	background-position: -55px 0px;
 	position: relative;	
-	@media(max-width: 992px){		
-		padding: 115px 30px 120px 30px;
-		background-position: -355px 0;
-	}
+	@media(max-width: 576px){
+		padding: 140px 0;
+		background-position: 0px 0px;	
+	}	
 	.dan-phoi-box{
 		position: absolute;
     	top: 220px;
-    	left: 95px;
+    	left: 95px;    	
+    	@media(max-width: 992px){
+    		left: 0;
+    		top: 110px;
+    		width: 100%;
+    	}
+    	@media(max-width: 576px){
+    		top:45px;
+    	}
 		.box-info-title{
 			@media(max-width: 992px){
 				text-align: center;				
@@ -786,12 +863,17 @@
 			}		
 			@media(max-width: 576px){
 				font-size: 14px;
+				margin-top: 0;
+				padding: 10px;
 			}	
 		}
 		.box-info-readmore{
 			margin-top: 20px;
 			@media(max-width: 992px){
 				text-align: center;
+			}
+			@media(max-width: 576px){
+				margin-top: 0;
 			}
 			a{
 				display: inline-block;
@@ -803,7 +885,13 @@
 				text-transform: uppercase;
 				position: relative;
 				overflow: hidden;
-				z-index: 1;								
+				z-index: 1;		
+				@media(max-width: 992px){
+					font-size: 28px;
+				}	
+				@media(max-width: 576px){
+					font-size: 14px;
+				}							
 				&:hover{
 					&:before{
 						left: 0;
