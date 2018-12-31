@@ -465,6 +465,9 @@
 				z-index: 1;	
 				@media(max-width: 992px){
 					font-size: 28px;
+				}	
+				@media(max-width: 576px){
+					font-size: 14px;
 				}							
 				&:hover{
 					&:before{
@@ -492,6 +495,7 @@
 	background-size: cover;
 	padding: 335px 0px 335px 0px;
 	position: relative;
+	background-position: -215px 0px;
 	.thi-cong-noi-that-info{
 		position: absolute;
     	top: 220px;
@@ -571,94 +575,99 @@
 	background-image: url(../img/banner_3.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 190px 100px 190px 100px;
-	background-position: -210px 0px;
-	@media(max-width: 992px){		
-		padding: 115px 30px 120px 30px;
-		background-position: -355px 0;
-	}
-	.box-info-title{
-		@media(max-width: 992px){
-			text-align: center;				
-		}
-		a{
-			text-transform: uppercase;
-			color: #ffffff;
-			font-size: 28px;
-			font-family: $f_bold;
+	padding: 335px 0px 335px 0px;
+	position: relative;
+	background-position: -210px 0px;	
+	.rem-cua-bx{
+		position: absolute;
+    	top: 220px;
+    	left: 95px;
+		.box-info-title{
 			@media(max-width: 992px){
-				font-size: 42px;
+				text-align: center;				
+			}
+			a{
+				text-transform: uppercase;
+				color: #ffffff;
+				font-size: 28px;
+				font-family: $f_bold;
+				@media(max-width: 992px){
+					font-size: 42px;
+				}		
+				@media(max-width: 576px){
+					font-size: 22px;
+				}		
+			}			
+		}
+		.box-info-excerpt{
+			background: rgba(0,0,0,0.5);
+			color: #ffffff;
+			font-family: $f_regular;
+			font-size: 17px;
+			width: 525px;
+			padding: 25px;
+			margin-top: 15px;
+			@media(max-width: 992px){
+				width:100%;
+				text-align: center;
+				background:transparent;
+				font-size: 30px;
 			}		
 			@media(max-width: 576px){
-				font-size: 22px;
-			}		
-		}			
-	}
-	.box-info-excerpt{
-		background: rgba(0,0,0,0.5);
-		color: #ffffff;
-		font-family: $f_regular;
-		font-size: 17px;
-		width: 525px;
-		padding: 25px;
-		margin-top: 15px;
-		@media(max-width: 992px){
-			width:100%;
-			text-align: center;
-			background:transparent;
-			font-size: 30px;
-		}		
-		@media(max-width: 576px){
-			font-size: 14px;
-		}	
-	}
-	.box-info-readmore{
-		margin-top: 20px;
-		@media(max-width: 992px){
-			text-align: center;
+				font-size: 14px;
+			}	
 		}
-		a{
-			display: inline-block;
-			color: #ffffff;
-			font-size: 14px;
-			font-family: $f_bold;
-			padding: 15px 30px;
-			background: #ec1f1f;
-			text-transform: uppercase;
-			position: relative;
-			overflow: hidden;
-			z-index: 1;								
-			&:hover{
+		.box-info-readmore{
+			margin-top: 20px;
+			@media(max-width: 992px){
+				text-align: center;
+			}
+			a{
+				display: inline-block;
+				color: #ffffff;
+				font-size: 14px;
+				font-family: $f_bold;
+				padding: 15px 30px;
+				background: #ec1f1f;
+				text-transform: uppercase;
+				position: relative;
+				overflow: hidden;
+				z-index: 1;								
+				&:hover{
+					&:before{
+						left: 0;
+					}
+				}
 				&:before{
-					left: 0;
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 100%;					
+					width: 100%;
+					height: 100%;
+					background: #0aceda;
+					z-index: -1;
+					@include p-web(transition, all 0.5s);
 				}
 			}
-			&:before{
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 100%;					
-				width: 100%;
-				height: 100%;
-				background: #0aceda;
-				z-index: -1;
-				@include p-web(transition, all 0.5s);
-			}
 		}
-	}
+	}	
 }
 .giay-dan-tuong-box{
 	background-image: url(../img/banner_4.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 180px 100px 180px 100px;
-	background-position: 0px 0px;
+	padding: 335px 0px 335px 0px;
+	position: relative;
+	background-position: -215px 0px;
 	@media(max-width: 992px){		
 		padding: 115px 30px 120px 30px;
 		background-position: -355px 0;
 	}
 	.thi-cong-noi-that-info{
-		float: right;
+		position: absolute;
+    	top: 220px;
+    	right: 95px;
 		.box-info-title{
 			@media(max-width: 992px){
 				text-align: center;				
@@ -733,81 +742,87 @@
 .dan-phoi-thong-minh-box{	
 	background-image: url(../img/banner_5.png);
 	background-repeat: no-repeat;
-	background-size: cover;	
-	padding: 190px 100px 190px 100px;
+	background-size: cover;
+	padding: 335px 0px 335px 0px;
+	position: relative;	
 	@media(max-width: 992px){		
 		padding: 115px 30px 120px 30px;
 		background-position: -355px 0;
 	}
-	.box-info-title{
-		@media(max-width: 992px){
-			text-align: center;				
-		}
-		a{
-			text-transform: uppercase;
-			color: #ffffff;
-			font-size: 28px;
-			font-family: $f_bold;
+	.dan-phoi-box{
+		position: absolute;
+    	top: 220px;
+    	left: 95px;
+		.box-info-title{
 			@media(max-width: 992px){
-				font-size: 42px;
+				text-align: center;				
+			}
+			a{
+				text-transform: uppercase;
+				color: #ffffff;
+				font-size: 28px;
+				font-family: $f_bold;
+				@media(max-width: 992px){
+					font-size: 42px;
+				}		
+				@media(max-width: 576px){
+					font-size: 22px;
+				}		
+			}			
+		}
+		.box-info-excerpt{
+			background: rgba(0,0,0,0.5);
+			color: #ffffff;
+			font-family: $f_regular;
+			font-size: 17px;
+			width: 525px;
+			padding: 25px;
+			margin-top: 15px;
+			@media(max-width: 992px){
+				width:100%;
+				text-align: center;
+				background:transparent;
+				font-size: 30px;
 			}		
 			@media(max-width: 576px){
-				font-size: 22px;
-			}		
-		}			
-	}
-	.box-info-excerpt{
-		background: rgba(0,0,0,0.5);
-		color: #ffffff;
-		font-family: $f_regular;
-		font-size: 17px;
-		width: 525px;
-		padding: 25px;
-		margin-top: 15px;
-		@media(max-width: 992px){
-			width:100%;
-			text-align: center;
-			background:transparent;
-			font-size: 30px;
-		}		
-		@media(max-width: 576px){
-			font-size: 14px;
-		}	
-	}
-	.box-info-readmore{
-		margin-top: 20px;
-		@media(max-width: 992px){
-			text-align: center;
+				font-size: 14px;
+			}	
 		}
-		a{
-			display: inline-block;
-			color: #ffffff;
-			font-size: 14px;
-			font-family: $f_bold;
-			padding: 15px 30px;
-			background: #e264af;
-			text-transform: uppercase;
-			position: relative;
-			overflow: hidden;
-			z-index: 1;								
-			&:hover{
+		.box-info-readmore{
+			margin-top: 20px;
+			@media(max-width: 992px){
+				text-align: center;
+			}
+			a{
+				display: inline-block;
+				color: #ffffff;
+				font-size: 14px;
+				font-family: $f_bold;
+				padding: 15px 30px;
+				background: #e264af;
+				text-transform: uppercase;
+				position: relative;
+				overflow: hidden;
+				z-index: 1;								
+				&:hover{
+					&:before{
+						left: 0;
+					}
+				}
 				&:before{
-					left: 0;
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 100%;					
+					width: 100%;
+					height: 100%;
+					background: #0aceda;
+					z-index: -1;
+					@include p-web(transition, all 0.5s);
 				}
 			}
-			&:before{
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 100%;					
-				width: 100%;
-				height: 100%;
-				background: #0aceda;
-				z-index: -1;
-				@include p-web(transition, all 0.5s);
-			}
 		}
-	}
+	}	
 }
 .thuong_hieu_box{
 	border-bottom: 1px solid #e8e8e8;

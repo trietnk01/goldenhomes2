@@ -90,12 +90,14 @@
 		</div>
 		<div class="clr"></div>
 	</div>
-	<div class="san-pham-rem-cua-box">		
-		<h3 class="box-info-title"><a href="<?php echo site_url( 'chi-tiet-san-pham',null ); ?>">Sản phẩm rèm cửa</a></h3>
+	<div class="san-pham-rem-cua-box">	
+		<div class="rem-cua-bx">
+			<h3 class="box-info-title"><a href="<?php echo site_url( 'chi-tiet-san-pham',null ); ?>">Sản phẩm rèm cửa</a></h3>
 		<div class="box-info-excerpt">
 			Rèm vải chắn sáng từ lâu đã là một vật dụng không thể thiếu trong ngôi nhà, đặc biệt là phòng ngủ, hay những căn nhà hướng tây mặt trời chiếu thẳng vào nhà lâu ngày có thể gây hỏng sàn gỗ...
 		</div>
 		<div class="box-info-readmore"><a href="<?php echo site_url( 'chi-tiet-san-pham',null ); ?>"><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
+		</div>			
 	</div>
 	<div class="giay-dan-tuong-box">
 		<div class="thi-cong-noi-that-info">
@@ -107,12 +109,14 @@
 		</div>
 		<div class="clr"></div>
 	</div>
-	<div class="dan-phoi-thong-minh-box">		
-		<h3 class="box-info-title"><a href="<?php echo site_url( 'chi-tiet-san-pham',null ); ?>">Dàn phơi thông minh</a></h3>
-		<div class="box-info-excerpt">
-			Giàn phơi thông minh là một vật dụng được phát minh nhằm hỗ trợ việc phơi  quần áo nhanh và hiệu quả hơn.đặc điểm nổi bật của giàn phơi thông minh là có thể điều khiển thanh phơi nâng lên...
-		</div>
-		<div class="box-info-readmore"><a href="<?php echo site_url( 'chi-tiet-san-pham',null ); ?>"><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
+	<div class="dan-phoi-thong-minh-box">	
+		<div class="dan-phoi-box">
+			<h3 class="box-info-title"><a href="<?php echo site_url( 'chi-tiet-san-pham',null ); ?>">Dàn phơi thông minh</a></h3>
+			<div class="box-info-excerpt">
+				Giàn phơi thông minh là một vật dụng được phát minh nhằm hỗ trợ việc phơi  quần áo nhanh và hiệu quả hơn.đặc điểm nổi bật của giàn phơi thông minh là có thể điều khiển thanh phơi nâng lên...
+			</div>
+			<div class="box-info-readmore"><a href="<?php echo site_url( 'chi-tiet-san-pham',null ); ?>"><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
+		</div>			
 	</div>
 	<div class="thuong_hieu_box">		
 		<div class="container">
