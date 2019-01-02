@@ -500,7 +500,7 @@
 	background-size: cover;
 	padding: 334px 0px;
 	position: relative;
-	background-position: -215px 0px;
+	background-position: 0px 0px;
 	@media(max-width: 576px){
 		padding: 160px 0px;
 	}
@@ -607,7 +607,7 @@
 	background-size: cover;
 	padding:314px 0px;
 	position: relative;
-	background-position: -55px 0px;	
+	background-position: 0px 0px;	
 	@media(max-width: 576px){
 		padding:150px 0;
 	}
@@ -711,7 +711,7 @@
 	background-size: cover;
 	padding: 334px 0px;
 	position: relative;
-	background-position: -145px 0px;	
+	background-position: 0px 0px;	
 	@media(max-width: 576px){
 		padding: 140px 0;
 		background-position: 0px 0px;	
@@ -815,7 +815,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 334px 0px 334px 0px;
-	background-position: -55px 0px;
+	background-position: 0px 0px;
 	position: relative;	
 	@media(max-width: 576px){
 		padding: 140px 0;
@@ -1263,6 +1263,40 @@
 		}   
 	}	
 } 
+.bg-bottom-2{
+	background: url('../img/bg_info.png');
+	padding-bottom: 48px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 90px;
+	.tsnhtv_goldenhomes{
+		text-align: center;
+		color: #fff;
+		padding-top: 45px;
+		font-size: 24px;
+		text-transform: uppercase;
+		@media(max-width: 576px){
+			font-size: 20px;
+		}
+	}
+	.why_box{
+		text-align: center;
+		color: #fff;
+		margin-top: 30px;
+		.why_box_solieu{
+			font-size: 44px;
+		}
+		.why_box_hr{
+			width: 66px;
+			border-top: 1px solid #d49a21;
+			margin: 15px auto 0px auto;
+		}
+		.why_box_txt{
+			font-size: 22px;
+			margin-top: 10px;
+		}
+	}
+}
 .bg_bottom{
 	background: url('../img/bg_info.png');
 	padding-bottom: 48px;

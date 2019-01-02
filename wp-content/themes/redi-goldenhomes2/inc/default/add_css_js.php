@@ -4,7 +4,7 @@ add_action('wp_enqueue_scripts','p_load_css_js');
 if(!function_exists('p_load_css_js')){
     function p_load_css_js(){    
         global $wp_scripts;   
-        $js_css_ran = rand(1000,100000);
+        $js_css_ran = rand(1000,100000000);
         // begin html5shiv
         wp_enqueue_script('html5shiv', P_LIB . '/html5/html5shiv-printshiv.min.js',array('jquery'),@$js_css_ran,true);
         $wp_scripts->add_data("html5shiv", "conditional", "lt IE 9"); 
@@ -66,7 +66,7 @@ if(!function_exists('p_load_css_js')){
         // end alo_phone
         // begin custom       
         wp_enqueue_script('stylecustomjs',P_ASSETS . '/js/style-custom.js',array('jquery'),@$js_css_ran,true);
-        wp_enqueue_style('stylecss',P_SCSS . '/style.css',array(),@$js_css_ran,'all');
+        wp_enqueue_style('stylecss',P_SCSS . '/style.css',array(),@$js_css_ran);
         // end custom
         // begin style       
         wp_enqueue_script('stylefuncjs',P_ASSETS . '/js/style-func.js',array('jquery'),@$js_css_ran,true);                      
