@@ -264,7 +264,7 @@
 			</div>
 		</div>
 	</div>	
-	<div class="bg-bottom-2">
+	<!--<div class="bg-bottom-2">
 		<div class="container">
 			<div class="row">
 				<div class="col"><h2 class="tsnhtv_goldenhomes">Tại sao nên hợp tác với Golden Homes</h2></div>
@@ -296,7 +296,7 @@
 				</div>
 			</div>
 		</div>		
-	</div>
+	</div>-->
 	<div class="bg_bottom">				
 		<div class="container">
 			<div class="row">
