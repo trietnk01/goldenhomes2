@@ -388,8 +388,7 @@
 		padding: 10px 0;
 	}
 }
-.thiet-ke-noi-that-box{	
-	background-image: url(../img/banner_1.png);
+.thiet-ke-noi-that-box{		
 	background-repeat: no-repeat;
 	background-size: cover;	
 	padding: 334px 0px 334px 0px;
@@ -495,7 +494,6 @@
 	}	
 }
 .thi-cong-noi-that-box{
-	background-image: url(../img/banner_2.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 334px 0px;
@@ -602,7 +600,6 @@
 	}
 }
 .san-pham-rem-cua-box{	
-	background-image: url(../img/banner_3.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding:314px 0px;
@@ -706,7 +703,6 @@
 	}	
 }
 .giay-dan-tuong-box{
-	background-image: url(../img/banner_4.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 334px 0px;
@@ -811,7 +807,6 @@
 	}
 }
 .dan-phoi-thong-minh-box{	
-	background-image: url(../img/banner_5.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 334px 0px 334px 0px;
@@ -1283,11 +1278,43 @@
 		width: 60%;
 		margin-left: auto;
 		margin-right: auto;
+		@media(max-width: 992px){
+			width: 70%;
+		}
 		@media(max-width: 740px){
-			width: 75%;
+			width: 90%;
 		}
 		@media(max-width: 576px){
+			width: 81%;
+		}
+		@media(max-width: 375px){
+			width: 90%;
+		}
+		@media(max-width: 360px){
+			width: 95%;
+		}
+		@media(max-width: 320px){
 			width: 100%;
+		}
+		.bo-khach-hang-tieu-bieu{
+			float: left;
+			@media(max-width: 240px){
+				width: 100%;
+			}
+		}
+		.bo-tho-tay-nghe-cao{
+			float: left;
+			margin-left: 50px;
+			@media(max-width: 576px){
+				margin-left: 30px;
+			}
+			@media(max-width: 320px){
+				margin-left: 10px;
+			}
+			@media(max-width: 240px){
+				width: 100%;
+				margin-left: 0px;
+			}
 		}
 		.why_box{
 			text-align: center;
@@ -1295,6 +1322,9 @@
 			margin-top: 30px;
 			.why_box_solieu{
 				font-size: 44px;
+				@media(max-width: 576px){
+					font-size: 30px;
+				}
 			}
 			.why_box_hr{
 				width: 66px;
@@ -1304,6 +1334,9 @@
 			.why_box_txt{
 				font-size: 22px;
 				margin-top: 10px;
+				@media(max-width: 576px){
+					font-size: 15px;
+				}
 			}
 		}
 	}	
