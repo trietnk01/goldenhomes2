@@ -152,56 +152,96 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6">
-				<h2 class="content_bottom_h">Tin tức mới nhất</h2>
-				<div>
-					<?php 
-					for($i=1;$i<=2;$i++){
-						?>
-						<div class="article_box">
-							<div class="article_hinh_anh">
-								<a href="<?php echo site_url( 'chi-tiet-tin-tuc',null ); ?>" title="tiêu đề tên">
-									<figure>									
-										<div class="news-bx-img" style="background-image: url(<?php echo P_IMG.'/img_news1.png'; ?>);">
-											
-										</div>																			
-									</figure>
-								</a>
-							</div>
-							<div class="article_info">
-								<div class="article_info_date_post">12.06.2018</div>
-								<h3 class="article_info_title"><a href="<?php echo site_url( 'chi-tiet-tin-tuc',null ); ?>" title="tiêu đề tên">Khoác áo mới cho phòng khách đón hè</a></h3>
-								<div class="article_info_intro">
-									<?php 
-									$intro="Những màu sắc từ mùa đông sang mùa xuân như thảm lông, gối ôm… đã không còn phù hợp với không khí mùa hè. Tuy nhiên bạn không cần.Những màu sắc từ mùa đông sang mùa xuân như thảm lông, gối ôm… đã không còn phù hợp với không khí mùa hè. Tuy nhiên bạn không cần.Những màu sắc từ mùa đông sang mùa xuân như thảm lông, gối ôm… đã không còn phù hợp với không khí mùa hè. Tuy nhiên bạn không cần";
-									$intro=mb_substr( $intro, 0,200, 'UTF-8')."...";														
-									echo $intro;
-									?>									
-								</div>
-							</div>
-							<div class="clr"></div>					
-						</div>
-						<?php
+				<?php 
+				
+				$args = array(
+					'post_type' => 'post',
+					'orderby' => 'id',
+					'order'   => 'DESC',  	
+					'posts_per_page' => 2,
+					'tax_query' => array(
+						array(
+							'taxonomy' => 'category',
+							'field'    => 'slug',
+							'terms'    => array('tin-tuc'),
+						)
+					),
+				);
+				$the_query = new WP_Query( $args );	
+				$source_article=array();
+				if($the_query->have_posts()){
+					while ($the_query->have_posts()) {
+						$the_query->the_post();
+						$post_id=$the_query->post->ID;                                                                      
+						$permalink=get_the_permalink($post_id);					
+						$title= wp_trim_words( get_the_title($post_id),10,'...' ) ;
+						$excerpt= wp_trim_words( get_the_excerpt($post_id),35,'...' ) ;
+						$featured_img=get_the_post_thumbnail_url($post_id, 'full'); 
+						$date_post=get_the_date('d.m.Y',@$post_id);							
+						$data_hot_article["title"]=$title;
+						$data_hot_article["title_tooltip"]= get_the_title($post_id);
+						$data_hot_article["permalink"]=$permalink;
+						$data_hot_article["featured_img"]=$featured_img;
+						$data_hot_article["date_post"]=$date_post;
+						$data_hot_article["excerpt"]=$excerpt;
+						$source_article[]=$data_hot_article;
 					}
-					?>										
-				</div>				
-				<div class="readmore2">
-					<a href="<?php echo site_url( 'tin-tuc',null ); ?>" title="tiêu đề tên">Xem tất cả</a>
-				</div>
+					wp_reset_postdata();
+				}
+				if(count(@$source_article) > 0){
+					?>
+					<h2 class="content_bottom_h">Tin tức mới nhất</h2>
+					<div>
+						<?php 
+						for ($i=0; $i < count(@$source_article) ; $i++){
+							?>
+							<div class="article_box">
+								<div class="article_hinh_anh">
+									<a href="<?php echo @$source_article[$i]['permalink']; ?>" title="<?php echo @$source_article[$i]['title_tooltip']; ?>">
+										<figure>									
+											<div class="news-bx-img" style="background-image: url(<?php echo @$source_article[$i]['featured_img']; ?>);">
+
+											</div>																			
+										</figure>
+									</a>
+								</div>
+								<div class="article_info">
+									<div class="article_info_date_post"><?php echo @$source_article[$i]['date_post']; ?></div>
+									<h3 class="article_info_title"><a href="<?php echo @$source_article[$i]['permalink']; ?>" title="<?php echo @$source_article[$i]['title_tooltip']; ?>"><?php echo @$source_article[$i]['title']; ?></a></h3>
+									<div class="article_info_intro">
+										<?php echo @$source_article[$i]['excerpt']; ?>							
+									</div>
+								</div>
+								<div class="clr"></div>					
+							</div>
+							<?php
+						}
+						$term_data=get_term_by( 'slug','tin-tuc', 'category' );		
+						$term_link=get_term_link( $term_data, 'category' );
+						?>										
+					</div>				
+					<div class="readmore2">
+						<a href="<?php echo @$term_link; ?>" title="tiêu đề tên">Xem tất cả</a>
+					</div>
+					<?php
+				}
+				?>				
 			</div>
 			<div class="col-lg-6">
 				<h2 class="content_bottom_h">Hình ảnh</h2>
 				<div class="box-gallery2">
 					<div class="owl_carousel_gallery2 owl-carousel owl-theme owl-loaded">
 						<?php 
-						for($i=1;$i<=3;$i++){
+						$source_gallery=get_field('op_hp_gallery_rpt','option');						
+						foreach($source_gallery as $key => $value){
 							?>
 							<div class="item">
 								<div>
 									<div class="row">
 										<div class="col">
 											<div class="img_bottom">
-												<a href="<?php echo P_IMG.'/hinhanh1.png'; ?>" title="tiêu đề tên" class="smlightbox">
-													<div class="bottom-img-calc" style="background-image: url(<?php echo P_IMG.'/hinhanh1.png'; ?>)"></div>
+												<a href="<?php echo @$value['op_hp_gallery_img']; ?>" title="tiêu đề tên" class="smlightbox">
+													<div class="bottom-img-calc" style="background-image: url(<?php echo @$value['op_hp_gallery_img']; ?>)"></div>
 													<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
 												</a>
 											</div>									
@@ -216,49 +256,29 @@
 				</div>	
 				<div class="box-gallery1">
 					<div class="owl_carousel_gallery owl-carousel owl-theme owl-loaded">
-						<?php 
-						for($i=1;$i<=10;$i++){
-							?>
-							<div class="item">
-								<div>
-									<div class="row">
-										<div class="col-sm-6">
-											<div class="img_bottom">
-												<a href="<?php echo P_IMG.'/hinhanh1.png'; ?>" class="smlightbox" title="tiêu đề tên">
-													<div class="bottom-img-calc" style="background-image: url(<?php echo P_IMG.'/hinhanh1.png'; ?>)"></div>
-													<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
-												</a>
-											</div>									
-										</div>
-										<div class="col-sm-6">
-											<div class="img_bottom">
-												<a href="<?php echo P_IMG.'/hinhanh1.png'; ?>" class="smlightbox" title="tiêu đề tên">
-													<div class="bottom-img-calc" style="background-image: url(<?php echo P_IMG.'/hinhanh2.png'; ?>)"></div>
-													<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
-												</a>
-											</div>									
-										</div>
-										<div class="col-sm-6">
-											<div class="img_bottom">
-												<a href="javascript:void(0);" title="tiêu đề tên">
-													<div class="bottom-img-calc" style="background-image: url(<?php echo P_IMG.'/hinhanh3.png'; ?>)"></div>
-													<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
-												</a>
-											</div>									
-										</div>
-										<div class="col-sm-6">
-											<div class="img_bottom">
-												<a href="javascript:void(0);" title="tiêu đề tên">
-													<div class="bottom-img-calc" style="background-image: url(<?php echo P_IMG.'/hinhanh4.png'; ?>)"></div>
-													<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
-												</a>
-											</div>									
-										</div>
-									</div>
+						<?php 						
+						if(count($source_gallery) > 0){
+							$k=0;
+							foreach($source_gallery as $key => $value){
+								if($k%4==0){
+									echo '<div class="item"><div><div class="row">';									
+								}
+								?>
+								<div class="col-sm-6">
+									<div class="img_bottom">
+										<a href="<?php echo @$value['op_hp_gallery_img']; ?>" class="smlightbox" title="tiêu đề tên">
+											<div class="bottom-img-calc" style="background-image: url(<?php echo @$value['op_hp_gallery_img']; ?>)"></div>
+											<div class="overlay"><i class="fa fa-camera" aria-hidden="true"></i></div>
+										</a>
+									</div>									
 								</div>
-							</div>
-							<?php
-						}
+								<?php
+								$k++;
+								if($k%4==0 || $k==count($source_gallery)){
+									echo '</div></div></div>';
+								}
+							}
+						}						
 						?>
 					</div>
 				</div>							
