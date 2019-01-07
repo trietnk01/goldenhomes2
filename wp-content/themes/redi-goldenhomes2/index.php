@@ -288,29 +288,29 @@
 	<div class="bg-bottom2">
 		<div class="container">
 			<div class="row">
-				<div class="col"><h2 class="tsnhtv_goldenhomes">Tại sao nên hợp tác với Golden Homes</h2></div>
+				<div class="col"><h2 class="tsnhtv_goldenhomes"><?php echo get_field('op_hp_hop_tac_slogan','option'); ?></h2></div>
 			</div>
 			<div class="thong-so">
 				<div class="bo-khach-hang-tieu-bieu">
 					<div class="why_box">
-						<div class="why_box_solieu"><span class="counter">500</span>+</div>
+						<div class="why_box_solieu"><span class="counter"><?php echo get_field('op_hp_hop_tac_so_lieu_khach_hang','option'); ?></span>+</div>
 						<div class="why_box_hr"></div>
 						<div class="why_box_txt">Khách hàng tiêu biểu</div>
 					</div>
 					<div class="why_box">
-						<div class="why_box_solieu"><span class="counter">9</span>+</div>
+						<div class="why_box_solieu"><span class="counter"><?php echo get_field('op_hp_hop_tac_so_nam_kinh_nghiem','option'); ?></span>+</div>
 						<div class="why_box_hr"></div>
 						<div class="why_box_txt">Năm kinh nghiệm</div>
 					</div>
 				</div>
 				<div class="bo-tho-tay-nghe-cao">
 					<div class="why_box">
-						<div class="why_box_solieu"><span class="counter">30</span>+</div>
+						<div class="why_box_solieu"><span class="counter"><?php echo get_field('op_hp_hop_tac_so_lieu_tho_tay_nghe_cao','option'); ?></span>+</div>
 						<div class="why_box_hr"></div>
 						<div class="why_box_txt">Thợ tay nghề cao</div>
 					</div>	
 					<div class="why_box">
-						<div class="why_box_solieu"><span class="counter">99</span>%</div>
+						<div class="why_box_solieu"><span class="counter"><?php echo get_field('op_hp_hop_tac_so_khach_hai_long','option'); ?></span>%</div>
 						<div class="why_box_hr"></div>
 						<div class="why_box_txt">Khách hàng hài lòng</div>
 					</div>
@@ -322,33 +322,33 @@
 	<div class="bg_bottom">				
 		<div class="container">
 			<div class="row">
-				<div class="col"><h2 class="tsnhtv_goldenhomes">Tại sao nên hợp tác với Golden Homes</h2></div>
+				<div class="col"><h2 class="tsnhtv_goldenhomes"><?php echo get_field('op_hp_hop_tac_slogan','option'); ?></h2></div>
 			</div>
 			<div class="row">
 				<div class="col-lg-3 col-xs-6">
 					<div class="why_box">
-						<div class="why_box_solieu"><span class="counter">500</span>+</div>
+						<div class="why_box_solieu"><span class="counter"><?php echo get_field('op_hp_hop_tac_so_lieu_khach_hang','option'); ?></span>+</div>
 						<div class="why_box_hr"></div>
 						<div class="why_box_txt">Khách hàng tiêu biểu</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-xs-6">
 					<div class="why_box">
-						<div class="why_box_solieu"><span class="counter">30</span>+</div>
+						<div class="why_box_solieu"><span class="counter"><?php echo get_field('op_hp_hop_tac_so_lieu_tho_tay_nghe_cao','option'); ?></span>+</div>
 						<div class="why_box_hr"></div>
 						<div class="why_box_txt">Thợ tay nghề cao</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-xs-6">
 					<div class="why_box">
-						<div class="why_box_solieu"><span class="counter">9</span>+</div>
+						<div class="why_box_solieu"><span class="counter"><?php echo get_field('op_hp_hop_tac_so_nam_kinh_nghiem','option'); ?></span>+</div>
 						<div class="why_box_hr"></div>
 						<div class="why_box_txt">Năm kinh nghiệm</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-xs-6">
 					<div class="why_box">
-						<div class="why_box_solieu"><span class="counter">99</span>%</div>
+						<div class="why_box_solieu"><span class="counter"><?php echo get_field('op_hp_hop_tac_so_khach_hai_long','option'); ?></span>%</div>
 						<div class="why_box_hr"></div>
 						<div class="why_box_txt">Khách hàng hài lòng</div>
 					</div>

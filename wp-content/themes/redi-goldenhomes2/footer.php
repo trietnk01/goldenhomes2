@@ -12,21 +12,16 @@ Footer template
 				<div class="footer_info">
 					<h2 class="tru_so_chinh">Trụ sở chính</h2>
 					<div class="address_r">
-						<i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;42/1 Đường 17, P. Hiệp Bình Chánh, Q. Thủ Đức, TP.HCm
+						<i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;<?php echo get_field('dia_chi','option'); ?>
 					</div>					
-					<div class="telephone_r">
-						<?php 
-						$sdt=get_field('sdt','option'); 
-						$tel_alo=get_field('tel_alo','option'); 
-						?>
-						<i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;<a href="tel:<?php echo @$tel_alo; ?>" title="tiêu đề tên"><?php echo @$sdt; ?></a>
+					<div class="telephone_r">						
+						<i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;<a href="tel:<?php echo get_field('tel_alo','option'); ?>" title="<?php echo get_field('tel_alo','option'); ?>"><?php echo get_field('sdt','option'); ?></a>
 					</div>
 					<div class="telephone_r">						
-						<i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;<a href="mailto:someone@example.com" title="tiêu đề tên">nguyenbaotuoc@gmail.com</a>
+						<i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;<a href="mailto:<?php echo get_field('email_info','option'); ?>" title="<?php echo get_field('email_info','option'); ?>"><?php echo get_field('email_info','option'); ?></a>
 					</div>					
 					<h2 class="about_us">Về chúng tôi</h2>
-					<div class="about_us_intro">Golden Homes được thành lập vào năm 2010 là một trong các công ty hàng đầu trong lĩnh vực thiết kế và thi công nội thất. Chúng tôi là những con người trẻ, tràn đầy nhiệt huyết kinh doanh với tâm huyết 
-						là mang đến cho khách hàng những sản phẩm tốt nhất.
+					<div class="about_us_intro"><?php echo get_field('op_footer_slogan','option'); ?>
 					</div>
 				</div>				
 			</div>
@@ -48,8 +43,7 @@ Footer template
 				</div>
 				<div class="map-box">
 					<div class="map-taro">
-						<!--<div class="fb-page" data-href="https://www.facebook.com/Golden-Homes-242837869639266/" data-tabs="timeline" data-width="340" data-height="260" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Golden-Homes-242837869639266/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Golden-Homes-242837869639266/">Golden Homes</a></blockquote></div>-->
-						<a href="javascript:void(0);"><img src="<?php echo P_IMG.'/fanpage.png'; ?>"></a>
+						<div class="fb-page" data-href="https://www.facebook.com/Golden-Homes-242837869639266/" data-tabs="timeline" data-height="260" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Golden-Homes-242837869639266/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Golden-Homes-242837869639266/">Golden Homes</a></blockquote></div>
 					</div>					
 					<div class="box-social-map">
 						<ul class="footer_social">
