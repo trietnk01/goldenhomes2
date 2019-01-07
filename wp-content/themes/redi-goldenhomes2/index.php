@@ -264,39 +264,42 @@
 			</div>
 		</div>
 	</div>	
-	<!--<div class="bg-bottom-2">
+	<div class="bg-bottom2">
 		<div class="container">
 			<div class="row">
 				<div class="col"><h2 class="tsnhtv_goldenhomes">Tại sao nên hợp tác với Golden Homes</h2></div>
 			</div>
-			<div class="row">
-				<div class="col-xs-6">
-					<div class="why_box">
-						<div class="why_box_solieu"><span class="counter">500</span>+</div>
-						<div class="why_box_hr"></div>
-						<div class="why_box_txt">Khách hàng tiêu biểu</div>
+			<div class="thong-so">
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="why_box">
+							<div class="why_box_solieu"><span class="counter">500</span>+</div>
+							<div class="why_box_hr"></div>
+							<div class="why_box_txt">Khách hàng tiêu biểu</div>
+						</div>
+						<div class="why_box">
+							<div class="why_box_solieu"><span class="counter">9</span>+</div>
+							<div class="why_box_hr"></div>
+							<div class="why_box_txt">Năm kinh nghiệm</div>
+						</div>
 					</div>
-					<div class="why_box">
-						<div class="why_box_solieu"><span class="counter">30</span>+</div>
-						<div class="why_box_hr"></div>
-						<div class="why_box_txt">Thợ tay nghề cao</div>
+					<div class="col-xs-6">
+						<div class="why_box">
+							<div class="why_box_solieu"><span class="counter">30</span>+</div>
+							<div class="why_box_hr"></div>
+							<div class="why_box_txt">Thợ tay nghề cao</div>
+						</div>
+						
+						<div class="why_box">
+							<div class="why_box_solieu"><span class="counter">99</span>%</div>
+							<div class="why_box_hr"></div>
+							<div class="why_box_txt">Khách hàng hài lòng</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-xs-6">
-					<div class="why_box">
-						<div class="why_box_solieu"><span class="counter">9</span>+</div>
-						<div class="why_box_hr"></div>
-						<div class="why_box_txt">Năm kinh nghiệm</div>
-					</div>
-					<div class="why_box">
-						<div class="why_box_solieu"><span class="counter">99</span>%</div>
-						<div class="why_box_hr"></div>
-						<div class="why_box_txt">Khách hàng hài lòng</div>
-					</div>
-				</div>
-			</div>
+			</div>			
 		</div>		
-	</div>-->
+	</div>
 	<div class="bg_bottom">				
 		<div class="container">
 			<div class="row">

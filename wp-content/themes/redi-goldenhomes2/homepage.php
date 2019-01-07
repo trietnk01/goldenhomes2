@@ -42,6 +42,9 @@
 			</div>
 		</div>
 	</div>
+	<div class="bg-bottom2">
+		<h3 class="tsnhtv_goldenhomes">TẠI SAO NÊN HỢP TÁC VỚI GOLDEN HOMES?</h3>
+	</div>
 	<div class="bg_bottom">
 		<h3 class="tsnhtv_goldenhomes">TẠI SAO NÊN HỢP TÁC VỚI GOLDEN HOMES?</h3>		
 		<div class="container">

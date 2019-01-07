@@ -402,14 +402,14 @@
 	}
 	.tknt-box-ab{
 		position: absolute;
-    	top: 220px;
-    	left: 95px;    	
-    	@media(max-width: 992px){    		
-    		top: 120px;
-    		left: 0;
-    		width: 100%;
-    	}
-    	@media(max-width: 576px){
+		top: 220px;
+		left: 95px;    	
+		@media(max-width: 992px){    		
+			top: 120px;
+			left: 0;
+			width: 100%;
+		}
+		@media(max-width: 576px){
 			top: 30px;
 		}
 		.box-info-title{
@@ -506,19 +506,19 @@
 	}
 	.thi-cong-noi-that-info{
 		position: absolute;
-    	top: 220px;
-    	right: 95px;
-    	@media(max-width: 992px){
-    		right: 0;
-    		top: 130px;
-    		width: 100%;    		
-    	}
-    	@media(max-width: 576px){
-    		top: 60px;
-    	}
-    	@media(max-width: 320px){
-    		top: 50px;
-    	}
+		top: 220px;
+		right: 95px;
+		@media(max-width: 992px){
+			right: 0;
+			top: 130px;
+			width: 100%;    		
+		}
+		@media(max-width: 576px){
+			top: 60px;
+		}
+		@media(max-width: 320px){
+			top: 50px;
+		}
 		.box-info-title{
 			@media(max-width: 992px){
 				text-align: center;				
@@ -613,16 +613,16 @@
 	}
 	.rem-cua-bx{
 		position: absolute;
-    	top: 210px;
-    	left: 95px;
-    	@media(max-width: 992px){
-    		left: 0;
-    		top: 110px;
-    		width: 100%;
-    	}
-    	@media(max-width: 576px){
-    		top: 40px;
-    	}
+		top: 210px;
+		left: 95px;
+		@media(max-width: 992px){
+			left: 0;
+			top: 110px;
+			width: 100%;
+		}
+		@media(max-width: 576px){
+			top: 40px;
+		}
 		.box-info-title{
 			@media(max-width: 992px){
 				text-align: center;				
@@ -718,16 +718,16 @@
 	}
 	.thi-cong-noi-that-info{
 		position: absolute;
-    	top: 240px;
-    	right: 95px;
-    	@media(max-width: 992px){
-    		right: 0;
-    		top: 140px;
-    		width: 100%;
-    	}
-    	@media(max-width: 576px){
-    		top: 45px;
-    	}
+		top: 240px;
+		right: 95px;
+		@media(max-width: 992px){
+			right: 0;
+			top: 140px;
+			width: 100%;
+		}
+		@media(max-width: 576px){
+			top: 45px;
+		}
 		.box-info-title{
 			@media(max-width: 992px){
 				text-align: center;				
@@ -823,19 +823,19 @@
 	}	
 	.dan-phoi-box{
 		position: absolute;
-    	top: 220px;
-    	left: 95px;    	
-    	@media(max-width: 992px){
-    		left: 0;
-    		top: 110px;
-    		width: 100%;
-    	}
-    	@media(max-width: 576px){
-    		top:45px;
-    	}
-    	@media(max-width: 240px){
-    		top:5px;
-    	}
+		top: 220px;
+		left: 95px;    	
+		@media(max-width: 992px){
+			left: 0;
+			top: 110px;
+			width: 100%;
+		}
+		@media(max-width: 576px){
+			top:45px;
+		}
+		@media(max-width: 240px){
+			top:5px;
+		}
 		.box-info-title{
 			@media(max-width: 992px){
 				text-align: center;				
@@ -1263,12 +1263,60 @@
 		}   
 	}	
 } 
-.bg-bottom-2{
+.bg-bottom2{
 	background: url('../img/bg_info.png');
 	padding-bottom: 48px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-top: 90px;
+	.tsnhtv_goldenhomes{
+		text-align: center;
+		color: #fff;
+		padding-top: 45px;
+		font-size: 24px;
+		text-transform: uppercase;
+		@media(max-width: 576px){
+			font-size: 20px;
+		}
+	}
+	.thong-so{
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		@media(max-width: 740px){
+			width: 75%;
+		}
+		@media(max-width: 576px){
+			width: 100%;
+		}
+		.why_box{
+			text-align: center;
+			color: #fff;
+			margin-top: 30px;
+			.why_box_solieu{
+				font-size: 44px;
+			}
+			.why_box_hr{
+				width: 66px;
+				border-top: 1px solid #d49a21;
+				margin: 15px auto 0px auto;
+			}
+			.why_box_txt{
+				font-size: 22px;
+				margin-top: 10px;
+			}
+		}
+	}	
+}
+.bg_bottom{
+	background: url('../img/bg_info.png');
+	padding-bottom: 48px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 90px;
+	@media(max-width: 992px){
+		display:none;
+	}
 	.tsnhtv_goldenhomes{
 		text-align: center;
 		color: #fff;
@@ -1297,12 +1345,16 @@
 		}
 	}
 }
-.bg_bottom{
+.bg-bottom2{
 	background: url('../img/bg_info.png');
 	padding-bottom: 48px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-top: 90px;
+	display: none;
+	@media(max-width: 992px){
+		display: block;
+	}
 	.tsnhtv_goldenhomes{
 		text-align: center;
 		color: #fff;
