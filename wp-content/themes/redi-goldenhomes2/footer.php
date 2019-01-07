@@ -28,17 +28,34 @@ Footer template
 			<div class="col-sm-7">
 				<div class="footer_info san-pham-footer">
 					<h2 class="tru_so_chinh">Sản phẩm</h2>
-					<ul class="menu_footer">
-						<li><a href="javascript:void(0);">Đồ gỗ</a></li>
-						<li><a href="javascript:void(0);">Rèm cửa</a></li>
-						<li><a href="javascript:void(0);">Giấy dán tường</a></li>
-						<li><a href="javascript:void(0);">Khung treo thông minh</a></li>
-					</ul>
+					<?php			
+					$args = array( 
+						'menu'              => '', 
+						'container'         => '', 
+						'container_class'   => '', 
+						'container_id'      => '', 
+						'menu_class'        => 'menu_footer',                             
+						'echo'              => true, 
+						'fallback_cb'       => 'wp_page_menu', 
+						'before'            => '', 
+						'after'             => '', 
+						'link_before'       => '', 
+						'link_after'        => '', 
+						'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>',  
+						'depth'             => 3, 
+						'walker'            => '', 
+						'theme_location'    => 'footer_menu' ,
+						'menu_li_actived'       => 'current-menu-item',
+						'menu_item_has_children'=> 'menu-item-has-children',
+					);
+					wp_nav_menu($args);
+					$source_social=get_field('op_inf_sn_repeat','option');				
+					?>        						
 					<ul class="footer_social">
-						<li><a href="javascript:void(0);" title="tiêu đề tên" target="_blank" rel="nofollow"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="javascript:void(0);" title="tiêu đề tên" target="_blank" rel="nofollow"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-						<li><a href="javascript:void(0);" title="tiêu đề tên" target="_blank" rel="nofollow"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li><a href="javascript:void(0);" title="tiêu đề tên" target="_blank" rel="nofollow"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li><a href="<?php echo @$source_social[0]['op_inf_sn_repeat_link']; ?>" title="tiêu đề tên" target="_blank" rel="nofollow"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="<?php echo @$source_social[1]['op_inf_sn_repeat_link']; ?>" title="tiêu đề tên" target="_blank" rel="nofollow"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+						<li><a href="<?php echo @$source_social[2]['op_inf_sn_repeat_link']; ?>" title="tiêu đề tên" target="_blank" rel="nofollow"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="<?php echo @$source_social[3]['op_inf_sn_repeat_link']; ?>" title="tiêu đề tên" target="_blank" rel="nofollow"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 					</ul>								
 				</div>
 				<div class="map-box">

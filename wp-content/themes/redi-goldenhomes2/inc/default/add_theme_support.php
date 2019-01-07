@@ -26,6 +26,7 @@ function p_load_support(){
         array(
             'primary'    => __( 'Primay Menu', TDM  ),
             'mobile'  => __( 'Mobile Menu', TDM  ),
+            'footer_menu'  => __( 'Footer Menu', TDM  ),
         )
     );
 

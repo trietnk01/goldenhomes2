@@ -1545,6 +1545,7 @@
 	}
 	.map-box{
 		float: right;
+		width: 60%;	
 		@media(max-width: 576px){
 			float: none;
 			text-align: center;
