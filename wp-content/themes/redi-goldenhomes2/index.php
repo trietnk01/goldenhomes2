@@ -153,7 +153,6 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<?php 
-				
 				$args = array(
 					'post_type' => 'post',
 					'orderby' => 'id',

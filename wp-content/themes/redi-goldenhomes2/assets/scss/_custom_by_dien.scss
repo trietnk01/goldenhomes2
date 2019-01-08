@@ -1663,7 +1663,7 @@
 			@media(max-width: 740px){
 				border-top: 1px solid #e8ab3c;
 			}
-			.category-title{
+			li{
 				display: inline-block;
 				margin-left: 5px;
 				margin-top: 5px;
@@ -2691,6 +2691,17 @@
 		text-align: center;
 		margin-top: 10px;
 		padding: 0px 20px;
+		.skype-icon{
+			float: left;
+		}
+		.viber-icon{
+			float: left;
+			margin-left: 10px;
+		}
+		.zalo-icon{
+			float: left;
+			margin-left: 10px;
+		}
 	}
 }
 .cac-dich-vu-chinh{

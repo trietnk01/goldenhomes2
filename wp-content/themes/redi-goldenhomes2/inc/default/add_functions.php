@@ -881,7 +881,13 @@ function portfolio_page_template( $template ) {
 	$term=get_term_by('id', $id,'category');
 	if(!empty($term)){
 		$slug=$term->slug;
-	}		
+	}	
+	if(get_query_var('za_category') != ''){
+		$file = get_template_directory() . '/template-05-product.php';
+		if(file_exists($file)){
+			return $file;
+		}			
+	}
 	return $template;
 }
 /* end template include */

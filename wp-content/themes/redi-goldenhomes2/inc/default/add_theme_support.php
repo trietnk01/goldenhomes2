@@ -27,6 +27,7 @@ function p_load_support(){
             'primary'    => __( 'Primay Menu', TDM  ),
             'mobile'  => __( 'Mobile Menu', TDM  ),
             'footer_menu'  => __( 'Footer Menu', TDM  ),
+            'san_pham_menu'  => __( 'Sản phẩm Menu', TDM  ),
         )
     );
 
