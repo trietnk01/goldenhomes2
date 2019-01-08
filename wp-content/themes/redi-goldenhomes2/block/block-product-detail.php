@@ -7,7 +7,7 @@
 	</div>	
 	<div class="support-hotline">
 		<div class="support-phone-icon"><img src="<?php echo P_IMG.'/telephone.png'; ?>"></div>
-		<div class="support-phone-number"><a href="javascript:void(0);">0903 600 002</a></div>
+		<div class="support-phone-number"><a href="tel:<?php echo get_field('tel_alo','option'); ?>"><?php echo get_field('sdt','option'); ?></a></div>
 		<div class="clr"></div>
 	</div>
 	<div class="call-skype-viber-zalo">
@@ -17,7 +17,7 @@
 		<img src="<?php echo P_IMG.'/skype-viber-zalo.png'; ?>">
 	</div>
 	<div class="support-email">
-		<a href="javascript:void(0);">Email: nguyenbaotuoc@gmail.com</a>
+		<a href="mailto:<?php echo get_field('email_info','option'); ?>">Email: <?php echo get_field('email_info','option'); ?></a>
 	</div>
 </div>
 <h3 class="cac-dich-vu-chinh">Các dịch vụ chính</h3>

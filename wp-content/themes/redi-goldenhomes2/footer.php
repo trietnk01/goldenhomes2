@@ -76,7 +76,7 @@ Footer template
 		</div>		
 	</div>
 	<div class="footer_copyright">
-		<span class="copyright">COPYRIGHT BY</span> <span class="golden_home"><a href="javascript:void(0);" title="tiêu đề tên">Golden Homes</a></span> <span class="copyright">|</span> <span class="copyright">POWERD BY</span> <span  class="golden_home"><a href="https://redi.vn" title="REDI - Thiết kế website chuẩn Marketing &amp; giải pháp Digital Marketing" target="_blank" rel="nofollow">REDI</a></span>
+		<span class="copyright">COPYRIGHT BY</span> <span class="golden_home"><a href="<?php echo home_url( '',null ); ?>" title="<?php echo get_bloginfo( 'name'); ?>">Golden Homes</a></span> <span class="copyright">|</span> <span class="copyright">POWERD BY</span> <span  class="golden_home"><a href="https://redi.vn" title="REDI - Thiết kế website chuẩn Marketing &amp; giải pháp Digital Marketing" target="_blank" rel="nofollow">REDI</a></span>
 	</div>
 </div>
 <?php

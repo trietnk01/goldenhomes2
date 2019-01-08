@@ -34,6 +34,12 @@ acf_add_options_sub_page(array(
 	'parent_slug'	=> 'p-option-page',
 ));
 acf_add_options_sub_page(array(
+	'page_title' 	=> 'Giới thiệu',
+	'menu_title'	=> 'Giới thiệu',
+	'menu_slug' 	=> 'p_about_us',
+	'parent_slug'	=> 'p-option-page',
+));
+acf_add_options_sub_page(array(
 	'page_title' 	=> 'Footer',
 	'menu_title'	=> 'Footer',
 	'menu_slug' 	=> 'footer',
