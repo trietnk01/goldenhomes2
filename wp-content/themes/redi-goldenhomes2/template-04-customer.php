@@ -11,12 +11,13 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<h2 class="san-pham-title">Khách hàng</h2>
+				<h2 class="san-pham-title"><?php echo get_field('op_partner_name','option'); ?></h2>
 			</div>
 		</div>
 		<?php
+		$source_partner=get_field('op_partner_rpt','option');
 		$k=0; 
-		for ($i=1; $i <=6 ; $i++) { 
+		foreach ($source_partner as $key => $value) { 			
 			if($k%3==0){
 				echo '<div class="row">';
 			}			
@@ -25,16 +26,16 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 				<div class="customer-item">
 					<div class="customer-item-shadow">
 						<div class="customer-item-outline">
-							<a href="javascript:void(0);">
-								<div class="partner-img" style="background-image: url(<?php echo P_IMG.'/logo-customer-'.$i.'.png'; ?>);"></div>
+							<a href="<?php echo @$value['op_partner_logo']; ?>" class="smlightbox">
+								<div class="partner-img" style="background-image: url(<?php echo @$value['op_partner_logo']; ?>);"></div>
 							</a>							
 						</div>
 					</div>
 					<h3 class="customer-name">
-						Gem center
+						<?php echo @$value['op_partner_title']; ?>
 					</h3>	
 					<div class="customer-comment">
-						“ Pellentesque iaculis eget orci eu laoreet. In et imperdiet lorem. Pellentesque facilisis lobortis consectetur. Nam eget pulvinar ”
+						“ <?php echo @$value['op_partner_message']; ?> ”
 					</div>				
 				</div>
 			</div>			

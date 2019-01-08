@@ -23,23 +23,22 @@ if(is_page()){
 	$the_query=$wp_query;	
 }
 /* end set the_query */
-
 /* start setup pagination */
-$totalItemsPerPage=9;
+$totalItemsPerPage=15;
 $pageRange=3;
 $currentPage=1; 
 if(!empty(@$_POST["filter_page"]))          {
-	$currentPage=@$_POST["filter_page"];  
+    $currentPage=@$_POST["filter_page"];  
 }
 $productModel->setWpQuery($the_query);   
 $productModel->setPerpage($totalItemsPerPage);        
 $productModel->prepare_items();               
 $totalItems= $productModel->getTotalItems();               
 $arrPagination=array(
-	"totalItems"=>$totalItems,
-	"totalItemsPerPage"=>$totalItemsPerPage,
-	"pageRange"=>$pageRange,
-	"currentPage"=>$currentPage   
+    "totalItems"=>$totalItems,
+    "totalItemsPerPage"=>$totalItemsPerPage,
+    "pageRange"=>$pageRange,
+    "currentPage"=>$currentPage   
 );    
 $pagination=$zController->getPagination("Pagination",$arrPagination); 
 /* end setup pagination */
@@ -121,7 +120,7 @@ $pagination=$zController->getPagination("Pagination",$arrPagination);
 					</div>
 					<?php
 					$k++;
-					if($k%3==0 || $k==9){
+					if($k%3==0 || $k==$the_query->post_count){
 						echo '</div>';
 					}
 				}

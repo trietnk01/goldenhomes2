@@ -19,17 +19,17 @@ $totalItemsPerPage=get_option( 'posts_per_page' );
 $pageRange=3;
 $currentPage=1; 
 if(!empty(@$_POST["filter_page"]))          {
-	$currentPage=@$_POST["filter_page"];  
+    $currentPage=@$_POST["filter_page"];  
 }
 $productModel->setWpQuery($the_query);   
 $productModel->setPerpage($totalItemsPerPage);        
 $productModel->prepare_items();               
 $totalItems= $productModel->getTotalItems();               
 $arrPagination=array(
-	"totalItems"=>$totalItems,
-	"totalItemsPerPage"=>$totalItemsPerPage,
-	"pageRange"=>$pageRange,
-	"currentPage"=>$currentPage   
+    "totalItems"=>$totalItems,
+    "totalItemsPerPage"=>$totalItemsPerPage,
+    "pageRange"=>$pageRange,
+    "currentPage"=>$currentPage   
 );    
 $pagination=$zController->getPagination("Pagination",$arrPagination); 
 /* end setup pagination */
@@ -40,7 +40,7 @@ if($the_query->have_posts()){
 		$post_id=$the_query->post->ID;                                                                      
 		$permalink=get_the_permalink($post_id);         
 		$title=get_the_title($post_id);
-		$excerpt=wp_trim_words( get_the_excerpt($post_id), 20, '...' ) ;
+		$excerpt=wp_trim_words( get_the_excerpt($post_id), 9999, '...' ) ;
 		$featured_img=get_the_post_thumbnail_url($post_id, 'full'); 
 		$date_post='';
 		$date_post=get_the_date('d/m/Y',@$post_id);      
@@ -54,7 +54,8 @@ if($the_query->have_posts()){
 	wp_reset_postdata();	
 }  
 ?>
-<div class="box-news">
+<form class="box-news" method="POST">
+	<input type="hidden" name="filter_page" value="1" />
 	<div class="container">
 		<div class="row">
 			<div class="col">
@@ -63,18 +64,24 @@ if($the_query->have_posts()){
 		</div>
 		<div class="row">
 			<div class="col-lg-6">
-				<div class="news-item">
-					<a href="<?php echo site_url( 'chi-tiet-tin-tuc', null ); ?>">
-						<figure><div class="news-img" style="background-image: url(<?php echo P_IMG.'/news-1.png'; ?>);"></div></figure>
-					</a>
-					<div class="news-date-post">12.06.2018</div>
-					<h3 class="news-title">
-						<a href="<?php echo site_url( 'chi-tiet-tin-tuc', null ); ?>">Hướng dẫn dọn dẹp tủ quần áo một cách chuyên nghiệp</a>
-					</h3>
-					<div class="news-excerpt">
-						Trước khi bắt tay vào việc dọn dẹp tủ quần áo hãy viết tất cả mọi thứ bạn muốn “vứt” ra giấy. Có như vậy công việc dọn dẹp sẽ được giải quyết khoa học và nhanh chóng hơn.
+				<?php 
+				if(count($source_article) > 0){
+					?>
+					<div class="news-item">
+						<a href="<?php echo @$source_article[0]['permalink']; ?>">
+							<figure><div class="news-img" style="background-image: url(<?php echo @$source_article[0]['featured_img']; ?>"></div></figure>
+						</a>
+						<div class="news-date-post"><?php echo @$source_article[0]['date_post']; ?></div>
+						<h3 class="news-title">
+							<a href="<?php echo @$source_article[0]['permalink']; ?>"><?php echo @$source_article[0]['title']; ?></a>
+						</h3>
+						<div class="news-excerpt">
+							<?php echo @$source_article[0]['excerpt']; ?>
+						</div>
 					</div>
-				</div>
+					<?php
+				}
+				?>				
 			</div>
 			<div class="col-lg-6">
 				<div class="news-bx-lemon">
@@ -83,23 +90,19 @@ if($the_query->have_posts()){
 						?>
 						<div class="article_box">
 							<div class="article_hinh_anh">
-								<a href="<?php echo site_url( 'chi-tiet-tin-tuc', null ); ?>" title="tiêu đề tên">
+								<a href="<?php echo @$source_article[$i]['permalink']; ?>" title="<?php echo @$source_article[$i]['title']; ?>">
 									<figure>									
-										<div class="news-bx-img" style="background-image: url(<?php echo P_IMG.'/img_news1.png'; ?>);">
+										<div class="news-bx-img" style="background-image: url(<?php echo @$source_article[$i]['featured_img']; ?>);">
 											
 										</div>																			
 									</figure>
 								</a>
 							</div>	
 							<div class="article_info">
-								<div class="article_info_date_post">12.06.2018</div>
-								<h3 class="article_info_title"><a href="<?php echo site_url( 'chi-tiet-tin-tuc', null ); ?>" title="tiêu đề tên">Khoác áo mới cho phòng khách đón hè</a></h3>
+								<div class="article_info_date_post"><?php echo @$source_article[$i]['date_post']; ?></div>
+								<h3 class="article_info_title"><a href="<?php echo @$source_article[$i]['permalink']; ?>" title="<?php echo @$source_article[$i]['title']; ?>"><?php echo @$source_article[$i]['title']; ?></a></h3>
 								<div class="article_info_intro">
-									<?php 
-									$intro="Những màu sắc từ mùa đông sang mùa xuân như thảm lông, gối ôm… đã không còn phù hợp với không khí mùa hè. Tuy nhiên bạn không cần.Những màu sắc từ mùa đông sang mùa xuân như thảm lông, gối ôm… đã không còn phù hợp với không khí mùa hè. Tuy nhiên bạn không cần.Những màu sắc từ mùa đông sang mùa xuân như thảm lông, gối ôm… đã không còn phù hợp với không khí mùa hè. Tuy nhiên bạn không cần";
-									$intro=mb_substr( $intro, 0,200, 'UTF-8')."...";														
-									echo $intro;
-									?>									
+									<?php echo @$source_article[$i]['excerpt']; ?>			
 								</div>
 							</div>
 							<div class="clr"></div>					
@@ -122,23 +125,19 @@ if($the_query->have_posts()){
 				<div class="box-art">
 					<div class="article_box">
 						<div class="article_hinh_anh">
-							<a href="<?php echo site_url( 'chi-tiet-tin-tuc', null ); ?>" title="tiêu đề tên">
+							<a href="<?php echo @$source_article[$i]['permalink']; ?>" title="<?php echo @$source_article[$i]['title']; ?>">
 								<figure>									
-									<div class="news-bx-img" style="background-image: url(<?php echo P_IMG.'/img_news1.png'; ?>);">
+									<div class="news-bx-img" style="background-image: url(<?php echo @$source_article[$i]['featured_img']; ?>);">
 
 									</div>																			
 								</figure>
 							</a>
 						</div>	
 						<div class="article_info">
-							<div class="article_info_date_post">12.06.2018</div>
-							<h3 class="article_info_title"><a href="<?php echo site_url( 'chi-tiet-tin-tuc', null ); ?>" title="tiêu đề tên">Khoác áo mới cho phòng khách đón hè</a></h3>
+							<div class="article_info_date_post"><?php echo @$source_article[$i]['date_post']; ?></div>
+							<h3 class="article_info_title"><a href="<?php echo @$source_article[$i]['permalink']; ?>" title="<?php echo @$source_article[$i]['title']; ?>"><?php echo @$source_article[$i]['title']; ?></a></h3>
 							<div class="article_info_intro">
-								<?php 
-								$intro="Những màu sắc từ mùa đông sang mùa xuân như thảm lông, gối ôm… đã không còn phù hợp với không khí mùa hè. Tuy nhiên bạn không cần.Những màu sắc từ mùa đông sang mùa xuân như thảm lông, gối ôm… đã không còn phù hợp với không khí mùa hè. Tuy nhiên bạn không cần.Những màu sắc từ mùa đông sang mùa xuân như thảm lông, gối ôm… đã không còn phù hợp với không khí mùa hè. Tuy nhiên bạn không cần";
-								$intro=mb_substr( $intro, 0,200, 'UTF-8')."...";														
-								echo $intro;
-								?>									
+								<?php echo @$source_article[$i]['excerpt']; ?>										
 							</div>
 						</div>
 						<div class="clr"></div>					
@@ -152,9 +151,12 @@ if($the_query->have_posts()){
 			}
 		}
 		?>
+		<div class="row">
+			<div class="col"><?php echo @$pagination->showPagination();   ?>	</div>
+		</div>
 		</div>			
 	</div>
-</div>
+</form>
 <?php
 get_footer();
 ?>

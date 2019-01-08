@@ -40,6 +40,18 @@ acf_add_options_sub_page(array(
 	'parent_slug'	=> 'p-option-page',
 ));
 acf_add_options_sub_page(array(
+	'page_title' 	=> 'Dịch vụ',
+	'menu_title'	=> 'Dịch vụ',
+	'menu_slug' 	=> 'p_service',
+	'parent_slug'	=> 'p-option-page',
+));
+acf_add_options_sub_page(array(
+	'page_title' 	=> 'Khách hàng',
+	'menu_title'	=> 'Khách hàng',
+	'menu_slug' 	=> 'p_partner',
+	'parent_slug'	=> 'p-option-page',
+));
+acf_add_options_sub_page(array(
 	'page_title' 	=> 'Footer',
 	'menu_title'	=> 'Footer',
 	'menu_slug' 	=> 'footer',

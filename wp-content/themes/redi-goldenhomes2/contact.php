@@ -10,18 +10,18 @@ get_header();
 		<div class="row">
 			<div class="col">
 				<h2 class="san-pham-title">Liên hệ</h2>	
-				<div class="gdhomes">Golden Homes</div>
+				<div class="gdhomes"><?php echo get_bloginfo( 'name','' ); ?></div>
 				<div class="gdhomes-address">
 					<span class="contact-marker"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-					<span class="contact-address"><a href="javascript:void(0);">42/1 Đường 17, P. Hiệp Bình Chánh, Q. Thủ Đức, TP.HCM</a></span>
+					<span class="contact-address"><a href="javascript:void(0);"><?php echo get_field('dia_chi','option'); ?></a></span>
 				</div>
 				<div class="gdhomes-phone">
 					<span class="contact-marker"><i class="fa fa-phone" aria-hidden="true"></i></span>
-					<span class="contact-address"><a href="javascript:void(0);">0903 600 002</a></span>
+					<span class="contact-address"><a href="tel:<?php echo get_field('tel_alo','option'); ?>"><?php echo get_field('sdt','option'); ?></a></span>
 				</div>
 				<div class="gdhomes-phone">
 					<span class="contact-marker"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-					<span class="contact-address"><a href="javascript:void(0);">nguyenbaotuoc@gmail.com</a></span>
+					<span class="contact-address"><a href="mailto:<?php echo get_field('email_info','option'); ?>"><?php echo get_field('email_info','option'); ?></a></span>
 				</div>			
 			</div>
 		</div>		
@@ -41,7 +41,7 @@ get_header();
 							<textarea name="message" class="form-control" cols="30" rows="10" placeholder="Nhập nội dung" required=""></textarea>
 						</div>
 						<div class="ck_submit">
-							<a href="javascript:void(0);" onclick="contactNow();">Gửi</a>
+							<a href="javascript:void(0);" onclick="contactNow(this);">Gửi</a>
 							<div class="ajax_loader_contact"></div>
 							<div class="clr"></div>     
 						</div>
@@ -51,7 +51,7 @@ get_header();
 			</div>
 			<div class="col-md-6">
 				<div class="big-map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.7064806422777!2d106.71669060451067!3d10.824630183217087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528840ad6001d%3A0x336a848831cb177f!2zxJDGsOG7nW5nIFPhu5EgMTcsIEhp4buHcCBCw6xuaCBDaMOhbmgsIFRo4bunIMSQ4bupYywgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1546076659991" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<?php echo get_field('google_map','option'); ?>
 				</div>				
 			</div>
 		</div>

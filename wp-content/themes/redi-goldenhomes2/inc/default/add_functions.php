@@ -883,11 +883,23 @@ function portfolio_page_template( $template ) {
 		$slug=$term->slug;
 	}	
 	if(get_query_var('za_category') != ''){
-		$file = get_template_directory() . '/template-05-product.php';
+		$file = get_template_directory() . '/template-02-product.php';
 		if(file_exists($file)){
 			return $file;
 		}			
 	}
+	if(get_query_var('zaproduct') != ''){
+		$file = get_template_directory() . '/template-05-product-detail.php';
+		if(file_exists($file)){
+			return $file;
+		}			
+	}	
+	if(strcmp($slug, 'dich-vu') == 0){
+		$file = get_template_directory() . '/template-03-service.php';
+		if(file_exists($file)){
+			return $file;
+		}
+	}		
 	return $template;
 }
 /* end template include */
