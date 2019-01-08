@@ -133,6 +133,12 @@ $pagination=$zController->getPagination("Pagination",$arrPagination);
 				</div>
 			</form>			
 			<?php
+		}else{
+			?>
+			<div class="row">
+				<div class="col"><div class="text-center">Đang cập nhật...</div></div>
+			</div>
+			<?php
 		}		
 		?>		
 	</div>	
