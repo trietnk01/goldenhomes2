@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 08, 2019 at 11:14 AM
+-- Generation Time: Jan 08, 2019 at 11:28 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.1.25
 
@@ -379,7 +379,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (215, 'wp_user_avatar_users_updated', '1', 'yes'),
 (216, 'wp_user_avatar_media_updated', '1', 'yes'),
 (217, 'cptui_new_install', 'false', 'yes'),
-(220, 'wpseo_sitemap_1_cache_validator', '3CZsO', 'no'),
+(220, 'wpseo_sitemap_1_cache_validator', '3GFzg', 'no'),
 (221, 'wpseo_sitemap_attachment_cache_validator', '3ec8u', 'no'),
 (222, 'permalinks_customizer_post', '%postname%.html', 'yes'),
 (223, 'permalinks_customizer_page', '%postname%', 'yes'),
@@ -641,8 +641,8 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (1315, 'wpseo_sitemap_186_cache_validator', '2Sbtj', 'no'),
 (1316, 'wpseo_sitemap_187_cache_validator', '2Sbtt', 'no'),
 (1377, 'wpseo_sitemap_629_cache_validator', 'YlRd', 'no'),
-(1411, 'wpseo_sitemap_zacontact_cache_validator', '3qKIE', 'no'),
-(1429, 'wpseo_sitemap_zaquotation_cache_validator', '3CZsW', 'no'),
+(1411, 'wpseo_sitemap_zacontact_cache_validator', '3GFzl', 'no'),
+(1429, 'wpseo_sitemap_zaquotation_cache_validator', 'hlab', 'no'),
 (1457, 'options_op_inf_sn_repeat_4_op_inf_sn_repeat_icon', 'fa-pinterest-p', 'no'),
 (1458, '_options_op_inf_sn_repeat_4_op_inf_sn_repeat_icon', 'field_5bcda365d05bc', 'no'),
 (1459, 'options_op_inf_sn_repeat_4_op_inf_sn_repeat_link', 'https://www.pinterest.com/', 'no'),
@@ -1070,7 +1070,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (2895, 'category-metabox-enhanced_za_material', 'a:6:{s:4:\"type\";s:8:\"checkbox\";s:7:\"context\";s:4:\"side\";s:8:\"priority\";s:7:\"default\";s:13:\"metabox_title\";s:0:\"\";s:8:\"indented\";i:1;s:15:\"allow_new_terms\";i:1;}', 'yes'),
 (2896, 'za_material_children', 'a:0:{}', 'yes'),
 (2897, 'wpseo_sitemap_za_material_cache_validator', '3BeOw', 'no'),
-(2916, '_transient_is_multi_author', '0', 'yes');
+(2918, '_transient_is_multi_author', '0', 'yes');
 
 -- --------------------------------------------------------
 
@@ -2067,7 +2067,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (5048, 1122, '_op_product_thumbnail_rpt', 'field_5c346b44c8145'),
 (5049, 1122, 'op_product_sku', 'GN001'),
 (5050, 1122, '_op_product_sku', 'field_5c346c13e7e3e'),
-(5051, 1122, 'count_view_post', '156'),
+(5051, 1122, 'count_view_post', '160'),
 (5052, 1122, '_yoast_wpseo_primary_za_material', '44'),
 (5053, 1122, 'op_product_excerpt', ''),
 (5054, 1122, '_op_product_excerpt', 'field_5c34702692bde'),
@@ -2692,7 +2692,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (17, 1, 'wp_dashboard_quick_press_last_post_id', '929'),
 (18, 1, 'community-events-location', 'a:1:{s:2:\"ip\";s:9:\"127.0.0.0\";}'),
 (19, 1, 'show_try_gutenberg_panel', '0'),
-(20, 1, 'wp_yoast_notifications', 'a:4:{i:0;a:2:{s:7:\"message\";s:590:\"<p>You\'re using WordPress in Vietnamese. While Yoast SEO has been translated to Vietnamese for 83%, it\'s not been shipped with the plugin yet. You can help! Register at <a href=\"https://translate.wordpress.org/projects/wp-plugins/wordpress-seo/\">Translating WordPress</a> to help complete the translation to Vietnamese!</p><p><a href=\"https://translate.wordpress.org/projects/wp-plugins/wordpress-seo/\">Register now &raquo;</a></p><a class=\"button\" href=\"/wp-admin/admin.php?page=wpseo_tools&#038;tool=file-editor&#038;remove_i18n_promo=1\">Please don\'t show me this notification anymore</a>\";s:7:\"options\";a:8:{s:4:\"type\";s:7:\"warning\";s:2:\"id\";s:31:\"i18nModuleTranslationAssistance\";s:5:\"nonce\";N;s:8:\"priority\";d:0.5;s:9:\"data_json\";a:0:{}s:13:\"dismissal_key\";N;s:12:\"capabilities\";a:1:{i:0;s:20:\"wpseo_manage_options\";}s:16:\"capability_check\";s:3:\"all\";}}i:1;a:2:{s:7:\"message\";s:1073:\"We\'ve noticed you\'ve been using Yoast SEO for some time now; we hope you love it! We\'d be thrilled if you could <a href=\"https://yoa.st/rate-yoast-seo?php_version=7.1.25&platform=wordpress&platform_version=4.9.9&software=free&software_version=7.2&role=administrator\">give us a 5 stars rating on WordPress.org</a>!\n\nIf you are experiencing issues, <a href=\"https://yoa.st/bugreport?php_version=7.1.25&platform=wordpress&platform_version=4.9.9&software=free&software_version=7.2&role=administrator\">please file a bug report</a> and we\'ll do our best to help you out.\n\nBy the way, did you know we also have a <a href=\'https://yoa.st/premium-notification?php_version=7.1.25&platform=wordpress&platform_version=4.9.9&software=free&software_version=7.2&role=administrator\'>Premium plugin</a>? It offers advanced features, like a redirect manager and support for multiple keywords. It also comes with 24/7 personal support.\n\n<a class=\"button\" href=\"http://goldenhomes2.dienkim/wp-admin/?page=wpseo_dashboard&yoast_dismiss=upsell\">Please don\'t show me this notification anymore</a>\";s:7:\"options\";a:8:{s:4:\"type\";s:7:\"warning\";s:2:\"id\";s:19:\"wpseo-upsell-notice\";s:5:\"nonce\";N;s:8:\"priority\";d:0.8;s:9:\"data_json\";a:0:{}s:13:\"dismissal_key\";N;s:12:\"capabilities\";s:20:\"wpseo_manage_options\";s:16:\"capability_check\";s:3:\"all\";}}i:2;a:2:{s:7:\"message\";s:170:\"Don\'t miss your crawl errors: <a href=\"http://goldenhomes2.dienkim/wp-admin/admin.php?page=wpseo_search_console&tab=settings\">connect with Google Search Console here</a>.\";s:7:\"options\";a:8:{s:4:\"type\";s:7:\"warning\";s:2:\"id\";s:17:\"wpseo-dismiss-gsc\";s:5:\"nonce\";N;s:8:\"priority\";d:0.5;s:9:\"data_json\";a:0:{}s:13:\"dismissal_key\";N;s:12:\"capabilities\";s:20:\"wpseo_manage_options\";s:16:\"capability_check\";s:3:\"all\";}}i:3;a:2:{s:7:\"message\";s:270:\"You still have the default WordPress tagline, even an empty one is probably better. <a href=\"http://goldenhomes2.dienkim/wp-admin/customize.php?url=http%3A%2F%2Fgoldenhomes2.dienkim%2Fwp-admin%2Fedit.php%3Fpost_type%3Dzaquotation\">You can fix this in the customizer</a>.\";s:7:\"options\";a:8:{s:4:\"type\";s:5:\"error\";s:2:\"id\";s:28:\"wpseo-dismiss-tagline-notice\";s:5:\"nonce\";N;s:8:\"priority\";d:0.5;s:9:\"data_json\";a:0:{}s:13:\"dismissal_key\";N;s:12:\"capabilities\";s:20:\"wpseo_manage_options\";s:16:\"capability_check\";s:3:\"all\";}}}'),
+(20, 1, 'wp_yoast_notifications', 'a:4:{i:0;a:2:{s:7:\"message\";s:590:\"<p>You\'re using WordPress in Vietnamese. While Yoast SEO has been translated to Vietnamese for 83%, it\'s not been shipped with the plugin yet. You can help! Register at <a href=\"https://translate.wordpress.org/projects/wp-plugins/wordpress-seo/\">Translating WordPress</a> to help complete the translation to Vietnamese!</p><p><a href=\"https://translate.wordpress.org/projects/wp-plugins/wordpress-seo/\">Register now &raquo;</a></p><a class=\"button\" href=\"/wp-admin/admin.php?page=wpseo_tools&#038;tool=file-editor&#038;remove_i18n_promo=1\">Please don\'t show me this notification anymore</a>\";s:7:\"options\";a:8:{s:4:\"type\";s:7:\"warning\";s:2:\"id\";s:31:\"i18nModuleTranslationAssistance\";s:5:\"nonce\";N;s:8:\"priority\";d:0.5;s:9:\"data_json\";a:0:{}s:13:\"dismissal_key\";N;s:12:\"capabilities\";a:1:{i:0;s:20:\"wpseo_manage_options\";}s:16:\"capability_check\";s:3:\"all\";}}i:1;a:2:{s:7:\"message\";s:1073:\"We\'ve noticed you\'ve been using Yoast SEO for some time now; we hope you love it! We\'d be thrilled if you could <a href=\"https://yoa.st/rate-yoast-seo?php_version=7.1.25&platform=wordpress&platform_version=4.9.9&software=free&software_version=7.2&role=administrator\">give us a 5 stars rating on WordPress.org</a>!\n\nIf you are experiencing issues, <a href=\"https://yoa.st/bugreport?php_version=7.1.25&platform=wordpress&platform_version=4.9.9&software=free&software_version=7.2&role=administrator\">please file a bug report</a> and we\'ll do our best to help you out.\n\nBy the way, did you know we also have a <a href=\'https://yoa.st/premium-notification?php_version=7.1.25&platform=wordpress&platform_version=4.9.9&software=free&software_version=7.2&role=administrator\'>Premium plugin</a>? It offers advanced features, like a redirect manager and support for multiple keywords. It also comes with 24/7 personal support.\n\n<a class=\"button\" href=\"http://goldenhomes2.dienkim/wp-admin/?page=wpseo_dashboard&yoast_dismiss=upsell\">Please don\'t show me this notification anymore</a>\";s:7:\"options\";a:8:{s:4:\"type\";s:7:\"warning\";s:2:\"id\";s:19:\"wpseo-upsell-notice\";s:5:\"nonce\";N;s:8:\"priority\";d:0.8;s:9:\"data_json\";a:0:{}s:13:\"dismissal_key\";N;s:12:\"capabilities\";s:20:\"wpseo_manage_options\";s:16:\"capability_check\";s:3:\"all\";}}i:2;a:2:{s:7:\"message\";s:170:\"Don\'t miss your crawl errors: <a href=\"http://goldenhomes2.dienkim/wp-admin/admin.php?page=wpseo_search_console&tab=settings\">connect with Google Search Console here</a>.\";s:7:\"options\";a:8:{s:4:\"type\";s:7:\"warning\";s:2:\"id\";s:17:\"wpseo-dismiss-gsc\";s:5:\"nonce\";N;s:8:\"priority\";d:0.5;s:9:\"data_json\";a:0:{}s:13:\"dismissal_key\";N;s:12:\"capabilities\";s:20:\"wpseo_manage_options\";s:16:\"capability_check\";s:3:\"all\";}}i:3;a:2:{s:7:\"message\";s:316:\"You still have the default WordPress tagline, even an empty one is probably better. <a href=\"http://goldenhomes2.dienkim/wp-admin/customize.php?url=http%3A%2F%2Fgoldenhomes2.dienkim%2Fwp-admin%2Fedit.php%3Fpost_status%3Dtrash%26post_type%3Dzacontact%26paged%3D1%26deleted%3D1\">You can fix this in the customizer</a>.\";s:7:\"options\";a:8:{s:4:\"type\";s:5:\"error\";s:2:\"id\";s:28:\"wpseo-dismiss-tagline-notice\";s:5:\"nonce\";N;s:8:\"priority\";d:0.5;s:9:\"data_json\";a:0:{}s:13:\"dismissal_key\";N;s:12:\"capabilities\";s:20:\"wpseo_manage_options\";s:16:\"capability_check\";s:3:\"all\";}}}'),
 (21, 1, 'wp_user-settings', 'libraryContent=browse&posts_list_mode=list&editor=tinymce'),
 (22, 1, 'wp_user-settings-time', '1546940871'),
 (23, 1, 'edit_page_per_page', '99'),
@@ -3691,7 +3691,9 @@ INSERT INTO `wp_yoast_seo_meta` (`object_id`, `internal_link_count`, `incoming_l
 (1140, 0, 0),
 (1142, 0, 0),
 (1144, 0, 0),
-(1167, 0, 0);
+(1167, 0, 0),
+(1177, 0, 0),
+(1178, 0, 0);
 
 --
 -- Indexes for dumped tables
@@ -3890,19 +3892,19 @@ ALTER TABLE `wp_links`
 -- AUTO_INCREMENT for table `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2917;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2919;
 
 --
 -- AUTO_INCREMENT for table `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5070;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5085;
 
 --
 -- AUTO_INCREMENT for table `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1177;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1179;
 
 --
 -- AUTO_INCREMENT for table `wp_termmeta`
