@@ -71,53 +71,57 @@
 			<div class="clr"></div>
 		</div>	
 	</div>
-	<div class="service-box-0" style="background-image: url(<?php echo get_field('op_hp_banner_thiet_ke_noi_that','option'); ?>);">	
-		<div class="tknt-box-ab">
-			<h3 class="box-info-title"><a href="<?php echo get_field('op_hp_link_thiet_ke_noi_that','option'); ?>"><?php echo get_field('op_hp_title_thiet_ke_noi_that','option'); ?></a></h3>
-			<div class="box-info-excerpt">
-				<?php echo get_field('op_hp_content_thiet_ke_noi_that','option'); ?>
-			</div>
-			<div class="box-info-readmore"><a href="<?php echo get_field('op_hp_link_thiet_ke_noi_that','option'); ?>"><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
-		</div>			
-	</div>
-	<div class="service-box-1" style="background-image: url(<?php echo get_field('op_hp_banner_thi_cong_noi_that','option'); ?>);">
-		<div class="thi-cong-noi-that-info">
-			<h3 class="box-info-title"><a href="<?php echo get_field('op_hp_link_thi_cong_noi_that','option'); ?>"><?php echo get_field('op_hp_title_thi_cong_noi_that','option'); ?></a></h3>
-			<div class="box-info-excerpt">
-				<?php echo get_field('op_hp_content_thi_cong_noi_that','option'); ?>
-			</div>
-			<div class="box-info-readmore"><a href="<?php echo get_field('op_hp_link_thi_cong_noi_that','option'); ?>"><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
-		</div>
-		<div class="clr"></div>
-	</div>
-	<div class="service-box-2" style="background-image: url(<?php echo get_field('op_hp_banner_san_pham_rem_cua','option'); ?>);">	
-		<div class="rem-cua-bx">
-			<h3 class="box-info-title"><a href="<?php echo get_field('op_hp_link_san_pham_rem_cua','option'); ?>"><?php echo get_field('op_hp_title_san_pham_rem_cua','option'); ?></a></h3>
-		<div class="box-info-excerpt">
-			<?php echo get_field('op_hp_content_san_pham_rem_cua','option'); ?>
-		</div>
-		<div class="box-info-readmore"><a href="<?php echo get_field('op_hp_link_san_pham_rem_cua','option'); ?>"><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
-		</div>			
-	</div>
-	<div class="service-box-3" style="background-image: url(<?php echo get_field('op_hp_banner_giay_gian_tuong','option'); ?>);">
-		<div class="thi-cong-noi-that-info">
-			<h3 class="box-info-title"><a href="<?php echo get_field('op_hp_link_giay_gian_tuong','option'); ?>"><?php echo get_field('op_hp_title_giay_gian_tuong','option'); ?></a></h3>
-			<div class="box-info-excerpt">
-				<?php echo get_field('op_hp_content_giay_gian_tuong','option'); ?>
-			</div>
-			<div class="box-info-readmore"><a href="<?php echo get_field('op_hp_link_giay_gian_tuong','option'); ?>"><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
-		</div>
-		<div class="clr"></div>
-	</div>
-	<div class="service-box-4" style="background-image: url(<?php echo get_field('op_hp_banner_dan_phoi_thong_minh','option'); ?>);">	
-		<div class="dan-phoi-box">
-			<h3 class="box-info-title"><a href="<?php echo get_field('op_hp_link_dan_phoi_thong_minh','option'); ?>"><?php echo get_field('op_hp_title_dan_phoi_thong_minh','option'); ?></a></h3>
-			<div class="box-info-excerpt">
-				<?php echo get_field('op_hp_content_dan_phoi_thong_minh','option'); ?>
-			</div>
-			<div class="box-info-readmore"><a href="<?php echo get_field('op_hp_link_dan_phoi_thong_minh','option'); ?>"><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
-		</div>			
-	</div>
+	<?php 
+	$source_service=get_field('op_hp_tax_rpt','option');
+	$k=0;
+	foreach ($source_service as $key => $value) {
+		$op_hp_tax_post_id=$value['op_hp_tax_post_id'];
+		$op_hp_tax_post_color=$value['op_hp_tax_post_color'];
+		$args = array(
+			'p' => $op_hp_tax_post_id
+		);
+		$the_query=new WP_Query($args);
+		if($the_query->have_posts()){
+			while ($the_query->have_posts()) {
+				$the_query->the_post();
+				$post_id=$the_query->post->ID;                                                                      
+				$permalink=get_the_permalink($post_id);					
+				$title= wp_trim_words( get_the_title($post_id),9999,'...' ) ;
+				$excerpt= wp_trim_words( get_the_excerpt($post_id),9999,'...' ) ;
+				$featured_img=get_the_post_thumbnail_url($post_id, 'full'); 
+				$date_post=get_the_date('d.m.Y',@$post_id);		
+				if($k%2==0){
+					?>
+					<div class="service-box-0" style="background-image: url(<?php echo $featured_img; ?>);">	
+						<div class="tknt-box-ab">
+							<h3 class="box-info-title"><a href="<?php echo @$permalink; ?>"><?php echo @$title; ?></a></h3>
+							<div class="box-info-excerpt">
+								<?php echo @$excerpt; ?>
+							</div>
+							<div class="box-info-readmore"><a href="<?php echo @$permalink; ?>" style="background-color: <?php echo $op_hp_tax_post_color; ?>"><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
+						</div>			
+					</div>
+					<?php
+				}else{
+					?>
+					<div class="service-box-1" style="background-image: url(<?php echo $featured_img; ?>);">
+						<div class="thi-cong-noi-that-info">
+							<h3 class="box-info-title"><a href="<?php echo @$permalink; ?>"><?php echo @$title; ?></a></h3>
+							<div class="box-info-excerpt">
+								<?php echo @$excerpt; ?>
+							</div>
+							<div class="box-info-readmore"><a href="<?php echo @$permalink; ?>" style="background-color: <?php echo $op_hp_tax_post_color; ?>" ><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
+						</div>
+						<div class="clr"></div>
+					</div>
+					<?php
+				}
+			}
+			wp_reset_postdata();
+		}		
+		$k++;
+	}
+	?>
 	<div class="thuong_hieu_box">		
 		<div class="container">
 			<div class="row">

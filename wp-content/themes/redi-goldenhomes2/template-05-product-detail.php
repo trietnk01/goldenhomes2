@@ -96,18 +96,16 @@ if( !empty($source_thumbnail_rpt) ){
 						<div class="product-info-box">							
 							<h2 class="info-product-title"><?php echo @$title; ?></h2>
 							<div class="sao-danh-gia">
+								<?php if(function_exists("kk_star_ratings")) : echo kk_star_ratings($post_id); endif; ?>
 								<?php 
-								for ($i=0; $i < 4; $i++) { 
+								/*for ($i=0; $i < 4; $i++) { 
 									?>
 									<div class="item-ngoi-sao" >
 										<div style="background-image: url(<?php echo P_IMG.'/sao-vang.png'; ?>);background-repeat: no-repeat;background-size: cover;padding-top: calc(100% / (17 / 15))"></div>
 									</div>
 									<?php
-								}
-								?>	
-								<div class="item-ngoi-sao" >
-										<div style="background-image: url(<?php echo P_IMG.'/sao-xam.png'; ?>);background-repeat: no-repeat;background-size: cover;padding-top: calc(100% / (17 / 15))"></div>
-								</div>
+								}*/
+								?>									
 								<div class="clr"></div>							
 							</div>
 							<div class="ma-hang">
