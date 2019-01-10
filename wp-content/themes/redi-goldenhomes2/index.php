@@ -94,11 +94,11 @@
 					?>
 					<div class="service-box-0" style="background-image: url(<?php echo $featured_img; ?>);">	
 						<div class="tknt-box-ab">
-							<h3 class="box-info-title"><a href="<?php echo @$permalink; ?>"><?php echo @$title; ?></a></h3>
-							<div class="box-info-excerpt">
+							<h3 class="box-info-title wow bounceInDown"><a href="<?php echo @$permalink; ?>"><?php echo @$title; ?></a></h3>
+							<div class="box-info-excerpt wow bounceInLeft">
 								<?php echo @$excerpt; ?>
 							</div>
-							<div class="box-info-readmore"><a href="<?php echo @$permalink; ?>" style="background-color: <?php echo $op_hp_tax_post_color; ?>"><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
+							<div class="box-info-readmore  wow bounceInRight"><a href="<?php echo @$permalink; ?>" style="background-color: <?php echo $op_hp_tax_post_color; ?>"><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
 						</div>			
 					</div>
 					<?php
@@ -106,11 +106,11 @@
 					?>
 					<div class="service-box-1" style="background-image: url(<?php echo $featured_img; ?>);">
 						<div class="thi-cong-noi-that-info">
-							<h3 class="box-info-title"><a href="<?php echo @$permalink; ?>"><?php echo @$title; ?></a></h3>
-							<div class="box-info-excerpt">
+							<h3 class="box-info-title wow bounceInDown"><a href="<?php echo @$permalink; ?>"><?php echo @$title; ?></a></h3>
+							<div class="box-info-excerpt wow bounceInLeft">
 								<?php echo @$excerpt; ?>
 							</div>
-							<div class="box-info-readmore"><a href="<?php echo @$permalink; ?>" style="background-color: <?php echo $op_hp_tax_post_color; ?>" ><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
+							<div class="box-info-readmore  wow bounceInRight"><a href="<?php echo @$permalink; ?>" style="background-color: <?php echo $op_hp_tax_post_color; ?>" ><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
 						</div>
 						<div class="clr"></div>
 					</div>

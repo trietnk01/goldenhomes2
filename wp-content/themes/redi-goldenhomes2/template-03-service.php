@@ -32,7 +32,7 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 							$date_post=get_the_date('d.m.Y',@$post_id);		
 							if($k%2==0){
 								?>
-								<div class="service-bol-1">
+								<div class="service-bol-1 wow bounceInLeft">
 									<div class="bol-service-left" >
 										<div class="service-img" style="background-image: url('<?php echo @$featured_img; ?>');">
 										</div>	
@@ -60,7 +60,7 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 								<?php
 							}else{
 								?>
-								<div class="service-bol-2">
+								<div class="service-bol-2 wow bounceInRight">
 									<div class="bol-service-left">
 										<h3 class="service-title"><a href="<?php echo @$permalink; ?>"><?php echo @$title; ?></a></h3>
 										<div class="service-excerpt">
