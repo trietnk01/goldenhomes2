@@ -128,7 +128,8 @@
 				<div class="col">
 					<h2 class="dvcchungtoi">Hệ thống thương hiệu</h2>
 					<div class="thuong_hieu_box_arrow">
-						<div class="owl_carousel_trade owl-carousel owl-theme owl-loaded">							<?php 
+						<div class="owl_carousel_trade owl-carousel owl-theme owl-loaded">							
+						<?php 
 						$source_logo=get_field('op_hp_logo_rpt','option');
 						foreach ($source_logo as $key => $value) { 
 							?>
@@ -138,14 +139,7 @@
 								</a>
 							</div>
 							<?php
-						}
-						for ($i=1; $i <= 6; $i++) { 
-							?>
-							<div class="item">
-								<a href="javascript:void(0);" title="tiêu đề tên" target="_blank" rel="nofollow"><img src="<?php echo P_IMG.'/logo_doitac'.$i.'.png'; ?>" alt="tên hình"></a>
-							</div>
-							<?php
-						}
+						}						
 						?>
 						</div>
 					</div>							
