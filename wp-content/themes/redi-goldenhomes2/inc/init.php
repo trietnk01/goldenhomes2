@@ -27,7 +27,7 @@ require_once dirname(__File__) . '/acf/init.php';
 
 
 // ** is_woocom
-
+require_once dirname(__File__) . '/is_woocom.php';
 
 
 // ----------------------------

@@ -94,11 +94,11 @@
 					?>
 					<div class="service-box-0" style="background-image: url(<?php echo $featured_img; ?>);">	
 						<div class="tknt-box-ab">
-							<h3 class="box-info-title wow bounceInDown"><a href="<?php echo @$permalink; ?>"><?php echo @$title; ?></a></h3>
-							<div class="box-info-excerpt wow bounceInLeft">
+							<h3 class="box-info-title"><a href="<?php echo @$permalink; ?>"><?php echo @$title; ?></a></h3>
+							<div class="box-info-excerpt">
 								<?php echo @$excerpt; ?>
 							</div>
-							<div class="box-info-readmore  wow bounceInRight"><a href="<?php echo @$permalink; ?>" style="background-color: <?php echo $op_hp_tax_post_color; ?>"><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
+							<div class="box-info-readmore"><a href="<?php echo @$permalink; ?>" style="background-color: <?php echo $op_hp_tax_post_color; ?>"><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
 						</div>			
 					</div>
 					<?php
@@ -106,11 +106,11 @@
 					?>
 					<div class="service-box-1" style="background-image: url(<?php echo $featured_img; ?>);">
 						<div class="thi-cong-noi-that-info">
-							<h3 class="box-info-title wow bounceInDown"><a href="<?php echo @$permalink; ?>"><?php echo @$title; ?></a></h3>
-							<div class="box-info-excerpt wow bounceInLeft">
+							<h3 class="box-info-title"><a href="<?php echo @$permalink; ?>"><?php echo @$title; ?></a></h3>
+							<div class="box-info-excerpt">
 								<?php echo @$excerpt; ?>
 							</div>
-							<div class="box-info-readmore  wow bounceInRight"><a href="<?php echo @$permalink; ?>" style="background-color: <?php echo $op_hp_tax_post_color; ?>" ><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
+							<div class="box-info-readmore"><a href="<?php echo @$permalink; ?>" style="background-color: <?php echo $op_hp_tax_post_color; ?>" ><img src="<?php echo P_IMG.'/detail-info.png'; ?>" alt="hinhanh">&nbsp;&nbsp;&nbsp;Xem chi tiết</a></div>
 						</div>
 						<div class="clr"></div>
 					</div>
@@ -128,8 +128,7 @@
 				<div class="col">
 					<h2 class="dvcchungtoi">Hệ thống thương hiệu</h2>
 					<div class="thuong_hieu_box_arrow">
-						<div class="owl_carousel_trade owl-carousel owl-theme owl-loaded">							
-						<?php 
+						<div class="owl_carousel_trade owl-carousel owl-theme owl-loaded">							<?php 
 						$source_logo=get_field('op_hp_logo_rpt','option');
 						foreach ($source_logo as $key => $value) { 
 							?>
@@ -139,7 +138,14 @@
 								</a>
 							</div>
 							<?php
-						}						
+						}
+						for ($i=1; $i <= 6; $i++) { 
+							?>
+							<div class="item">
+								<a href="javascript:void(0);" title="tiêu đề tên" target="_blank" rel="nofollow"><img src="<?php echo P_IMG.'/logo_doitac'.$i.'.png'; ?>" alt="tên hình"></a>
+							</div>
+							<?php
+						}
 						?>
 						</div>
 					</div>							

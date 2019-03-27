@@ -56,7 +56,6 @@ if($the_query->have_posts()){
 ?>
 <form class="box-news" method="POST">
 	<input type="hidden" name="filter_page" value="1" />
-	<input type="hidden" name="s" value="<?php echo @$s; ?>" />
 	<div class="container">
 		<div class="row">
 			<div class="col">
